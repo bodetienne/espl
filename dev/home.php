@@ -2,7 +2,9 @@
    <head>
        <meta charset="utf-8">
        <title>Campus ESPL - Choisis ton école</title>
+       <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
     </head>
     <body>
       <main class="home-main">
@@ -14,7 +16,7 @@
             </a>
           </div>
           <div class="ecole IPAC">
-            <a href="#">
+            <a href="www.mydigitalschool.com">
               <img src="elements/logo-ipac.png" alt="logo ipac">
             </a>
           </div>
