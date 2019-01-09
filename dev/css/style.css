@@ -1,1 +1,12 @@
-/** FEUILLE DE STYLE **/ 
+/** FEUILLE DE STYLE **/
+
+/** HOME PAGE **/
+.home-main {
+  display: flex;
+  flex-direction: column;
+  background: url('../elements/background-home.png');
+}
+
+.home-main .school-box .choose-school {
+  margin: auto;
+}
