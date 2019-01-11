@@ -1,3 +1,73 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url('../fonts/ubuntu/UbuntuCondensed-Regular.ttf');
+}
+
+/** STYLE FUNCTIONS **/
+
+/** INPUT TEXT **/
+
+.form-main {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-main .nom-form {
+	margin: 6rem auto 3rem;
+	font-size: 1.5rem;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	color: #7C7C7C;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.form-main .textfield {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.textfield .input-group {
+	margin: auto;
+	display: flex;
+}
+
+.textfield .input-group a {
+	margin: auto;
+	margin-left: 2rem;
+	display: flex;
+}
+
+.textfield .input-group .info-button {
+	margin: auto;
+	width: 36px;
+}
+
+.textfield .textfield-label {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	color: #7C7C7C;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 1.1rem;
+	padding: 1rem 0;
+}
+
+.textfield .input-group .textfield-input {
+	border: 1px solid rgba(112, 112, 112, .4);
+	padding : 1rem 7rem 1rem 1.5rem;
+	margin: auto;
+	margin-right: 2rem;
+}
+
+.textfield .input-group .textfield-input:focus {
+	border: 1px solid #17E5F5;
+	outline: none;
+}
+
+/**  **/
+
 .page-presentation .boutons {
 	display: flex;
 }

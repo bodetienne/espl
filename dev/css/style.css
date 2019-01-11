@@ -1,6 +1,14 @@
 /** FEUILLE DE STYLE **/
 
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
 /** HOME PAGE **/
+
 .home-main {
   display: flex;
   flex-direction: column;
@@ -11,10 +19,11 @@
 }
 
 .home-main .choose-school {
-  margin: 5rem auto;
-  color: #2b2b2b;
+  margin: 10% auto 6%;
+  color: #707070;
   text-transform: uppercase;
   font-size: 1.7rem;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
 .home-main .school-box {
@@ -25,22 +34,25 @@
   margin: auto;
   display: flex;
   background-color: white;
-  width: 150px;
-  height: 150px;
+  width: 12%;
+  height: 26.5%;
 }
 
-.home-main .school-box .MDS {
+.home-main .school-box .ecole:first-of-type {
   margin-left: 150px;
 }
 
-.home-main .school-box .MBWAY {
+.home-main .school-box .ecole:last-of-type {
   margin-right: 150px;
 }
 
 .school-box .ecole a {
-  margin: auto;
+  display: flex;
+  width: 100%;
 }
 
 .school-box .ecole a img {
+  margin: auto;
   max-width: 100px;
+  max-height: 90px;
 }

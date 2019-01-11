@@ -11,12 +11,12 @@
         <h1 class="choose-school">Choisissez votre école</h1>
         <div class="school-box">
           <div class="ecole MDS">
-            <a href="#">
+            <a href="https://www.mydigitalschool.com">
               <img src="elements/logo-mds.png" alt="logo mds">
             </a>
           </div>
           <div class="ecole IPAC">
-            <a href="www.mydigitalschool.com">
+            <a href="#">
               <img src="elements/logo-ipac.png" alt="logo ipac">
             </a>
           </div>
