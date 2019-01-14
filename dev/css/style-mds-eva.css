@@ -1,0 +1,22 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+.page-presentation .logo-mds {
+	display: flex;
+	margin: auto;
+}
+
+.page-presentation .texte-mds {
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.page-presentation .titre-mds {	
+	text-transform: uppercase;
+	font-weight: bolder;
+}
