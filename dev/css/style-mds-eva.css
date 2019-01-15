@@ -1,0 +1,31 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+.page-presentation .logo-mds {
+	display: flex;
+	margin: 60px auto;
+}
+
+.page-presentation .texte-mds {
+	font-family: "Ubuntu-condensed", sans-serif;
+	font-size: 1.1em;
+	color: #363635;
+}
+
+.page-presentation .titre-mds {	
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.page-presentation .intro-mds p{
+	width: 30%;
+	display: flex;
+	margin: auto auto 20px;
+}
