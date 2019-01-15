@@ -7,6 +7,7 @@
 
 /** STYLE FUNCTIONS **/
 
+
 /** INPUT TEXT **/
 
 .form-main {
@@ -32,6 +33,7 @@
 .textfield .input-group {
 	margin: auto;
 	display: flex;
+	margin-bottom: 1.5rem;
 }
 
 .textfield .input-group a {
@@ -65,6 +67,91 @@
 	border: 1px solid #17E5F5;
 	outline: none;
 }
+
+/** NAV FORM **/
+
+.form-main .nav-form {
+	display: flex;
+	margin: auto;
+	margin-top: 1.5rem;
+}
+
+.form-main .nav-form .btn-form {
+	margin: auto 1rem;
+	border: none;
+	padding: .8rem 2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .5s, border .5s, background .5s, transform 2s;
+}
+
+
+.form-main .nav-form .btn-precedent {
+	background: #E7E7E7;
+	color: #A9A9A9;
+}
+
+.form-main .nav-form .btn-precedent:hover,
+.form-main .nav-form .btn-precedent:focus,
+.form-main .nav-form .btn-precedent:active {
+	color: #E7E7E7;
+	background: #A9A9A9;
+}
+
+.form-main .nav-form .btn-enregistrer {
+	color: #F7B60A;
+	border: 1px solid #F7B60A;
+}
+
+.form-main .nav-form .btn-enregistrer:hover,
+.form-main .nav-form .btn-enregistrer:focus,
+.form-main .nav-form .btn-enregistrer:active {
+	color: #ffffff;
+	background: #F7B60A;
+}
+
+.form-main .nav-form .btn-suivant {
+	color: #ffffff;
+	background: #FF8A22;
+}
+
+.form-main .nav-form .btn-suivant:hover,
+.form-main .nav-form .btn-suivant:focus,
+.form-main .nav-form .btn-suivant:active {
+	background: #E76D00;
+}
+
+/** BOUTON CHOIX **/
+
+.form-main .container-lgn {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-main .container-lgn h2 {
+	margin: 6rem auto 3rem;
+	font-size: 1.2rem;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	color: #7C7C7C;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.form-main .container-lgn .lgn {
+	margin: auto;
+	display: flex;
+}
+
+.container-lgn .lgn .btn-choix {
+	margin: auto 1rem;
+	border: none;
+	padding: .8rem 2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .5s, border .5s, background .5s, transform 2s;
+}
+
+
 
 /**  **/
 
