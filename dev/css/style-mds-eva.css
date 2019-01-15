@@ -5,13 +5,18 @@
 	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
 }
 
+.block-main {
+	height: 100%;
+	min-height: 84.8vh;
+}
+
 .page-presentation .logo-mds {
 	display: flex;
 	margin: 60px auto;
 }
 
 .page-presentation .texte-mds {
-	font-family: "Ubuntu-condensed", sans-serif;
+	font-family: "Ubuntu-condensed", helvetica, arial, sans-serif;
 	font-size: 1.1em;
 	color: #363635;
 }
@@ -24,8 +29,60 @@
 	margin-bottom: 60px;
 }
 
-.page-presentation .intro-mds p{
+.page-presentation .intro-mds p {
 	width: 30%;
 	display: flex;
 	margin: auto auto 20px;
+}
+
+.page-presentation .boutons {
+
+}
+
+
+
+/*FOOTER TOUTES ECOLES*/
+
+.block-footer .footer { 
+	display: flex;
+	margin: auto;
+	padding: 20px 0;
+	bottom: 0;
+}
+
+.block-footer ul { 
+	display: flex;
+	margin: auto;
+	padding-left: 0;
+}
+
+.block-footer li { 
+	list-style: none;
+	margin: 0 15px;
+}
+
+
+
+/*FOOTER MDS*/
+
+.block-footer .footer.mds {
+	background-color: #363635;
+}
+
+.block-footer .footer.mds li {
+	color: #777777;
+}
+
+
+.block-footer .footer.mds a {
+	color: #777777;
+	text-decoration: none;
+	font-family: "Ubuntu-condensed", helvetica, arial, sans-serif;
+	font-size: 1.1em;
+}
+
+.block-footer .footer.mds a:hover, 
+.block-footer .footer.mds a:active,
+.block-footer .footer.mds a:focus {
+	color: #999999;
 }
