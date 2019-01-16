@@ -16,15 +16,12 @@
 	min-height: 81.7vh;
 }
 
-.page-presentation .logo-mds {
-	display: flex;
-	margin: 60px auto;
-}
 
 .page-presentation .texte-mds {
 	font-family: "Ubuntu-condensed", helvetica, arial, sans-serif;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	color: #363635;
+	margin-bottom: 60px;
 }
 
 .page-presentation .titre-mds {	
@@ -47,57 +44,13 @@
 }
 
 
-/*BOUTON HELP*/
-.block-footer .help {
-	margin: 0 3% 20px 0;
-	text-align: right;
+.page-presentation .container-lgn .lgn-1 {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.page-presentation .container-lgn .lgn .btn-choix {
+    margin: auto 15px;
 }
 
 
-
-/*FOOTER TOUTES ECOLES*/
-
-.block-footer .footer { 
-	display: flex;
-	margin: auto;
-	padding: 20px 0;
-	bottom: 0;
-}
-
-.block-footer ul { 
-	display: flex;
-	margin: auto;
-	padding-left: 0;
-}
-
-.block-footer li { 
-	list-style: none;
-	margin: 0 15px;
-}
-
-
-
-/*FOOTER MDS*/
-
-.block-footer .footer.mds {
-	background-color: #363635;
-}
-
-
-.block-footer .footer.mds li {
-	color: #777777;
-}
-
-
-.block-footer .footer.mds a {
-	color: #777777;
-	text-decoration: none;
-	font-family: "Ubuntu-condensed", helvetica, arial, sans-serif;
-	font-size: 1.1em;
-}
-
-.block-footer .footer.mds a:hover, 
-.block-footer .footer.mds a:active,
-.block-footer .footer.mds a:focus {
-	color: #999999;
-}

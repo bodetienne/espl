@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
 		<link rel="stylesheet" href="css/style-mds-eva.css"> 
+		<link rel="stylesheet" href="css/style-mds-header-footer.css"> 
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
 
@@ -13,9 +14,7 @@
 		<main class="form-main">
 			<div class="block-main">
 				<div class="page-presentation">
-					<div class="logo">
-						<img class="logo-mds" src="elements/logo-mds.png">
-					</div>
+					<?php include 'header.php'; ?>
 					<div class="texte-mds">
 						<h1 class="titre-mds">Bienvenue sur le site d'inscription en ligne de My Digital School !</h1>
 						<div class="intro-mds">
