@@ -7,7 +7,7 @@
 
 .block-main {
 	height: 100%;
-	min-height: 84.8vh;
+	min-height: 74.1vh;
 }
 
 .page-presentation .logo-mds {
@@ -40,6 +40,13 @@
 }
 
 
+/*BOUTON HELP*/
+.block-footer .help {
+	margin: 0 3% 20px 0;
+	text-align: right;
+}
+
+
 
 /*FOOTER TOUTES ECOLES*/
 
@@ -68,6 +75,7 @@
 .block-footer .footer.mds {
 	background-color: #363635;
 }
+
 
 .block-footer .footer.mds li {
 	color: #777777;
