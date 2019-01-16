@@ -42,9 +42,9 @@
 	display: flex;
 }
 
-.textfield .input-group .info-button {
+.info-button {
 	margin: auto;
-	width: 36px;
+	width: 27px;
 }
 
 .textfield .textfield-label {
@@ -151,7 +151,37 @@
 	transition: color .5s, border .5s, background .5s, transform 2s;
 }
 
+button:focus {
+	outline:0;
+}
 
+/** CHECKLIST **/
+
+.form-main .form-checklist {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+}
+
+.form-main .form-checklist .check-ligne {
+	display: flex;
+	margin: auto;
+}
+
+.form-main .form-checklist .check-ligne a,
+.form-main .form-checklist .check-ligne img,
+.form-main .form-checklist .check-ligne p {
+	margin: auto .5rem;
+}
+
+.form-checklist .check-ligne .case-check {
+	max-width: 25px;
+	margin-left: 0;
+}
+
+.form-checklist .check-ligne .case-check:active {
+	content: attr("src", "../elements/check-fulled.png");
+}
 
 /**  **/
 
