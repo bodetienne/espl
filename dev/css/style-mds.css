@@ -145,7 +145,7 @@
 .container-lgn .lgn .btn-choix {
 	margin: auto 1rem;
 	border: none;
-	padding: 20px 30px;
+	padding: .8rem 2rem;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: color .5s, border .5s, background .5s, transform 2s;
