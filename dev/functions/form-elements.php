@@ -30,9 +30,9 @@ function textfield($label, $placeholder, $info, $oblig){
 
 //Fonction bouton
 
-function createbtn ($class, $txt, $color, $bg, $border){
-    echo'<button type="button" name="button" class="btn-choix '.$class. '"
-    style="color : ' . $color .'; background : ' . $bg .'; border : 1px solid ' .$border. ' "
+function createbtn ($id, $txt, $color, $bg, $border){
+    echo'<button type="button" name="button" class="btn-choix" id="' . $id .'"
+    style="color : ' . $color .'; background : ' . $bg .'; border : 1px solid ' . $border. ';"
     >'.$txt.'</button>';
 }
 

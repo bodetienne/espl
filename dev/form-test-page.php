@@ -19,14 +19,14 @@
         <div class="container-lgn">
           <h2>Bachelor Web et Digital</h2>
           <div class="lgn lgn-1">
-            <?php echo createbtn("bac-1", "Année 1", "#707070", "white", "#17E5F5"); ?>
-            <?php echo createbtn("bac-1", "Année 2", "#707070", "white", "#50A7FF"); ?>
-            <?php echo createbtn("bac-1", "Année 3", "#707070", "white", "#F74D9D"); ?>
+            <?php echo createbtn("1", "Année 1", "#707070", "white", "#17E5F5"); ?>
+            <?php echo createbtn("2", "Année 2", "#707070", "white", "#50A7FF"); ?>
+            <?php echo createbtn("3", "Année 3", "#707070", "white", "#F74D9D"); ?>
           </div>
           <h2>MBA</h2>
           <div class="lgn lgn-2">
-            <?php echo createbtn("bac-1", "Année 1", "#707070", "white", "#9B9B9B"); ?>
-            <?php echo createbtn("bac-1", "Année 2", "#707070", "white", "#343434"); ?>
+            <?php echo createbtn("4", "Année 1", "#707070", "white", "#9B9B9B"); ?>
+            <?php echo createbtn("5", "Année 2", "#707070", "white", "#343434"); ?>
           </div>
         </div>
 
@@ -37,5 +37,7 @@
         </div>
 
       </main>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/effects.js"></script>
     </body>
 </html>
