@@ -27,9 +27,9 @@
 					
 					<div class="container-lgn">
 						<div class="lgn lgn-1">
-						<?php echo createbtn("doc", "Recevoir </br>la documentation", "#FFFFFF", "#FFBD1D", "#FFBD1D");
-						echo createbtn("debut", "Commencer </br>ma candidature", "#FFFFFF", "#FF8A22", "#FF8A22");
-						echo createbtn("reprendre", "Reprendre </br>ma candidature", "#FFFFFF", "#4BC4CF", "#4BC4CF");
+						<?php echo createbtn("doc", "Recevoir la documentation", "#FFFFFF", "#FFBD1D", "#FFBD1D");
+						echo createbtn("debut", "Commencer ma candidature", "#FFFFFF", "#FF8A22", "#FF8A22");
+						echo createbtn("reprendre", "Reprendre ma candidature", "#FFFFFF", "#4BC4CF", "#4BC4CF");
 
 						?>
 						</div>
