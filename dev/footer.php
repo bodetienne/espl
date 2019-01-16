@@ -1,4 +1,7 @@
 <footer class="block-footer">
+	<div class="help mds">
+		<a href="#" class="bouton-help"><img src="./elements/help-button.png"></a>
+	</div>
 	<div class="footer mds">
 		<ul>
 			<li><a href="#" class="mentions">Mentions légales</a></li>

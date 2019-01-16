@@ -7,9 +7,9 @@
 
     </head>
     <body>
-      <main class="form-main">  <!-- "form-main" doit toujours resté, mettre le vrai nom à coté :
+      <main class="form-main">  <!-- "form-main" doit toujours rester, mettre le vrai nom à coté :
                                       ex) class="form-main form-contact" !-->
-        <h1 class="nom-form">Présentes-toi !</h1>
+        <h1 class="nom-form">Présente-toi !</h1>
         <?php include('functions/form-elements.php'); ?>
         <?php echo textfield("", "Prénom", "no", "yes"); ?>
         <?php echo textfield("", "Nom", "no", "yes"); ?>

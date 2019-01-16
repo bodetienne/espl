@@ -5,9 +5,15 @@
 	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
 }
 
+.page-presentation {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
 .block-main {
 	height: 100%;
-	min-height: 84.8vh;
+	min-height: 81.7vh;
 }
 
 .page-presentation .logo-mds {
@@ -30,13 +36,21 @@
 }
 
 .page-presentation .intro-mds p {
-	width: 30%;
-	display: flex;
+	width: 45%;
 	margin: auto auto 20px;
+	text-align: center;
 }
 
-.page-presentation .boutons {
 
+.page-presentation .intro-mds .blue {
+	color: #4BC4CF;
+}
+
+
+/*BOUTON HELP*/
+.block-footer .help {
+	margin: 0 3% 20px 0;
+	text-align: right;
 }
 
 
@@ -68,6 +82,7 @@
 .block-footer .footer.mds {
 	background-color: #363635;
 }
+
 
 .block-footer .footer.mds li {
 	color: #777777;
