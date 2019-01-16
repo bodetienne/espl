@@ -30,11 +30,20 @@
           </div>
         </div>
 
+        <h1 class="nom-form">Comment as-tu connu l'école ?</h1>
+        <div class="form-checklist">
+          <div class="check-ligne">
+            <p>Bouche à oreille / relation</p>
+            <img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
+          </div>
+        </div>
+
         <div class="nav-form">
           <a href="#" class="btn-form btn-precedent">Précédent</a>
           <a href="#" class="btn-form btn-enregistrer">Enregistrer</a>
           <a href="#" class="btn-form btn-suivant">Suivant</a>
         </div>
+
 
       </main>
       <script type="text/javascript" src="js/jquery.min.js"></script>
