@@ -35,12 +35,9 @@
 					</div>
 						
 				</div>
-			</div>
+			</div>				
 
-
-				
-
-			</div><?php include 'footer.php';?>
+			<?php include 'footer.php';?>
 		</main>
 	    <script type="text/javascript" src="js/jquery.min.js"></script>
       	<script type="text/javascript" src="js/effects.js"></script>
