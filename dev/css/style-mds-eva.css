@@ -5,9 +5,15 @@
 	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
 }
 
+.page-presentation {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
 .block-main {
 	height: 100%;
-	min-height: 74.1vh;
+	min-height: 81.7vh;
 }
 
 .page-presentation .logo-mds {
@@ -31,12 +37,12 @@
 
 .page-presentation .intro-mds p {
 	width: 30%;
-	display: flex;
 	margin: auto auto 20px;
 }
 
-.page-presentation .boutons {
 
+.page-presentation .intro-mds .blue {
+	color: #4BC4CF;
 }
 
 
