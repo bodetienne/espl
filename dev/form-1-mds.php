@@ -17,7 +17,6 @@
 					<div class="aside">
 						<?php include 'header.php'; ?>
 					</div>
-						
 				</div>
 			</div>				
 
