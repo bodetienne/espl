@@ -17,9 +17,7 @@
 					<div class="aside">
 	        </div>
 	        <div class="main">
-						<div class="header">
-							<img class="logo-mds" src="elements/logo-mds.png">
-						</div>
+						<?php include 'header.php';?>
 					</div>
 				</div>
 			</div>
