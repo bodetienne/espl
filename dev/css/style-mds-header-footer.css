@@ -1,4 +1,9 @@
-.header .logo-mds {
+.page-presentation .header .logo-mds {
+	display: flex;
+	margin: 60px auto;
+}
+
+.aside .header .logo-mds {
 	display: flex;
 	margin: 60px auto;
 }
