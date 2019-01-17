@@ -3,8 +3,9 @@
 //Fonction champ de texte
 
 function textfield($label, $placeholder, $info, $oblig){
+  $form_star = "*";
   if($oblig == "yes"){
-    $placeholder = $placeholder . "*";
+    $placeholder = $placeholder . $form_star ;
   }
   if($info == "no"){
     $display = "none;";

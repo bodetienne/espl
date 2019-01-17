@@ -121,6 +121,10 @@
 	background: #E76D00;
 }
 
+.form-star {
+	color: #FF8A22;
+}
+
 /** BOUTON CHOIX **/
 
 .form-main .container-lgn {
@@ -168,19 +172,18 @@ button:focus {
 	margin: auto;
 }
 
-.form-main .form-checklist .check-ligne a,
-.form-main .form-checklist .check-ligne img,
-.form-main .form-checklist .check-ligne p {
-	margin: auto .5rem;
+.form-checklist .checkmark-école {
+	margin: auto 1rem;
 }
 
-.form-checklist .check-ligne .case-check {
-	max-width: 25px;
+/* .form-checklist input[type="radio"]:not(:checked),
+.form-checklist input[type="radio"]:checked */
+.form-checklist .radio-école  {
+	margin: auto;
 	margin-left: 0;
-}
-
-.form-checklist .check-ligne .case-check:active {
-	content: attr("src", "../elements/check-fulled.png");
+	padding: 1.5em;
+	background: none;
+	border: none;
 }
 
 /**  **/
