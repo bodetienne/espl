@@ -1,11 +1,13 @@
 .page-presentation .header .logo-mds {
 	display: flex;
 	margin: 60px auto;
+	width: 200px;
 }
 
 .aside .header .logo-mds {
 	display: flex;
 	margin: 60px auto;
+	width: 200px;
 }
 
 

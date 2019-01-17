@@ -5,24 +5,6 @@
 	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
 }
 
-html {
-	height: 100%; 
-}
-
-body {
-	height: 100%;
-	position: relative;
-}
-
-main {
-	min-height: 100%;
-	position: relative;
-}
-
-.block-main {
-	position: relative;
-	padding-bottom: 15px;
-}
 
 .page-presentation {
 	margin: auto;
@@ -57,6 +39,13 @@ main {
 	color: #4BC4CF;
 }
 
+.page-presentation .intro-mds .yellow {
+	color: #F7B60A;
+}
+
+.page-presentation .intro-mds .orange {
+	color: #FF8A22;
+}
 
 .page-presentation .container-lgn .lgn-1 {
 	font-size: 0.8em;
@@ -70,4 +59,9 @@ main {
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: color .5s, border .5s, background .5s, transform 2s;
+}
+
+
+.page-formulaire-1 .aside {
+	width: 33.5vw;
 }
