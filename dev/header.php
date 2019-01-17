@@ -1,3 +1,6 @@
 <div class="header">
-	<img class="logo-mds" src="elements/logo-mds2.png">
+	<a href="presentation-mds.php">
+		<img class="logo-mds" src="elements/logo-mds2.png">
+	</a>
+
 </div>

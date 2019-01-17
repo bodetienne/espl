@@ -11,13 +11,16 @@
 	</head>
 
 	<body>
-		<main class="form-main">
+		<main class="form-main aide">
 			<div class="block-main">
 				<div class="page-aide">
 					<div class="aside">
 	        </div>
 	        <div class="main">
 						<?php include 'header.php';?>
+						<div class="title_question">
+							<h1 class="titre-mds">Besoin d'aide ou d'une réponse à une question ?</h1>
+						</div>
 					</div>
 				</div>
 			</div>

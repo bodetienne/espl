@@ -1,4 +1,4 @@
-/** FONTS **/
+* FONTS **/
 
 @font-face {
 	font-family: "Ubuntu-condensed";
@@ -62,6 +62,14 @@
 }
 
 
-.page-formulaire-1 .aside {
-	width: 33.5vw;
+/* PAGE FORMULAIRE 1*/
+
+.page-formulaire-1 {
+	display: flex;
+	width: 100vw;
+}
+
+.page-formulaire-1 .progession-mds {
+	margin: 60px auto;
+	display: flex;
 }

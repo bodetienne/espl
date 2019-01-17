@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
 		<link rel="stylesheet" href="css/style-mds-eva.css"> 
+		<link rel="stylesheet" href="css/style-mds-alex.css"> 
 		<link rel="stylesheet" href="css/style-mds-header-footer.css"> 
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
@@ -16,6 +17,10 @@
 				<div class="page-formulaire-1">
 					<div class="aside">
 						<?php include 'header.php'; ?>
+					</div>
+					<div class="main">
+						<img class="progession-mds" src="elements/barre-progression-mds-1.png">
+						<h1 class="titre-mds">Présente-toi</h1>
 					</div>
 				</div>
 			</div>				

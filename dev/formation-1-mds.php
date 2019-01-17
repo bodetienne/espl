@@ -29,6 +29,8 @@
 						<div class="groupe-formation">
 							<?php echo createbtn("1", "Année 1", "#707070", "white", "#17E5F5"); ?>
 	            <?php echo createbtn("2", "Année 2", "#707070", "white", "#50A7FF"); ?>
+							<p class=",zebfn ze veqs :
+							z"></p>
 						</div>
             	<?php echo createbtn("3", "Année 3", "#707070", "white", "#F74D9D"); ?>
           </div>
