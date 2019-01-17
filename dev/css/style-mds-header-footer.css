@@ -11,6 +11,13 @@
 }
 
 
+.main .header .logo-mds {
+	display: flex;
+	margin: 60px auto 0;
+	width: 200px;
+}
+
+
 /*BOUTON HELP*/
 .block-footer .help {
 	bottom: 70px;
