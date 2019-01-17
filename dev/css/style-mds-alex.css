@@ -1,0 +1,45 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+/* BOUTON AIDE NONE */
+.block-footer .help {
+  display: none;
+}
+
+.form-main {
+	height: 100vh;
+}
+
+.block-main {
+  display: flex;
+	height: 100%;
+	min-height: 81.7vh;
+  width: 100%;
+}
+
+.page-aide {
+	display: flex;
+	height: 100%;
+	min-height: 81.7vh;
+	width: 100%;
+}
+
+/* PARTIE GAUCHE */
+
+.aside {
+  width: 33.5vw;
+  height: 100vh;
+	border-right: 4px #363635 solid;
+}
+
+/* PARTIE DROITE */
+
+.reponse-right {
+  width: 66.5vw;
+  height: 100vh;
+	display: flex;
+}

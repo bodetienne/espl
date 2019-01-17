@@ -1,6 +1,6 @@
 <footer class="block-footer">
 	<div class="help mds">
-		<a href="#" class="bouton-help"><img src="./elements/help-button.png"></a>
+		<a href="aide-mds.php" class="bouton-help"><img src="./elements/help-button.png"></a>
 	</div>
 	<div class="footer mds">
 		<ul>
