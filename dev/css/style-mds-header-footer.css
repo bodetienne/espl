@@ -1,4 +1,9 @@
-.header .logo-mds {
+.page-presentation .header .logo-mds {
+	display: flex;
+	margin: 60px auto;
+}
+
+.aside .header .logo-mds {
 	display: flex;
 	margin: 60px auto;
 }
@@ -6,10 +11,32 @@
 
 /*BOUTON HELP*/
 .block-footer .help {
-	margin: 0 3% 20px 0;
-	text-align: right;
+	bottom: 70px;
+	position: absolute;
+	right: 3%;
 }
 
+
+/*POUR QUE LE FOOTER SE METTE BIEN EN BAS*/
+
+html {
+	height: 100%; 
+}
+
+body {
+	height: 100%;
+	position: relative;
+}
+
+main {
+	min-height: 100%;
+	position: relative;
+}
+
+.block-main {
+	position: relative;
+	padding-bottom: 15px;
+}
 
 
 /*FOOTER TOUTES ECOLES*/
@@ -19,6 +46,10 @@
 	margin: auto;
 	padding: 20px 0;
 	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 15px;
+	position: absolute;
 }
 
 .block-footer ul { 

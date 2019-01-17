@@ -5,15 +5,29 @@
 	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
 }
 
+html {
+	height: 100%; 
+}
+
+body {
+	height: 100%;
+	position: relative;
+}
+
+main {
+	min-height: 100%;
+	position: relative;
+}
+
+.block-main {
+	position: relative;
+	padding-bottom: 15px;
+}
+
 .page-presentation {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-}
-
-.block-main {
-	height: 100%;
-	min-height: 81.7vh;
 }
 
 
@@ -49,6 +63,11 @@
 	font-weight: bold;
 }
 
-.page-presentation .container-lgn .lgn .btn-choix {
+.page-presentation .container-lgn .lgn .btn-presentation {
     margin: auto 15px;
+    border: none;
+	padding: 18px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .5s, border .5s, background .5s, transform 2s;
 }
