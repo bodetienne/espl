@@ -18,6 +18,10 @@
 					<div class="aside">
 						<?php include 'header.php'; ?>
 					</div>
+					<div class="main">
+						<img class="progession-mds" src="elements/barre-progression-mds-1.png">
+						<h1 class="titre-mds">Présente-toi</h1>
+					</div>
 				</div>
 			</div>				
 

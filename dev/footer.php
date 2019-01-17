@@ -8,7 +8,7 @@
 			<li> | </li>
 			<li><a href="#" class="devign">Création : Devign</a></li>
 			<li> | </li>
-			<li><a href="#" class="contact">Contact</a></li>
+			<li><a href="contact.php" class="contact">Contact</a></li>
 		</ul>
 	</div>
 </footer>
