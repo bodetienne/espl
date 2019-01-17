@@ -14,10 +14,13 @@
 		<main class="form-main">
 			<div class="block-main">
 				<div class="page-aide">
-          <div class="menu-left">
-          </div>
-          <div class="reponse-right">
-          </div>
+					<div class="aside">
+	        </div>
+	        <div class="main">
+						<div class="header">
+							<img class="logo-mds" src="elements/logo-mds.png">
+						</div>
+					</div>
 				</div>
 			</div>
 
