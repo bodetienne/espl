@@ -18,9 +18,12 @@
 	width: 100%;
 }
 
+.page-aide .main .header a {
+	margin: 60px auto;
+}
+
 .page-aide .main .header .logo-mds {
 	width: 200px;
-	margin: auto;
 }
 
 /* FIN PAGE AIDE */
