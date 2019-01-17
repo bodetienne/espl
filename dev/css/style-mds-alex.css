@@ -6,7 +6,7 @@
 }
 
 /* BOUTON AIDE NONE */
-.block-footer .help {
+.aide .block-footer .help {
   display: none;
 }
 
@@ -39,5 +39,5 @@
 /* PARTIE DROITE */
 
 .main {
-	display: flex;
+	width: 100%;
 }
