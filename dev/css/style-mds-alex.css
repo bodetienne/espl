@@ -28,7 +28,7 @@
 	width: 100%;
 }
 
-/* PARTIE GAUCHE */
+/* PARTIE ASIDE*/
 
 .aside {
   width: 33.5vw;
@@ -36,8 +36,20 @@
 	border-right: 4px #363635 solid;
 }
 
-/* PARTIE DROITE */
+.titre-mds {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* FIN PARTIE ASIDE  */
+
+/* PARTIE MAIN */
 
 .main {
 	width: 100%;
 }
+
+/* FIN PARTIE MAIN */

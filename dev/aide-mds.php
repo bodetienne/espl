@@ -19,7 +19,7 @@
 	        <div class="main">
 						<?php include 'header.php';?>
 						<div class="title_question">
-							<h1>Besoin d'aide ou d'une réponse à une question ?</h1>
+							<h1 class="titre-mds">Besoin d'aide ou d'une réponse à une question ?</h1>
 						</div>
 					</div>
 				</div>
