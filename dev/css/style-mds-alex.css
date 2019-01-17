@@ -1,0 +1,27 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+.block-main {
+	height: 100%;
+	min-height: 81.7vh;
+}
+
+.page-aide {
+  display: flex;
+}
+
+.menu-left {
+  width: 33vw;
+  height: 100px;
+  background-color: green;
+}
+
+.reponse-right {
+  width: 67vw;
+  height: 100px;
+
+}
