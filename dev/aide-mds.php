@@ -21,6 +21,16 @@
 						<div class="title_question">
 							<h1 class="titre-mds">Besoin d'aide ou d'une réponse à une question ?</h1>
 						</div>
+						<hr></hr>
+						<div class="answer_question">
+							<p>Tu trouveras toutes tes réponses en parcourant le menu sur ta gauche,
+								sinon tu peux nous contacter à travers le formulaire de contact en cliquant
+								sur le bouton ci-dessous
+							</p>
+
+						</div>
+						<?php include 'functions/form-elements.php';?>
+						<a href="contact.php"><?php echo createbtn("contacter", "Contact", "#FFFFFF", "#FF8A22", "#FF8A22");?></a>
 					</div>
 				</div>
 			</div>
@@ -30,5 +40,4 @@
 	    <script type="text/javascript" src="js/jquery.min.js"></script>
       	<script type="text/javascript" src="js/effects.js"></script>
 	</body>
-
 </html>

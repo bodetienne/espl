@@ -33,7 +33,6 @@
 
 .aside {
   width: 33.5vw;
-  height: 100vh;
 	border-right: 4px #363635 solid;
 }
 
@@ -43,7 +42,7 @@
 	font-family: "Ubuntu-condensed";
 	font-weight: bolder;
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	color: #363635
 }
 
@@ -52,7 +51,31 @@
 /* PARTIE MAIN */
 
 .main {
-	width: 100%;
+	width: 66.5vw;
+}
+
+.main hr {
+	height: 2px;
+	border: none;
+	background-color: #363635;
+	width: 300px;
+	margin: 20px auto;
+}
+
+.main .answer_question {
+	margin: auto;
+	width: 50%;
+}
+
+.main .answer_question p{
+	font-size: 1.1em;
+	font-family: "Ubuntu-condensed";
+	text-align: center;
+	color: #363635
+}
+
+.main a {
+	margin: auto;
 }
 
 /* FIN PARTIE MAIN */
