@@ -39,6 +39,7 @@
 .titre-mds {
 	font-size: 1.4em;
 	text-transform: uppercase;
+	font-family: "Ubuntu-condensed";
 	font-weight: bolder;
 	text-align: center;
 	margin-bottom: 60px;
