@@ -11,9 +11,12 @@
 }
 
 
-.main .header .logo-mds {
+.page-aide .main .header {
 	display: flex;
 	margin: 60px auto 0;
+}
+
+.page-aide .main .header .logo-mds {
 	width: 200px;
 }
 
