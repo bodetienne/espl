@@ -57,4 +57,13 @@ function createbtn ($id, $txt, $color, $bg, $border){
 //   }
 // }
 
+function radiobutton ($txt){
+  echo
+  '<div class="check-ligne">
+    <input type="radio" class="radio-école">
+    <span class="checkmark-école">'.$txt.'</span>
+    <img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
+  </div>';
+}
+
 ?>

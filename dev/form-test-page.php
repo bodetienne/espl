@@ -32,26 +32,9 @@
 
         <h1 class="nom-form">Comment as-tu connu l'école ?</h1>
         <div class="form-checklist">
-          <div class="check-ligne">
-            <input type="radio" class="radio-école">
-            <span class="checkmark-école">Bouche à oreille / relation</span>
-            <img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
-          </div>
-          <div class="check-ligne">
-            <input type="radio" class="radio-école">
-            <span class="checkmark-école">Bouche à oreille / relation</span>
-            <img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
-          </div>
-          <div class="check-ligne">
-            <input type="radio" class="radio-école">
-            <span class="checkmark-école">Bouche à oreille / relation</span>
-            <img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
-          </div>
-          <div class="check-ligne">
-            <input type="radio" class="radio-école">
-            <span class="checkmark-école">Bouche à oreille / relation</span>
-            <img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
-          </div>
+          <?php echo radiobutton("Bouche à oreille / relation / étudiant") ?>
+          <?php echo radiobutton("Internet (Précisez : moteur de recherche ...)") ?>
+          <?php echo radiobutton("Salon, lequel") ?>
         </div>
 
         <div class="nav-form">
