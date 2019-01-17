@@ -38,8 +38,7 @@
 
 /* PARTIE DROITE */
 
-.reponse-right {
-  width: 66.5vw;
+.main {
   height: 100vh;
 	display: flex;
 }
