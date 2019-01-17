@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
 <head>
-		<link rel="stylesheet" href="css/style-mds-emma.css" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-mds-header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
+		<link rel="stylesheet" href="css/style-mds-emma.css" />
+    <link rel="stylesheet" href="css/style-mds-header-footer.css">
+    <link rel="icon" type="img" href="elements/favicon.ico.png">
 
 		<meta charset="utf-8">
 		<title>Contact</title>
