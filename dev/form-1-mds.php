@@ -27,7 +27,12 @@
 							echo textfield("", "Nom ", "no", "yes");
 							?>
 						</div>
-						<?php echo createbtn("debut", "Sauvegarder", "#F7B60A", "white", "#F7B60A"); ?>
+						<div class="container-lgn">
+							<div class="lgn lgn-1">
+								<?php echo createbtn("debut", "Enregistrer", "#F7B60A", "white", "#F7B60A");
+								echo createbtn("suivant", "Suivant", "white", "#FF8A22", "#FF8A22"); ?>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>				
