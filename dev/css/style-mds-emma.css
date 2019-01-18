@@ -1,11 +1,18 @@
 .contact{
   background-color: #2B2B2B;
   position:none;
-  height: 95%;
+
 
   }
 .contact .block-left {
-  margin-right: 50%;
+  width: 50%;
+  position: relative;
+}
+
+.contact .block-left .logo-ecole-contact img{
+  width: 50%;
+  margin: auto;
+  display: flex;
 }
 
 .contact .block-left h2{
@@ -23,8 +30,10 @@
 
 
 .contact .block-right{
-  margin-top: -130px;
-  margin-left: 40%;
+  margin-top: -65px;
+  margin-left: 50%;
+  width: 50%;
+  position: absolute;
 }
 
 .contact .block-right .cadre-contact{
@@ -34,6 +43,7 @@
   width: 60%;
   display: flex;
   margin: auto;
+  margin-top: -45%;
 }
 
 

@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
 <head>
-		<link rel="stylesheet" href="css/style-mds-emma.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style-mds-header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
+		<link rel="stylesheet" href="css/style-mds-emma.css" />
+
+    <link rel="icon" type="img" href="elements/favicon.ico.png">
 
 		<meta charset="utf-8">
 		<title>Contact</title>
@@ -13,6 +15,9 @@
 <body class="contact">
 
   <div class="block-left">
+    <div class="logo-ecole-contact">
+      <img src="elements/logo-mds-blanc.png" alt="logo-mds-blanc">
+    </div>
     <h2>Contacte-nous !</h2>
     <h3>Tu peux aussi nous joindre par téléphone au 02.41.73.20.30</h3>
   </div>
