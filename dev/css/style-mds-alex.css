@@ -30,12 +30,15 @@
 
 /* PARTIE ASIDE*/
 
-.aside {
-  width: 33.5vw;
-	border-right: 4px #363635 solid;
+.page-aide .aside {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+}
+
+.aside {
+	width: 33.5vw;
+	border-right: 4px #363635 solid;
 }
 
 	/* Partie menu  */
