@@ -21,17 +21,22 @@
 					<div class="main">
 						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
 						<h1 class="titre-mds">Présente-toi</h1>
-						<div class="nom-prenom">
-							<?php include('functions/form-elements.php');
-							echo textfield("", "Prénom ", "no", "yes");
-							echo textfield("", "Nom ", "no", "yes");
-							?>
-						</div>
-						<div class="container-lgn">
-							<div class="lgn lgn-1">
-								<?php echo createbtn("debut", "Enregistrer", "#F7B60A", "white", "#F7B60A"); ?>
-								<a href="form-2-mds.php">
-									<?php echo createbtn("suivant", "Suivant", "white", "#FF8A22", "#FF8A22"); ?></a>
+						<div class="form-1">
+							<div class="nom-prenom">
+								<?php include('functions/form-elements.php');
+								echo textfield("", "Prénom ", "no", "yes");
+								echo textfield("", "Nom ", "no", "yes");
+								?>
+							</div>
+							<div class="container-lgn">
+								<div class="lgn lgn-1">
+									<?php echo createbtn("debut", "Enregistrer", "#F7B60A", "white", "#F7B60A"); ?>
+									<a href="form-2-mds.php" class="lien-suivant">
+										<?php echo createbtn("suivant", "Suivant", "white", "#FF8A22", "#FF8A22"); ?></a>
+								</div>
+							</div>
+							<div class="essai">
+								
 							</div>
 						</div>						
 					</div>
