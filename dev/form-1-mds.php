@@ -19,8 +19,15 @@
 						<?php include 'header.php'; ?>
 					</div>
 					<div class="main">
-						<img class="progession-mds" src="elements/barre-progression-mds-1.png">
+						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
 						<h1 class="titre-mds">Présente-toi</h1>
+						<div class="nom-prenom">
+							<?php include('functions/form-elements.php');
+							echo textfield("", "Prénom ", "no", "yes");
+							echo textfield("", "Nom ", "no", "yes");
+							?>
+						</div>
+						<?php echo createbtn("debut", "Sauvegarder", "#F7B60A", "white", "#F7B60A"); ?>
 					</div>
 				</div>
 			</div>				
