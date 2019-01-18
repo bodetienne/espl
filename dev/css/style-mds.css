@@ -185,7 +185,8 @@ button:focus {
 
 /* .form-checklist input[type="radio"]:not(:checked),
 .form-checklist input[type="radio"]:checked */
-.form-checklist .radio-école  {
+.form-checklist .radio-école,
+.form-checklist .check-école {
 	margin: auto;
 	margin-left: 0;
 	padding: 1.5em;
@@ -193,8 +194,62 @@ button:focus {
 	border: none;
 }
 
-/**  **/
+/**  ALL **/
 
 .page-presentation .boutons {
 	display: flex;
+}
+
+.block-main .groupe-formation {
+	background: #EBEBEB;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.block-main .groupe-formation .btn-school {
+	margin: auto;
+	display: flex;
+}
+
+.block-main .groupe-formation .txt-bachelor {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+}
+
+.groupe-formation .txt-bachelor .cycle-mds {
+	margin: auto;
+	margin-bottom: .4rem;
+	font-family: "Ubuntu";
+	font-size: 18px;
+	color: #707070;
+}
+
+.groupe-formation .txt-bachelor .hashtag-groupe {
+		display: flex;
+		margin: auto;
+}
+
+.groupe-formation .txt-bachelor .ligne-hashtag {
+	display: flex;
+	margin: auto;
+}
+
+.txt-bachelor .hashtag-groupe span,
+.txt-bachelor .hashtag-groupe p {
+	margin: auto;
+	font-family: "Ubuntu";
+	font-size: 18px;
+}
+
+.txt-bachelor .hashtag-groupe span {
+	color: #17E5F5;
+	margin-right: 0;
+}
+
+.txt-bachelor .hashtag-groupe p {
+	margin-right: .4rem;
+	color: #707070;
 }

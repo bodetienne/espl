@@ -11,7 +11,7 @@
         <h1 class="choose-school">Choisissez votre école</h1>
         <div class="school-box">
           <div class="ecole MDS">
-            <a href="form-test-page.php">
+            <a href="presentation-mds.php">
               <img src="elements/logo-mds.png" alt="logo mds">
             </a>
           </div>
