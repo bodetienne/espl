@@ -1,4 +1,4 @@
-* FONTS **/
+/** FONTS **/
 
 @font-face {
 	font-family: "Ubuntu-condensed";
@@ -17,7 +17,6 @@
 	font-family: "Ubuntu-condensed", helvetica, arial, sans-serif;
 	font-size: 1.2em;
 	color: #363635;
-	margin-bottom: 60px;
 }
 
 .page-presentation .titre-mds {

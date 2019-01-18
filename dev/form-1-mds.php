@@ -29,8 +29,9 @@
 						</div>
 						<div class="container-lgn">
 							<div class="lgn lgn-1">
-								<?php echo createbtn("debut", "Enregistrer", "#F7B60A", "white", "#F7B60A");
-								echo createbtn("suivant", "Suivant", "white", "#FF8A22", "#FF8A22"); ?>
+								<?php echo createbtn("debut", "Enregistrer", "#F7B60A", "white", "#F7B60A"); ?>
+								<a href="form-2-mds.php">
+									<?php echo createbtn("suivant", "Suivant", "white", "#FF8A22", "#FF8A22"); ?></a>
 							</div>
 						</div>						
 					</div>
