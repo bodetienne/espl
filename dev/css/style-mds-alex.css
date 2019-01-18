@@ -72,11 +72,12 @@
 }
 
 .aside  .questions {
+	display: none;
 	padding: 0 18px;
 	background-color: white;
-	display: none;
 	overflow: hidden;
 }
+
 
 /* FIN PARTIE ASIDE  */
 
