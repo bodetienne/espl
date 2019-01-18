@@ -36,14 +36,46 @@
 	border-right: 4px #363635 solid;
 }
 
-.titre-mds {
-	font-size: 1.4em;
-	text-transform: uppercase;
-	font-family: "Ubuntu-condensed";
-	font-weight: bolder;
-	text-align: center;
-	margin-bottom: 30px;
-	color: #363635
+	/* Partie menu  */
+.aside button {
+	padding: 0px;
+	border: none;
+	display: flex;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.aside .perso {
+	background-color: #FFBD1D;
+}
+
+.aside .garant {
+	background-color: #FF8A22;
+}
+
+.aside .formation {
+	background-color: #4BC4CF;
+}
+
+.aside .dossier {
+	background-color: #46A2FF;
+}
+
+.aside .pj {
+	background-color: #F74D9D;
+}
+
+.aside button h2 {
+	width: 100%;
+	margin: auto;
+	padding: 25px;
+}
+
+.aside  .questions {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
 }
 
 /* FIN PARTIE ASIDE  */
@@ -52,6 +84,16 @@
 
 .main {
 	width: 66.5vw;
+}
+
+.titre-mds {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-family: "Ubuntu-condensed";
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #363635
 }
 
 .main hr {

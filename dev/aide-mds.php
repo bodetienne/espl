@@ -15,6 +15,62 @@
 			<div class="block-main">
 				<div class="page-aide">
 					<div class="aside">
+						<div class="infos_perso">
+							<button class="title">
+								<h2 class="perso">1 - Infos personnelles</h2>
+							</button>
+							<div class="questions">
+								<ul>
+									<p>Pourquoi me demande-t-on mon numéro de sécurité sociale ?</p>
+									<p>Pourquoi me demandez-vous si j'ai mon permis ?</p>
+								</ul>
+							</div>
+						</div>
+						<div class="infos_garants">
+							<button class="title">
+								<h2 class="garant">2 - Infos garants</h2>
+							</button>
+							<div class="questions">
+								<ul>
+									<p>Pourquoi me demande-t-on 2 garants ?</p>
+									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+								</ul>
+							</div>
+						</div>
+						<div class="infos_formation">
+							<button class="title">
+								<h2 class="formation">3 - Formation souhaitée</h2>
+							</button>
+							<div class="questions">
+								<ul>
+									<p>Pourquoi me demande-t-on 2 garants ?</p>
+									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+								</ul>
+							</div>
+						</div>
+						<div class="infos_dossier">
+							<button class="title">
+								<h2 class="dossier">4 - Dossier de réflexion</h2>
+							</button>
+							<div class="questions">
+								<ul>
+									<p>Pourquoi me demande-t-on 2 garants ?</p>
+									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+								</ul>
+							</div>
+						</div>
+						<div class="infos_pj">
+							<button class="title">
+								<h2 class="pj">5 - Pièces jointes</h2>
+							</button>
+							<div class="questions">
+								<ul>
+									<p>Pourquoi me demande-t-on 2 garants ?</p>
+									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+								</ul>
+							</div>
+						</div>
+
 	        </div>
 	        <div class="main">
 						<?php include 'header.php';?>
@@ -30,14 +86,18 @@
 
 						</div>
 						<?php include 'functions/form-elements.php';?>
+						<div class="container-lgn">
+						<div class="lgn lgn-1">
 						<a href="contact.php"><?php echo createbtn("contacter", "Contact", "#FFFFFF", "#FF8A22", "#FF8A22");?></a>
-					</div>
+						</div>
+						</div>
 				</div>
 			</div>
 
 			<?php include 'footer.php';?>
 		</main>
 	    <script type="text/javascript" src="js/jquery.min.js"></script>
-      	<script type="text/javascript" src="js/effects.js"></script>
+      <script type="text/javascript" src="js/effects.js"></script>
+			<script type="text/javascript" src="js/aide.js"></script>
 	</body>
 </html>
