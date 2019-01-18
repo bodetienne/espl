@@ -30,8 +30,7 @@
 
 
 .contact .block-right{
-  margin-top: -65px;
-  margin-left: 50%;
+  margin-left: 50vw;
   width: 50%;
   position: absolute;
 }
@@ -40,13 +39,14 @@
   padding: 25px;
   border-radius: 15px;
   background-color: white;
-  width: 60%;
-  display: flex;
-  margin: auto;
-  margin-top: -45%;
+  width: 35vw;
+  margin-top: 3%;
 }
 
-
+.contact .entire-block {
+  display: flex;
+  max-height: 100vh;
+}
 
 
 /*---------------------------------------------*/
@@ -112,6 +112,7 @@ textarea:-ms-input-placeholder { color: #999999; }
   border-bottom: 2px solid #adadad;
   margin-bottom: 37px;
 }
+
 
 .input2 {
   display: block;
