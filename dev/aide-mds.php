@@ -14,64 +14,68 @@
 		<main class="form-main aide">
 			<div class="block-main">
 				<div class="page-aide">
+					<!-- PARTIE ASIDE (gauche) -->
 					<div class="aside">
-						<div class="infos_perso">
-							<button class="title">
-								<h2 class="perso">1 - Infos personnelles</h2>
-							</button>
-							<div class="questions">
-								<ul>
-									<p>Pourquoi me demande-t-on mon numéro de sécurité sociale ?</p>
-									<p>Pourquoi me demandez-vous si j'ai mon permis ?</p>
-								</ul>
+						<div class="menu">
+							<div class="infos_perso">
+								<button class="title">
+									<h2 class="perso">1 - Infos personnelles</h2>
+								</button>
+								<div class="questions">
+									<ul>
+										<p>Pourquoi me demande-t-on mon numéro de sécurité sociale ?</p>
+										<p>Pourquoi me demandez-vous si j'ai mon permis ?</p>
+									</ul>
+								</div>
+							</div>
+							<div class="infos_garants">
+								<button class="title">
+									<h2 class="garant">2 - Infos garants</h2>
+								</button>
+								<div class="questions">
+									<ul>
+										<p>Pourquoi me demande-t-on 2 garants ?</p>
+										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+									</ul>
+								</div>
+							</div>
+							<div class="infos_formation">
+								<button class="title">
+									<h2 class="formation">3 - Formation souhaitée</h2>
+								</button>
+								<div class="questions">
+									<ul>
+										<p>Pourquoi me demande-t-on 2 garants ?</p>
+										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+									</ul>
+								</div>
+							</div>
+							<div class="infos_dossier">
+								<button class="title">
+									<h2 class="dossier">4 - Dossier de réflexion</h2>
+								</button>
+								<div class="questions">
+									<ul>
+										<p>Pourquoi me demande-t-on 2 garants ?</p>
+										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+									</ul>
+								</div>
+							</div>
+							<div class="infos_pj">
+								<button class="title">
+									<h2 class="pj">5 - Pièces jointes</h2>
+								</button>
+								<div class="questions">
+									<ul>
+										<p>Pourquoi me demande-t-on 2 garants ?</p>
+										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="infos_garants">
-							<button class="title">
-								<h2 class="garant">2 - Infos garants</h2>
-							</button>
-							<div class="questions">
-								<ul>
-									<p>Pourquoi me demande-t-on 2 garants ?</p>
-									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
-								</ul>
-							</div>
-						</div>
-						<div class="infos_formation">
-							<button class="title">
-								<h2 class="formation">3 - Formation souhaitée</h2>
-							</button>
-							<div class="questions">
-								<ul>
-									<p>Pourquoi me demande-t-on 2 garants ?</p>
-									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
-								</ul>
-							</div>
-						</div>
-						<div class="infos_dossier">
-							<button class="title">
-								<h2 class="dossier">4 - Dossier de réflexion</h2>
-							</button>
-							<div class="questions">
-								<ul>
-									<p>Pourquoi me demande-t-on 2 garants ?</p>
-									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
-								</ul>
-							</div>
-						</div>
-						<div class="infos_pj">
-							<button class="title">
-								<h2 class="pj">5 - Pièces jointes</h2>
-							</button>
-							<div class="questions">
-								<ul>
-									<p>Pourquoi me demande-t-on 2 garants ?</p>
-									<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
-								</ul>
-							</div>
-						</div>
-
 	        </div>
+					<!-- FIN PARTIE ASIDE -->
+					<!-- PARTIE MAIN (droite)-->
 	        <div class="main">
 						<?php include 'header.php';?>
 						<div class="title_question">
@@ -92,6 +96,7 @@
 						</div>
 						</div>
 				</div>
+				<!-- FIN PARTIE MAIN -->
 			</div>
 
 			<?php include 'footer.php';?>
