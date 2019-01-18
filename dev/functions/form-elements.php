@@ -66,4 +66,13 @@ function radiobutton ($txt){
   </div>';
 }
 
+function checkbox ($txt){
+  echo
+  '<div class="check-ligne">
+    <input type="checkbox" class="check-école">
+    <span class="checkmark-école">'.$txt.'</span>
+    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+  </div>';
+}
+
 ?>
