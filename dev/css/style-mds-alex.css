@@ -11,7 +11,7 @@
   display: none;
 }
 
-.form-main {
+.form-aide.aide {
 	height: 100vh;
 }
 
@@ -34,6 +34,9 @@
 .aside {
   width: 33.5vw;
 	border-right: 4px #363635 solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 	/* Partie menu  */
