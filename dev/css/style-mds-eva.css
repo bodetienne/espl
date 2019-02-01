@@ -65,7 +65,7 @@
 
 /*Mur*/
 .fond-martin .mur {
-	height: 35vh;
+	height: 43vh;
 	display: flex;
 }
 
@@ -120,27 +120,27 @@
 
 /* PAGE FORMULAIRE 1*/
 
-.page-formulaire-1 {
+.block-main {
 	display: flex;
 	width: 100vw;
 }
 
 
-.page-formulaire-1 .progression-mds {
+.main.formulaire-1 .progression-mds {
 	margin: 60px auto;
 	display: flex;
 }
 
-.page-formulaire-1 .titre-mds {
+.main.formulaire-1 .titre-mds {
 	margin-bottom: 60px;
 }
 
-.page-formulaire-1 .textfield .input-group .textfield-input {
+.main.formulaire-1 .textfield .input-group .textfield-input {
 	margin: auto auto 20px;
 	width: 15vw;
 }
 
-.page-formulaire-1 .container-lgn .lgn .btn-choix {
+.main.formulaire-1 .container-lgn .lgn .btn-choix {
 	margin: auto 1vw;
 	width: 9vw;
 }

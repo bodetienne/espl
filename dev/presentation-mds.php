@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
 		<link rel="stylesheet" href="css/style-mds-eva.css"> 
+		<link rel="stylesheet" href="css/style-mds-structure.css"> 
 		<link rel="stylesheet" href="css/style-mds-header-footer.css"> 
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
