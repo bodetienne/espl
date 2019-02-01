@@ -17,6 +17,21 @@
 				<div class="page-formulaire-1">
 					<div class="aside">
 						<?php include 'header.php'; ?>
+						<div class="fond-martin">
+							<div class="mur">
+								<div class="col-1"></div>
+								<div class="col-2">
+									<div class="blanc"></div>
+									<div class="bleu"></div>
+								</div>
+								<div class="col-3"></div>
+							</div>
+							<div class="trottoir">
+								<div class="ligne-1"></div>
+								<div class="ligne-2"></div>
+							</div>
+							<div class="sol"></div>
+						</div>
 					</div>
 					<div class="main">
 						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
