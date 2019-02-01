@@ -6,13 +6,18 @@
 
 /* PAGE AIDE */
 
+.aside .header {
+	height: 14vh;
+}
+
 .aside .header .logo-mds {
 	display: flex;
 	margin: 60px auto;
 	width: 200px;
+
 }
 
-.page-aide .main .header {
+.main .header {
 	display: flex;
 	width: 100%;
 }
@@ -30,7 +35,7 @@
 
 /*BOUTON HELP*/
 .block-footer .help {
-	bottom: 70px;
+	bottom: 12%;
 	position: absolute;
 	right: 3%;
 }
@@ -44,30 +49,17 @@ html {
 
 body {
 	height: 100%;
-	position: relative;
 }
-
-main {
-	min-height: 100%;
-	position: relative;
-}
-
-.block-main {
-	position: relative;
-/*	padding-bottom: 15px;*/
-}
-
 
 /*FOOTER TOUTES ECOLES*/
 
 .block-footer .footer {
 	display: flex;
 	margin: auto;
-	padding: 20px 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	height: 15px;
+	height:;
 	position: absolute;
 }
 
@@ -88,6 +80,7 @@ main {
 
 .block-footer .footer.mds {
 	background-color: #363635;
+	height: inherit;
 }
 
 

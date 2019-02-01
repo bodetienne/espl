@@ -5,17 +5,17 @@
 		<title>Candidature My Digital School</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
-		<link rel="stylesheet" href="css/style-mds-alex.css">
+		<link rel="stylesheet" href="css/style-mds-structure.css">
 		<link rel="stylesheet" href="css/style-mds-header-footer.css">
+		<link rel="stylesheet" href="css/style-mds-alex.css">
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
 
 	<body>
-		<main class="form-main aide">
+		<main class="form-main structure">
 			<div class="block-main">
-				<div class="page-aide">
 					<!-- PARTIE ASIDE (gauche) -->
-					<div class="aside">
+					<div class="aside-aide">
 						<div class="menu">
 							<div class="infos_perso">
 								<button class="title">
@@ -95,9 +95,9 @@
 						<a href="contact.php"><?php echo createbtn("contacter", "Contact", "#FFFFFF", "#FF8A22", "#FF8A22");?></a>
 						</div>
 						</div>
-				</div>
+					</div>
 				<!-- FIN PARTIE MAIN -->
-			</div>
+				</div>
 
 			<?php include 'footer.php';?>
 		</main>

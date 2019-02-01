@@ -11,38 +11,19 @@
   display: none;
 }
 
-.form-aide.aide {
-	height: 100vh;
-}
-
-.block-main {
- 	display: flex;
-	min-height: 100vh;
- 	width: 100%;
-}
-
-.page-aide {
-	display: flex;
-	height: 100%;
-	min-height: 81.7vh;
-	width: 100%;
-}
-
 /* PARTIE ASIDE*/
 
-.page-aide .aside {
+.block-main .aside-aide {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-}
-
-.aside {
-	width: 33.5vw;
-	border-right: 4px #363635 solid;
+	height: 100%;
+  width: 33.5vw;
+  border-right: 4px #363635 solid;
 }
 
 	/* Partie menu  */
-.aside button {
+.menu button {
 	padding: 0px;
 	border: none;
 	display: flex;
@@ -50,33 +31,33 @@
 	transition: 0.4s;
 }
 
-.aside .perso {
+.menu .perso {
 	background-color: #FFBD1D;
 }
 
-.aside .garant {
+.menu .garant {
 	background-color: #FF8A22;
 }
 
-.aside .formation {
+.menu .formation {
 	background-color: #4BC4CF;
 }
 
-.aside .dossier {
+.menu .dossier {
 	background-color: #46A2FF;
 }
 
-.aside .pj {
+.menu .pj {
 	background-color: #F74D9D;
 }
 
-.aside button h2 {
+.menu button h2 {
 	width: 100%;
 	margin: auto;
 	padding: 25px;
 }
 
-.aside  .questions {
+.menu  .questions {
 	display: none;
 	padding: 0 18px;
 	background-color: white;
@@ -88,9 +69,6 @@
 
 /* PARTIE MAIN */
 
-.main {
-	width: 66.5vw;
-}
 
 .titre-mds {
 	font-size: 1.4em;
