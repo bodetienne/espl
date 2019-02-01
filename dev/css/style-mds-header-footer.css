@@ -4,8 +4,6 @@
 	width: 200px;
 }
 
-/* PAGE AIDE */
-
 .aside .header {
 	height: 14vh;
 	display: flex;
@@ -16,6 +14,7 @@
 	display: flex;
 }
 
+/* PAGE AIDE */
 .main .header .logo-mds {
 	display: flex;
 	margin: auto;
@@ -28,11 +27,11 @@
 	width: 100%;
 }
 
-.page-aide .main .header a {
+.main .header a {
 	margin: 60px auto;
 }
 
-.page-aide .main .header .logo-mds {
+.main .header .logo-mds {
 	width: 200px;
 }
 
