@@ -1,46 +1,46 @@
 .page-presentation .header .logo-mds {
-	display: flex;
-	margin: 60px auto 30px;
-	width: 200px;
+    display: flex;
+    margin: 60px auto 30px;
+    width: 200px;
 }
 
 
 .aside .header {
-	height: 14vh;
-	display: flex;
-	justify-content: center;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
 }
 
 .aside .header a {
-	display: flex;
-	margin: auto;
+    display: flex;
+    margin: auto;
 }
 
 .aside .logo-mds {
-	width: 200px;
+    width: 200px;
 
 }
 
 /* PAGE AIDE */
 
 .main .header .logo-mds {
-	display: flex;
-	margin: auto;
-	width: 200px;
+    display: flex;
+    margin: auto;
+    width: 200px;
 
 }
 
 .main .header {
-	display: flex;
-	width: 100%;
+    display: flex;
+    width: 100%;
 }
 
 .page-aide .main .header a {
-	margin: 60px auto;
+    margin: 60px auto;
 }
 
 .page-aide .main .header .logo-mds {
-	width: 200px;
+    width: 200px;
 }
 
 /* FIN PAGE AIDE */
