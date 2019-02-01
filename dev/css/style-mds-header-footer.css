@@ -8,11 +8,17 @@
 
 .aside .header {
 	height: 14vh;
+	display: flex;
+	justify-content: center;
+}
+
+.aside .header a {
+	display: flex;
 }
 
 .aside .header .logo-mds {
 	display: flex;
-	margin: 60px auto;
+	margin: auto;
 	width: 200px;
 
 }

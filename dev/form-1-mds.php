@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
 		<link rel="stylesheet" href="css/style-mds-eva.css"> 
 		<link rel="stylesheet" href="css/style-mds-alex.css"> 
+		<link rel="stylesheet" href="css/style-mds-structure.css"> 		
 		<link rel="stylesheet" href="css/style-mds-header-footer.css"> 
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
@@ -14,7 +15,7 @@
 	<body>
 		<main class="form-main">
 			<div class="block-main">
-				<div class="page-formulaire-1">
+		
 					<div class="aside">
 						<?php include 'header.php'; ?>
 						<div class="fond-martin">
@@ -33,7 +34,7 @@
 							<div class="sol"></div>
 						</div>
 					</div>
-					<div class="main">
+					<div class="main formulaire-1">
 						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
 						<h1 class="titre-mds">Présente-toi</h1>
 						<div class="form-1">
@@ -56,7 +57,7 @@
 						</div>						
 					</div>
 				</div>
-			</div>				
+							
 
 			<?php include 'footer.php';?>
 		</main>
