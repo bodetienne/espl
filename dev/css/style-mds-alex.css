@@ -13,13 +13,10 @@
 
 /* PARTIE ASIDE*/
 
-.block-main .aside-aide {
+.block-main .aside.aide {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	height: 100%;
-  width: 33.5vw;
-  border-right: 4px #363635 solid;
 }
 
 	/* Partie menu  */

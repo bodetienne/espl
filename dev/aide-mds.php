@@ -15,7 +15,7 @@
 		<main class="form-main structure">
 			<div class="block-main">
 					<!-- PARTIE ASIDE (gauche) -->
-					<div class="aside-aide">
+					<div class="aside aide">
 						<div class="menu">
 							<div class="infos_perso">
 								<button class="title">
