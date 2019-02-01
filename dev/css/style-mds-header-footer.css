@@ -4,6 +4,10 @@
 	width: 200px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 13b680f2001718eaf83a379dbdad197df3a4a656
 .aside .header {
 	height: 14vh;
 	display: flex;
@@ -12,9 +16,21 @@
 
 .aside .header a {
 	display: flex;
+	margin: auto;
 }
 
+<<<<<<< HEAD
 /* PAGE AIDE */
+=======
+.aside .logo-mds {
+	width: 200px;
+
+}
+
+
+/* PAGE AIDE */
+
+>>>>>>> 13b680f2001718eaf83a379dbdad197df3a4a656
 .main .header .logo-mds {
 	display: flex;
 	margin: auto;
