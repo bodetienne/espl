@@ -59,6 +59,7 @@
 .page-presentation .container-button button {
     margin: auto 15px;
     border-width: 1px;
+    border-style: solid;
 	padding: 18px 15px;
 	text-transform: uppercase;
 	text-decoration: none;
