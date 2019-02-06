@@ -51,10 +51,30 @@
 .menu button h2 {
 	width: 100%;
 	margin: auto;
-	padding: 25px;
+	display: flex;
+	padding: 4vh 0vh 4vh 20vh;
+	color: white;
+	font-size: 1.4em;
+	font-family: "Ubuntu-condensed";
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: left;
 }
 
-.menu  .questions {
+.menu button h2 img {
+	width: 20px;
+	height: 20px;
+	text-align: right;
+}
+
+.menu button h2 :active {
+	width: 20px;
+	height: 20px;
+	text-align: right;
+	background-image: url('elements/angle-arrow-up.png');
+}
+
+.menu .questions {
 	display: none;
 	padding: 0 18px;
 	background-color: white;
@@ -67,13 +87,18 @@
 /* PARTIE MAIN */
 
 
+.main.aide .header {
+	margin-top: 12vh;
+}
+
+
 .titre-mds {
 	font-size: 1.4em;
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
 	font-weight: bolder;
 	text-align: center;
-	margin-bottom: 30px;
+	margin: 6vh 0 4vh;
 	color: #363635
 }
 
@@ -82,23 +107,53 @@
 	border: none;
 	background-color: #363635;
 	width: 300px;
-	margin: 20px auto;
+	margin: 5vh auto;
 }
 
 .main .answer_question {
-	margin: auto;
-	width: 50%;
+	margin: 8vh auto;
+	width: 45vw;
 }
 
 .main .answer_question p{
 	font-size: 1.1em;
 	font-family: "Ubuntu-condensed";
 	text-align: center;
-	color: #363635
+	color: #363635;
 }
 
-.main a {
+.main .contact {
+	display: flex;
+	width: 100%;
+}
+.main .contact a {
 	margin: auto;
+	color: white;
+}
+
+.main .contact a:hover {
+	margin: auto;
+	color: #FF8a22;
+}
+
+.main .contact button {
+	background-color: #FF8a22;
+	font-size: 1.1em;
+	font-family: "Ubuntu-condensed";
+	border: 1px solid #FF8a22 ;
+	padding: 20px 30px;
+}
+
+.main .contact button:hover {
+	background-color: white;
+	font-size: 1.1em;
+	font-family: "Ubuntu-condensed";
+	border: 1px solid #FF8a22 ;
+	padding: 20px 30px;
+}
+
+.form-main.aide .footer .help.mds {
+	display: none;
 }
 
 /* FIN PARTIE MAIN */
