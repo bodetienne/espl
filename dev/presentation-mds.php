@@ -23,18 +23,12 @@
 							<p>Plus de <span class="yellow">documentation</span> au sujet de My Digital School Angers est également disponible avec le lien ci-dessous. Tu peux aussi <span class="orange">commencer ta candidature</span> ou la <span class="blue">reprendre là où tu l'avais laissée</span>.</p>
 						</div>				
 					</div>
-					<?php function createbtn ($id, $txt, $color, $bg, $border) {
-					    echo'<button type="button" name="button" class="btn-presentation" id="' . $id .'"
-					    style="color : ' . $color .'; background : ' . $bg .'; border : 1px solid ' . $border. ';"
-					    >'.$txt.'</button>';
-					}; ?>
 					
-					<div class="container-lgn">
-						<div class="lgn lgn-1">
-							<a href="https://www.mydigitalschool.com/demande-de-documentation"><?php echo createbtn("doc", "Recevoir la documentation", "#FFFFFF", "#FFBD1D", "#FFBD1D");?></a>
-							<a href="form-1-mds.php"><?php echo createbtn("debut", "Commencer ma candidature", "#FFFFFF", "#FF8A22", "#FF8A22");?></a>
-							<a href="connexion-mds.php"><?php echo createbtn("reprendre", "Reprendre ma candidature", "#FFFFFF", "#4BC4CF", "#4BC4CF");?></a>
-						</div>
+					<div class="container-button">
+						<a href="https://www.mydigitalschool.com/demande-de-documentation" class="doc"><button type="button">Recevoir la documentation</button></a>
+						<a href="form-1-mds.php" class="begin"><button type="button">Commencer ma candidature</button></a>
+						<a href="connexion-mds.php" class="continue"><button type="button">Reprendre ma candidature</button></a>
+					
 					</div>
 						
 				</div>

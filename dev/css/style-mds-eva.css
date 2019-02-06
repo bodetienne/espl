@@ -51,13 +51,62 @@
 	font-weight: bold;
 }
 
-.page-presentation .container-lgn .lgn .btn-presentation {
+.page-presentation .container-button {
+	display: flex;
+	margin: auto;
+}
+
+.page-presentation .container-button button {
     margin: auto 15px;
-    border: none;
+    border-width: 1px;
 	padding: 18px 15px;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: color .5s, border .5s, background .5s, transform 2s;
+}
+
+.page-presentation .container-button a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.page-presentation .container-button .doc:hover,
+.page-presentation .container-button .doc:active, 
+.page-presentation .container-button .doc:focus {
+	color: #FFBD1D;
+}
+
+.page-presentation .container-button .begin:hover,
+.page-presentation .container-button .begin:active,
+.page-presentation .container-button .begin:focus {
+	color: #FF8A22;
+}
+
+.page-presentation .container-button .continue:hover,
+.page-presentation .container-button .continue:active,
+.page-presentation .container-button .continue:focus {
+	color: #4BC4CF;
+}
+
+.page-presentation .container-button .doc button {
+	background-color: #FFBD1D;
+	border-color: #FFBD1D;
+}
+
+.page-presentation .container-button .begin button {
+	background-color: #FF8A22;
+	border-color: #FF8A22;
+}
+
+.page-presentation .container-button .continue button {
+	background-color: #4BC4CF;
+	border-color: #4BC4CF;
+}
+
+
+.page-presentation .container-button button:hover, 
+.page-presentation .container-button button:active, 
+.page-presentation .container-button button:focus {
+	background-color: #ffffff;
 }
 
 
