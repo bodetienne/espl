@@ -134,7 +134,7 @@
 }
 
 .form-main .container-lgn .container-titre {
-	width: 52%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -156,7 +156,7 @@
 .container-lgn .lgn .btn-choix {
 	margin: auto 3rem;
 	border: none;
-	padding: 18px 15px;
+	padding: 18px 50px;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: color .5s, border .5s, background .5s, transform 2s;
@@ -204,8 +204,8 @@ button:focus {
 	background: #EBEBEB;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem;
-	padding: 1rem;
+	margin: 0 3rem 0 0;
+	padding: 0 1rem;
 }
 
 .block-main .groupe-formation .btn-school {
@@ -252,4 +252,8 @@ button:focus {
 .txt-bachelor .hashtag-groupe p {
 	margin-right: .4rem;
 	color: #707070;
+}
+
+.lgn .check-group {
+	margin: 0 3rem;
 }
