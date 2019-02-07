@@ -16,7 +16,7 @@
 }
 
 .form-main .nom-form {
-	margin: 3rem auto;
+	margin: 4vh auto;
 	font-size: 1.5rem;
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 	color: #7C7C7C;
@@ -135,7 +135,7 @@
 
 .form-main .container-lgn .container-titre {
 	width: 80%;
-	margin: 0 auto;
+	margin: 2vh auto;
 }
 
 .form-main .container-titre h2 {
@@ -149,16 +149,19 @@
 }
 
 .form-main .container-lgn .lgn {
-	margin: 1.5rem auto;
+	margin: auto;
 	display: flex;
+	height: 30vh;
 }
 
 .container-lgn .lgn .btn-choix {
-	margin: auto 3rem;
+	margin: auto 2.5vw;
 	border: none;
-	padding: 18px 50px;
+	/* padding: 18px 50px; */
 	text-transform: uppercase;
 	text-decoration: none;
+	height: 8vh;
+	width: 10vw;
 	transition: color .5s, border .5s, background .5s, transform 2s;
 }
 

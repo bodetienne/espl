@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
 		<link rel="stylesheet" href="css/style-mds-structure.css">
+		<link rel="stylesheet" href="css/style-mds-etienne.css">
 		<link rel="stylesheet" href="css/style-mds-header-footer.css">
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
@@ -103,12 +104,12 @@
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 									</div>
 								</div>
@@ -123,12 +124,12 @@
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 									</div>
 								</div>
