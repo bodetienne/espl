@@ -18,8 +18,9 @@
 					<div class="aside aide">
 						<div class="menu">
 							<div class="infos_perso">
-								<button class="title">
+								<button class="title perso">
 									<h2 class="perso">1 - Infos personnelles</h2>
+									<img src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -29,8 +30,9 @@
 								</div>
 							</div>
 							<div class="infos_garants">
-								<button class="title">
-									<h2 class="garant">2 - Infos garants <img src="elements/angle-arrow-down.png"></h2>
+								<button class="title garant">
+									<h2 class="garant">2 - Infos garants </h2>
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -40,8 +42,9 @@
 								</div>
 							</div>
 							<div class="infos_formation">
-								<button class="title">
+								<button class="title formation">
 									<h2 class="formation">3 - Formation souhaitée</h2>
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -51,8 +54,9 @@
 								</div>
 							</div>
 							<div class="infos_dossier">
-								<button class="title">
+								<button class="title dossier">
 									<h2 class="dossier">4 - Dossier de réflexion</h2>
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -62,8 +66,9 @@
 								</div>
 							</div>
 							<div class="infos_pj">
-								<button class="title">
+								<button class="title pj">
 									<h2 class="pj">5 - Pièces jointes</h2>
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>

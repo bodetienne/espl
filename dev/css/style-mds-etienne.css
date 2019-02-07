@@ -16,7 +16,7 @@
 	background: #EBEBEB;
 	display: flex;
 	flex-direction: column;
-	margin: 0 3rem 0 0;
+	/* margin: 0 3rem 0 0; */
 	padding: 0 1rem;
 }
 
@@ -41,7 +41,7 @@
 
 .groupe-formation .txt-bachelor .hashtag-groupe {
 		display: flex;
-		margin: auto;
+		margin: 0 auto;
 }
 
 .groupe-formation .txt-bachelor .ligne-hashtag {
@@ -67,9 +67,24 @@
 }
 
 .lgn .check-group {
-	margin: 0 3rem;
+	margin: 0 3vw;
 }
 
 .spé-grp .checkmark-école {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  padding: 0 .3em;
+}
+
+.containe-lgn .spé-grp .check-ligne {
+  padding: .4em 0;
+}
+
+.spé-grp .check-ligne .more-button {
+  width: 1.2em;
+}
+
+.lgn .spé-grp .spé-title{
+  font-weight: normal;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.2em;
 }

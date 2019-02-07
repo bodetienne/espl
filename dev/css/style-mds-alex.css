@@ -28,26 +28,28 @@
 	transition: 0.4s;
 }
 
-.menu .perso {
+/* coulerus menus */
+.menu .title.perso {
 	background-color: #FFBD1D;
 }
 
-.menu .garant {
+.menu .title.garant {
 	background-color: #FF8A22;
 }
 
-.menu .formation {
+.menu .title.formation {
 	background-color: #4BC4CF;
 }
 
-.menu .dossier {
+.menu .title.dossier {
 	background-color: #46A2FF;
 }
 
-.menu .pj {
+.menu .title.pj {
 	background-color: #F74D9D;
 }
 
+/* Positionnement titre */
 .menu button h2 {
 	width: 100%;
 	margin: auto;
@@ -61,19 +63,15 @@
 	text-align: left;
 }
 
-.menu button h2 img {
+/* Positionnement image */
+.menu button img {
+	margin: auto;
 	width: 20px;
 	height: 20px;
-	text-align: right;
+	padding-right: 10vh;
 }
 
-.menu button h2 :active {
-	width: 20px;
-	height: 20px;
-	text-align: right;
-	background-image: url('elements/angle-arrow-up.png');
-}
-
+/* Positionnement questions */
 .menu .questions {
 	display: none;
 	padding: 0 18px;
@@ -81,6 +79,11 @@
 	overflow: hidden;
 }
 
+.menu .questions p {
+	font-size: 1.1em;
+	font-family: "Ubuntu-condensed";
+	font-weight: lighter;
+}
 
 /* FIN PARTIE ASIDE  */
 
