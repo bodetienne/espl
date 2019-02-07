@@ -68,22 +68,22 @@
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Développeur Web</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">WebDesign</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">WebMarketing & Social Medias</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">E-Business</span>
-									    <img class="info-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
 									  </div>
 									</div>
 								</div>
