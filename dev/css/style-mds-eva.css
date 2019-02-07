@@ -1,4 +1,4 @@
-/** FONTS **/
+* FONTS **/
 
 @font-face {
 	font-family: "Ubuntu-condensed";
@@ -108,7 +108,7 @@
 }
 
 
-/** PAGE FORMULAIRE 1 **/
+/** PAGES FORMULAIRE **/
 
 .block-main {
 	display: flex;
@@ -116,53 +116,93 @@
 }
 
 
-.main.formulaire-1 .progression-mds {
+/*Barre de progression*/
+.main.formulaire-1 .progression-mds,
+.main.formulaire-2 .progression-mds {
 	margin: 60px auto;
 	display: flex;
 }
 
-.main.formulaire-1 .titre-mds {
+
+/*Titre*/
+.main.formulaire-1 .titre-mds,
+.main.formulaire-2 .titre-mds {
 	margin-bottom: 60px;
 }
 
+
+/*Champs de texte*/
 .main.formulaire-1 .textfield .input-group .textfield-input {
 	margin: auto auto 20px;
 	width: 15vw;
 }
 
-.main.formulaire-1 .container-lgn .lgn button {
+
+/*Boutons*/
+.main.formulaire-1 .container-lgn .lgn button,
+.main.formulaire-2 .container-lgn .lgn button {
 	margin: auto 1vw;
 }
 
-.main.formulaire-1 .container-lgn .lgn button {
+.main.formulaire-1 .container-lgn .lgn button,
+.main.formulaire-2 .container-lgn .lgn button {
 	padding: 20px 30px;
 	border-style: solid;
 	border-width: 1px;
 	text-transform: uppercase;
 }
 
-.main.formulaire-1 .container-lgn .lgn .btn-save {
+.main.formulaire-1 .container-lgn .lgn .btn-save, 
+.main.formulaire-2 .container-lgn .lgn .btn-save {
 	color: #FFBD1D;
 	background-color: #ffffff;
 	border-color: #FFBD1D;
 }
 
 .main.formulaire-1 .container-lgn .lgn .btn-save:hover,
-.main.formulaire-1 .container-lgn .lgn .btn-save:active,
-.main.formulaire-1 .container-lgn .lgn .btn-save:focus {
+.main.formulaire-1 .container-lgn .lgn .btn-save:focus,
+.main.formulaire-2 .container-lgn .lgn .btn-save:hover,
+.main.formulaire-2 .container-lgn .lgn .btn-save:focus {
 	color: #ffffff;
 	background-color: #FFBD1D;
 }
 
-.main.formulaire-1 .container-lgn .lgn .btn-next {
+.main.formulaire-1 .container-lgn .lgn .btn-next,
+.main.formulaire-2 .container-lgn .lgn .btn-next {
 	color: #ffffff;
 	background-color: #FF8A22;
 	border-color: #FF8A22;
 }
 
 .main.formulaire-1 .container-lgn .lgn .btn-next:hover,
-.main.formulaire-1 .container-lgn .lgn .btn-next:active,
-.main.formulaire-1 .container-lgn .lgn .btn-next:focus {
+.main.formulaire-1 .container-lgn .lgn .btn-next:focus,
+.main.formulaire-2 .container-lgn .lgn .btn-next:hover,
+.main.formulaire-2 .container-lgn .lgn .btn-next:focus {
 	color: #FF8A22;
 	background-color: #ffffff;
+}
+
+
+/** PAGE FORMULAIRE 2 **/
+.main.formulaire-2 .form-zone {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main.formulaire-2 .form-zone .form-gauche .champs-date {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main.formulaire-2 .form-zone .divider-milieu {
+	background-color: #E4E4E4;
+	width: 10px;
+}
+
+#jour, #mois {
+	width: 3em;
+}
+
+#annee {
+	width: 4em;
 }
