@@ -60,13 +60,11 @@
 								</div>
 							</div>
 
-							<div class="container-lgn">
-								<div class="lgn lgn-1">
-									<button id="save" class="btn-save" type="button">Enregistrer</button>
-									<a class="lien suivant" href="form-2-mds.php">
-										<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
-									</a>
-								</div>
+							<div class="container-button">
+								<button id="save" class="btn-save" type="button">Enregistrer</button>
+								<a class="lien suivant" href="form-2-mds.php">
+									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
+								</a>
 							</div>
 						</div>						
 					</div>

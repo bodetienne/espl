@@ -138,46 +138,53 @@
 }
 
 
-/*Boutons*/
-.main.formulaire-1 .container-lgn .lgn button,
-.main.formulaire-2 .container-lgn .lgn button {
-	margin: auto 1vw;
+.main.formulaire-1 .form-1,
+.main.formulaire-2 .form-2 {
+	display: flex;
+	flex-direction: column;
 }
 
-.main.formulaire-1 .container-lgn .lgn button,
-.main.formulaire-2 .container-lgn .lgn button {
+/*Boutons*/
+.main.formulaire-1 .container-button,
+.main.formulaire-2 .container-button {
+	margin: auto;
+}
+
+.main.formulaire-1 .container-button button,
+.main.formulaire-2 .container-button button {
+	margin: auto 1vw;
 	padding: 20px 30px;
 	border-style: solid;
 	border-width: 1px;
 	text-transform: uppercase;
 }
 
-.main.formulaire-1 .container-lgn .lgn .btn-save, 
-.main.formulaire-2 .container-lgn .lgn .btn-save {
+.main.formulaire-1 .container-button .btn-save, 
+.main.formulaire-2 .container-button .btn-save {
 	color: #FFBD1D;
 	background-color: #ffffff;
 	border-color: #FFBD1D;
 }
 
-.main.formulaire-1 .container-lgn .lgn .btn-save:hover,
-.main.formulaire-1 .container-lgn .lgn .btn-save:focus,
-.main.formulaire-2 .container-lgn .lgn .btn-save:hover,
-.main.formulaire-2 .container-lgn .lgn .btn-save:focus {
+.main.formulaire-1 .container-button .btn-save:hover,
+.main.formulaire-1 .container-button .btn-save:focus,
+.main.formulaire-2 .container-button .btn-save:hover,
+.main.formulaire-2 .container-button .btn-save:focus {
 	color: #ffffff;
 	background-color: #FFBD1D;
 }
 
-.main.formulaire-1 .container-lgn .lgn .btn-next,
-.main.formulaire-2 .container-lgn .lgn .btn-next {
+.main.formulaire-1 .container-button .btn-next,
+.main.formulaire-2 .container-button .btn-next {
 	color: #ffffff;
 	background-color: #FF8A22;
 	border-color: #FF8A22;
 }
 
-.main.formulaire-1 .container-lgn .lgn .btn-next:hover,
-.main.formulaire-1 .container-lgn .lgn .btn-next:focus,
-.main.formulaire-2 .container-lgn .lgn .btn-next:hover,
-.main.formulaire-2 .container-lgn .lgn .btn-next:focus {
+.main.formulaire-1 .container-button .btn-next:hover,
+.main.formulaire-1 .container-button .btn-next:focus,
+.main.formulaire-2 .container-button .btn-next:hover,
+.main.formulaire-2 .container-button .btn-next:focus {
 	color: #FF8A22;
 	background-color: #ffffff;
 }
