@@ -7,7 +7,7 @@
 
 
 .page-presentation {
-	margin: auto;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 }
@@ -53,7 +53,7 @@
 
 .page-presentation .container-button {
 	display: flex;
-	margin: auto;
+	margin: 4% auto;
 }
 
 .page-presentation .container-button button {
