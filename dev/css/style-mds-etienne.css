@@ -1,0 +1,75 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url('../fonts/ubuntu/UbuntuCondensed-Regular.ttf');
+}
+
+
+/**  PAGE FORMATION **/
+
+.page-presentation .boutons {
+	display: flex;
+}
+
+.block-main .groupe-formation {
+	background: #EBEBEB;
+	display: flex;
+	flex-direction: column;
+	margin: 0 3rem 0 0;
+	padding: 0 1rem;
+}
+
+.block-main .groupe-formation .btn-school {
+	margin: auto;
+	display: flex;
+}
+
+.block-main .groupe-formation .txt-bachelor {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+}
+
+.groupe-formation .txt-bachelor .cycle-mds {
+	margin: auto;
+	margin-bottom: .4rem;
+	font-family: "Ubuntu";
+	font-size: 18px;
+	color: #707070;
+}
+
+.groupe-formation .txt-bachelor .hashtag-groupe {
+		display: flex;
+		margin: auto;
+}
+
+.groupe-formation .txt-bachelor .ligne-hashtag {
+	display: flex;
+	margin: auto;
+}
+
+.txt-bachelor .hashtag-groupe span,
+.txt-bachelor .hashtag-groupe p {
+	margin: auto;
+	font-family: "Ubuntu";
+	font-size: 18px;
+}
+
+.txt-bachelor .hashtag-groupe span {
+	color: #17E5F5;
+	margin-right: 0;
+}
+
+.txt-bachelor .hashtag-groupe p {
+	margin-right: .4rem;
+	color: #707070;
+}
+
+.lgn .check-group {
+	margin: 0 3rem;
+}
+
+.spé-grp .checkmark-école {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
