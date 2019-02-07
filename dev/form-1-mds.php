@@ -39,20 +39,25 @@
 						<h1 class="titre-mds">Présente-toi</h1>
 						<div class="form-1">
 							<div class="nom-prenom">
-								<?php include('functions/form-elements.php');
-								echo textfield("", "Prénom ", "no", "yes");
-								echo textfield("", "Nom ", "no", "yes");
-								?>
-							</div>
-							<div class="container-lgn">
-								<div class="lgn lgn-1">
-									<?php echo createbtn("debut", "Enregistrer", "#F7B60A", "white", "#F7B60A"); ?>
-									<a href="form-2-mds.php" class="lien-suivant">
-										<?php echo createbtn("suivant", "Suivant", "white", "#FF8A22", "#FF8A22"); ?></a>
+								<div class="textfield">
+									<div class="input-group">
+										<input class="textfield-input" type="text" name="textfield" placeholder="Prénom *">
+									</div>								
+								</div>
+								<div class="textfield">
+									<div class="input-group">
+										<input class="textfield-input" type="text" name="textfield" placeholder="Nom *">
+									</div>								
 								</div>
 							</div>
-							<div class="essai">
-								
+
+							<div class="container-lgn">
+								<div class="lgn lgn-1">
+									<button id="save" class="btn-save" type="button">Enregistrer</button>
+									<a class="lien suivant" href="form-2-mds.php">
+										<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
+									</a>
+								</div>
 							</div>
 						</div>						
 					</div>
