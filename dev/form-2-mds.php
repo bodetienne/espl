@@ -42,26 +42,78 @@
 									<div class="date-naissance">		
 										<label class="label label-date">Date de naissance<span class="required"> *</span></label>
 										<div class="champs-date">
-											<input class="textfield-input" type="number" min="1" max="31" name="textfield" placeholder="JJ" id="jour">
-											<input class="textfield-input" type="number" min="1" max="12" name="textfield" placeholder="MM" id="mois">
-											<input class="textfield-input" type="number" min="1900" name="textfield" placeholder="AAAA" id="annee">
+											<input class="number-input" type="number" min="1" max="31" placeholder="JJ" id="jour">
+											<input class="number-input" type="number" min="1" max="12" placeholder="MM" id="mois">
+											<input class="number-input" type="number" placeholder="AAAA" id="annee">
 										</div>						
 									</div>
+									<div class="lieu-naissance">		
+										<label class="label label-lieu">Lieu de naissance<span class="required"> *</span></label>
+										<div class="champs-lieu">
+											<input class="textfield-input" type="text" name="textfield"id="lieu">
+										</div>						
+									</div>
+									<div class="mail-candidat">		
+										<label class="label label-mail-candidat">E-mail<span class="required"> *</span></label>
+										<div class="champs-mail-candidat">
+											<input class="textfield-input" type="text" name="textfield"id="mail">
+										</div>						
+									</div>
+									<div class="tel-candidat">
+										<div class="tel-fixe-candidat">		<label class="label label-tel-fixe">Tel. fixe</label>
+											<div class="champs-tel-fixe-candidat">
+												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-fixe">
+											</div>						
+										</div>
+										<div class="tel-port-candidat">		<label class="label label-tel-port">Tel. portable<span class="required"> *</span></label>
+											<div class="champs-tel-port-candidat">
+												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-port">
+											</div>						
+										</div>
+									</div>
+									
 								</div>
 								<div class="divider-milieu"></div>
 								<div class="form-droite">
-									<div class="nom-prenom">
-										<div class="textfield">
-											<div class="input-group">
-												<input class="textfield-input" type="text" name="textfield" placeholder="Prénom *">
+									<div class="adresse-candidat">		
+										<label class="label label-adresse">Adresse<span class="required"> *</span></label>
+										<div class="champs-adresse">
+											<input class="textfield-input" type="text" name="textfield"id="adresse">
+										</div>						
+									</div>
+									<div class="CP-ville">
+										<div class="cp-candidat">
+											<label class="label label-cp">Code postal<span class="required"> *</span></label>
+											<div class="champ-cp">
+												<input class="number-input" type="number" id="cp">
+											</div>
+										</div>
+										<div class="adresse-candidat">	
+											<label class="label label-adresse">Ville<span class="required"> *</span></label>
+											<div class="champs-adresse">
+												<input class="textfield-input" type="text" name="textfield"id="adresse">
 											</div>						
 										</div>
+									</div>								
+									<div class="adresse-candidat">		
+										<label class="label label-adresse">Numéro de sécurité sociale<span class="required"> *</span></label>
+										<div class="champs-adresse">
+											<input class="textfield-input" type="text" name="textfield"id="adresse">
+										</div>						
+									</div>
+									<div class="permis">		
+										<label class="label label-adresse">Permis<span class="required"> *</span></label>
+										<div class="champs-adresse">
+											<input class="textfield-input" type="text" name="textfield"id="adresse">
+										</div>						
 									</div>
 								</div>
 							</div>
 
 							<div class="container-button">
-								<button id="save" class="btn-save" type="button">Enregistrer</button>
+								<a class="lien precedent" href="form-1-mds.php">
+									<button id="previous" class="btn-previous" type="button">Enregistrer</button>
+								</a>
 								<a class="lien suivant" href="form-2-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>

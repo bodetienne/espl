@@ -52,7 +52,6 @@
 							</div>
 
 							<div class="container-button">
-								<button id="save" class="btn-save" type="button">Enregistrer</button>
 								<a class="lien suivant" href="form-2-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>

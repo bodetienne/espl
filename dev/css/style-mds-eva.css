@@ -119,7 +119,7 @@
 /*Barre de progression*/
 .main.formulaire-1 .progression-mds,
 .main.formulaire-2 .progression-mds {
-	margin: 60px auto;
+	margin: 40px auto;
 	display: flex;
 }
 
@@ -144,12 +144,15 @@
 	flex-direction: column;
 }
 
-/*Boutons*/
+/*Container boutons*/
 .main.formulaire-1 .container-button,
 .main.formulaire-2 .container-button {
 	margin: auto;
+	display: flex;
 }
 
+
+/*Style général des boutons*/
 .main.formulaire-1 .container-button button,
 .main.formulaire-2 .container-button button {
 	margin: auto 1vw;
@@ -159,21 +162,8 @@
 	text-transform: uppercase;
 }
 
-.main.formulaire-1 .container-button .btn-save, 
-.main.formulaire-2 .container-button .btn-save {
-	color: #FFBD1D;
-	background-color: #ffffff;
-	border-color: #FFBD1D;
-}
 
-.main.formulaire-1 .container-button .btn-save:hover,
-.main.formulaire-1 .container-button .btn-save:focus,
-.main.formulaire-2 .container-button .btn-save:hover,
-.main.formulaire-2 .container-button .btn-save:focus {
-	color: #ffffff;
-	background-color: #FFBD1D;
-}
-
+/*Bouton suivant*/
 .main.formulaire-1 .container-button .btn-next,
 .main.formulaire-2 .container-button .btn-next {
 	color: #ffffff;
@@ -190,26 +180,154 @@
 }
 
 
+/*Bouton précédent*/
+.main.formulaire-2 .container-button .btn-previous {
+	color: #A9A9A9;
+	background-color: #E7E7E7;
+	border-color: #E7E7E7;
+}
+
+.main.formulaire-2 .container-button .btn-previous:hover,
+.main.formulaire-2 .container-button .btn-previous:focus {
+	color: #E7E7E7;
+	background-color: #A9A9A9;
+	border-color: #A9A9A9;
+}
+
+
+/*Bouton sauvegarder*/
+.main.formulaire-3 .container-button .btn-save {
+	color: #FFBD1D;
+	background-color: #ffffff;
+	border-color: #FFBD1D;
+}
+
+.main.formulaire-3 .container-button .btn-save:hover,
+.main.formulaire-3 .container-button .btn-save:focus {
+	color: #ffffff;
+	background-color: #FFBD1D;
+}
+
+
+
 /** PAGE FORMULAIRE 2 **/
 .main.formulaire-2 .form-zone {
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 8vh;
 }
 
+.main.formulaire-2 .form-zone .form-gauche,
+.main.formulaire-2 .form-zone .form-droite {
+	width: 30%;
+	margin: auto;
+}
+
+
+/*Style général des labels*/
+.main.formulaire-2 .form-zone .label {
+	text-transform: uppercase;
+	font-family: "Ubuntu-condensed";
+	font-size: 0.9em;
+	color: #7C7C7C;
+}
+
+/*Style général des astérisques*/
+.main.formulaire-2 .form-zone .required {
+	font-family: "Ubuntu-condensed";
+	color: #FF8A22;
+}
+
+
+/*Style général des input*/
+.main.formulaire-2 .form-zone input {
+	border: 1px solid #DCDCDC;
+	padding: 10px 10px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-size: 0.9em;
+}
+
+.main.formulaire-2 .form-zone input:hover,
+.main.formulaire-2 .form-zone input:focus,
+.main.formulaire-2 .form-zone input:active {
+	border-color: #19E5F5;
+}
+
+
+/*Date de naissance*/
 .main.formulaire-2 .form-zone .form-gauche .champs-date {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
+
+/*Largeur champs jour et mois de naissance*/
+#jour, #mois {
+	width: 3em;
+	margin-right: 20px;
+}
+
+/*Largeur champ année de naissance*/
+#annee {
+	width: 4em;
+}
+
+/*Largeur champ code postal*/
+#cp {
+	width: 5em;
+}
+
+/*Pour retirer les flèches des input type number*/
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
+}
+
+
+/*Largeur max champs texte*/
+.main.formulaire-2 .form-zone .textfield-input {
+	width: 100%;
+}
+
+.main.formulaire-2 .form-zone #lieu,
+.main.formulaire-2 .form-zone #mail {
+	width: 94%;
+}
+
+
+/*Numéros de téléphone sur une ligne + CP et ville*/
+.main.formulaire-2 .form-zone .tel-candidat,
+.main.formulaire-2 .form-zone .CP-ville {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+/*Suppression margin bottom derniers input du form*/
+.main.formulaire-2 .form-zone .tel-candidat input,
+.main.formulaire-2 .form-zone .permis input, {
+	margin-bottom: 0;
+}
+
+/*Séparateur deux parties du formulaire*/
 .main.formulaire-2 .form-zone .divider-milieu {
 	background-color: #E4E4E4;
 	width: 10px;
-}
-
-#jour, #mois {
-	width: 3em;
-}
-
-#annee {
-	width: 4em;
 }
