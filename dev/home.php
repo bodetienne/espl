@@ -12,7 +12,7 @@
         <div class="school-box">
           <div class="ecole MDS">
             <a href="presentation-mds.php">
-              <img src="elements/logo-mds.png" alt="logo mds">
+              <img src="elements/logo-mds2.png" alt="logo mds">
             </a>
           </div>
           <div class="ecole IPAC">
