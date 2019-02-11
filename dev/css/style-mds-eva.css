@@ -305,12 +305,15 @@ input::-o-outer-spin-button {
 
 
 /*Largeur max champs texte*/
-.main.formulaire-2 .form-zone .textfield-input {
+.main.formulaire-2 .form-zone .textfield-input,
+.main.formulaire-2 .form-zone .champ-secu .number-input {
 	width: 100%;
 }
 
 .main.formulaire-2 .form-zone #lieu,
-.main.formulaire-2 .form-zone #mail {
+.main.formulaire-2 .form-zone #mail,
+.main.formulaire-2 .form-zone .form-droite .champs-adresse,
+.main.formulaire-2 .form-zone .form-droite .CP-ville {
 	width: 94%;
 }
 
@@ -340,18 +343,26 @@ input::-o-outer-spin-button {
 	margin-right: 6px;
 }
 
-/*Numéros de téléphone sur une ligne + CP et ville + sécu*/
+/*Numéros de téléphone sur une ligne + CP et ville*/
 .main.formulaire-2 .form-zone .tel-candidat,
-.main.formulaire-2 .form-zone .CP-ville,
-.main.formulaire-2 .form-zone .champ-secu {
+.main.formulaire-2 .form-zone .CP-ville {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-/**/
-.main.formulaire-2 .form-zone .champ-secu .info {
-	width: 30px;
-	height: 30px;
+.main.formulaire-2 .form-zone .champ-secu {
+	display: flex;
+}
+
+/*Bouton info*/
+.main.formulaire-2 .form-zone .champ-secu .bouton-info:after {
+	content: "";
+	background: url('../elements/info-button.png') no-repeat center;
+	width: 60px; 
+	height: 60px;
+	background-size: 45%;
+	position: absolute;
 }
 
 /*Alignement boutons radios permis*/

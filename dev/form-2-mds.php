@@ -91,15 +91,14 @@
 										<div class="ville-candidat">	
 											<label class="label label-ville">Ville<span class="required"> *</span></label>
 											<div class="champs-ville">
-												<input class="textfield-input" type="text" name="textfield"id="ville">
+												<input class="textfield-input" type="text" name="textfield" id="ville">
 											</div>						
 										</div>
 									</div>								
 									<div class="secu-candidat">	
 										<label class="label label-secu">Numéro de sécurité sociale<span class="required"> *</span></label>
 										<div class="champ-secu">
-											<input class="textfield-input" type="text" name="textfield"id="secu">
-											<img src="elements/info-button.png" class="info">
+											<input class="number-input" type="number" id="secu"><span class="bouton-info">
 										</div>			
 									</div>
 									<div class="permis">		
@@ -121,7 +120,7 @@
 
 							<div class="container-button">
 								<a class="lien precedent" href="form-1-mds.php">
-									<button id="previous" class="btn-previous" type="button">Enregistrer</button>
+									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
 								<a class="lien suivant" href="form-2-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
