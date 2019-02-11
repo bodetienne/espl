@@ -1,4 +1,4 @@
-/** FONTS **/
+	²/** FONTS **/
 
 @font-face {
 	font-family: "Ubuntu";
@@ -24,6 +24,33 @@
 	margin: auto;
 	display: flex;
 }
+
+.btn-school .btn-choix,
+.block-btn .btn-choix{
+	color: #707070;
+	background: #ffffff;
+}
+
+.btn-school #btn1 {
+	border: 2px solid #17E5F5;
+}
+
+.btn-school #btn2 {
+	border: 2px solid #50A7FF;
+}
+
+.block-btn #btn3 {
+	border: 2px solid #F74D9D;
+}
+
+.block-btn #btn4 {
+	border: 2px solid #9B9B9B;
+}
+
+.block-btn #btn5 {
+	border: 2px solid #343434;
+}
+
 
 .block-main .groupe-formation .txt-bachelor {
 	display: flex;
