@@ -351,17 +351,16 @@ input::-o-outer-spin-button {
 	align-items: center;
 }
 
+
 .main.formulaire-2 .form-zone .champ-secu {
 	display: flex;
+	align-items: center;
 }
 
 /*Bouton info*/
-.main.formulaire-2 .form-zone .champ-secu .bouton-info:after {
-	content: "";
-	background: url('../elements/info-button.png') no-repeat center;
-	width: 60px; 
-	height: 60px;
-	background-size: 45%;
+.main.formulaire-2 .form-zone .bouton-info .bouton {
+	width: 27px;
+	margin: -20px 0 10px 10px;
 	position: absolute;
 }
 

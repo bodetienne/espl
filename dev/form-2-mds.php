@@ -98,7 +98,7 @@
 									<div class="secu-candidat">	
 										<label class="label label-secu">Numéro de sécurité sociale<span class="required"> *</span></label>
 										<div class="champ-secu">
-											<input class="number-input" type="number" id="secu"><span class="bouton-info">
+											<input class="number-input" type="number" id="secu"><a href="#" class="bouton-info"><img class="bouton" src="elements/info-button.png"></a>
 										</div>			
 									</div>
 									<div class="permis">		
