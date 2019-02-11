@@ -88,23 +88,32 @@
 												<input class="number-input" type="number" id="cp">
 											</div>
 										</div>
-										<div class="adresse-candidat">	
-											<label class="label label-adresse">Ville<span class="required"> *</span></label>
-											<div class="champs-adresse">
-												<input class="textfield-input" type="text" name="textfield"id="adresse">
+										<div class="ville-candidat">	
+											<label class="label label-ville">Ville<span class="required"> *</span></label>
+											<div class="champs-ville">
+												<input class="textfield-input" type="text" name="textfield"id="ville">
 											</div>						
 										</div>
 									</div>								
-									<div class="adresse-candidat">		
-										<label class="label label-adresse">Numéro de sécurité sociale<span class="required"> *</span></label>
-										<div class="champs-adresse">
-											<input class="textfield-input" type="text" name="textfield"id="adresse">
-										</div>						
+									<div class="secu-candidat">	
+										<label class="label label-secu">Numéro de sécurité sociale<span class="required"> *</span></label>
+										<div class="champ-secu">
+											<input class="textfield-input" type="text" name="textfield"id="secu">
+											<img src="elements/info-button.png" class="info">
+										</div>			
 									</div>
 									<div class="permis">		
-										<label class="label label-adresse">Permis<span class="required"> *</span></label>
-										<div class="champs-adresse">
-											<input class="textfield-input" type="text" name="textfield"id="adresse">
+										<label class="label label-permis">Permis<span class="required"> *</span></label>
+										<div class="champ-permis">
+											<div class="permis-oui">
+												<input type="radio" id="oui" name="radiofield" value="oui">
+												<label for="oui"></label>
+											</div>
+											<div class="permis-non">
+												<input type="radio" id="non" name="radiofield" value="non">
+												<label for="non"></label>
+											</div>
+											
 										</div>						
 									</div>
 								</div>
