@@ -3,17 +3,20 @@
 <head>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
-		<link rel="stylesheet" href="css/style-mds-emma.css" />
+    <link rel="stylesheet" href="css/style-mds-structure" />
     <link rel="stylesheet" href="css/style-mds-header-footer.css">
+    <link rel="stylesheet" href="css/style-mds-emma.css" />
+    <link rel="stylesheet" href="css/style-mds-alex.css">
 
     <link rel="icon" type="img" href="elements/favicon.ico.png">
 
 		<meta charset="utf-8">
 		<title>Contact</title>
 </head>
-<main>
-<body class="contact">
-    <div class="blockmain">
+
+<body>
+  <main class="form-main contact">
+    <div class="block-main">
 
       <div class="entire-block">
 
@@ -66,8 +69,8 @@
       </div>
 
     </div>
-  <?php include 'footer.php';?>
-</main>
+    <?php include 'footer.php';?>
+  </main>
 </body>
 
 </html>
