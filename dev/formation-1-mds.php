@@ -35,8 +35,8 @@
 								</a>
 								<div class="groupe-formation">
 									<div class="btn-school">
-										<button type="button" name="button" class="btn-choix" id="1">Année 1</button>
-										<button type="button" name="button" class="btn-choix" id="2">Année 2</button>
+										<button type="button" name="button" class="btn-choix" id="btn1">Année 1</button>
+										<button type="button" name="button" class="btn-choix" id="btn2">Année 2</button>
 									</div>
 									<div class="txt-bachelor">
 										<p class="cycle-mds">Cycle web et Digital : formation initiale</p>
@@ -61,7 +61,7 @@
 								</div>
 								<div class="check-group">
 									<div class="block-btn">
-										<button type="button" name="button" class="btn-choix" id="3">Année 3</button>
+										<button type="button" name="button" class="btn-choix" id="btn3">Année 3</button>
 										<img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
 									</div>
 									<div class="spé-grp">
@@ -69,23 +69,31 @@
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Développeur Web</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
-									  </div>
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">WebDesign</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
-									  </div>
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">WebMarketing & Social Medias</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
-									  </div>
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">E-Business</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
-									  </div>
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -97,25 +105,29 @@
 								<div class="check-group">
 									<div class="block-btn">
 										<img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
-										<button type="button" name="button" class="btn-choix" id="4">Année 1</button>
+										<button type="button" name="button" class="btn-choix" id="btn4">Année 1</button>
 									</div>
 									<div class="spé-grp">
 										<h3 class="spé-title">Choisis ta spécialisation</h3>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
-									  </div>
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
-									  </div>
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
+									 </div>
 									</div>
 								</div>
 								<div class="check-group">
 									<div class="block-btn">
-										<button type="button" name="button" class="btn-choix" id="5">Année 2</button>
+										<button type="button" name="button" class="btn-choix" id="btn5">Année 2</button>
 										<img class="info-button" src="elements/info-button.png" alt="bouton pour plus d\'informations">
 
 									</div>
@@ -124,12 +136,16 @@
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
 									  </div>
 										<div class="check-ligne">
 									    <input type="checkbox" class="check-école">
 									    <span class="checkmark-école">Entreprenariat Web & Digital</span>
-									    <img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											<a href="#">
+												<img class="more-button" src="elements/more-btn.png" alt="bouton pour plus d\'informations">
+											</a>
 									  </div>
 									</div>
 								</div>
