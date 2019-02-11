@@ -1,27 +1,39 @@
-.contact{
+.form-main{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.block-main .entireblock {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.form-main{
   background-color: #2B2B2B;
   position:none;
 
 
   }
-.contact .block-left {
+.form-main .block-left {
   width: 50%;
   position: relative;
 }
 
-.contact .block-left .logo-ecole-contact img{
+.form-main .block-left .logo-ecole-contact img{
   width: 50%;
   margin: auto;
   display: flex;
 }
 
-.contact .block-left h2{
+.form-main .block-left h2{
   color: white;
   font-family: ubuntu condensed;
   font-size: 45px;
   text-align: center;
 }
-.contact .block-left h3{
+.form-main .block-left h3{
   color: #4BC4CF;
   text-align: center;
   font-family: ubuntu condensed;
@@ -29,13 +41,13 @@
 }
 
 
-.contact .block-right{
+.form-main .block-right{
   margin-left: 50vw;
   width: 50%;
   position: absolute;
 }
 
-.contact .block-right .cadre-contact{
+.form-main .block-right .cadre-contact{
   padding: 25px;
   border-radius: 15px;
   background-color: white;
@@ -43,7 +55,7 @@
   margin-top: 3%;
 }
 
-.contact .entire-block {
+.form-main .entire-block {
   display: flex;
   max-height: 100vh;
 }
