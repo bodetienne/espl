@@ -127,7 +127,12 @@
 /*Titre*/
 .main.formulaire-1 .titre-mds,
 .main.formulaire-2 .titre-mds {
-	margin-bottom: 60px;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-family: "Ubuntu-condensed";
+	text-align: center;
+	margin-bottom: 4vh;
+	color: #363635;
 }
 
 
@@ -309,15 +314,82 @@ input::-o-outer-spin-button {
 	width: 94%;
 }
 
+/*Icône e-mail*/
+.main.formulaire-2 .form-zone .label-mail-candidat:before {
+	content: url('../elements/enveloppe.png');
+	margin-right: 8px;
+}
 
-/*Numéros de téléphone sur une ligne + CP et ville*/
+/*Icône tél fixe*/
+.main.formulaire-2 .form-zone .label-tel-fixe:before {
+	content: url('../elements/tel-fixe.png');
+	margin-right: 8px;
+}
+
+
+/*Icône tél portable*/
+.main.formulaire-2 .form-zone .label-tel-port:before {
+	content: url('../elements/tel-portable.png');
+	margin-right: 8px;
+}
+
+
+/*Icône adresse*/
+.main.formulaire-2 .form-zone .label-adresse:before {
+	content: url('../elements/adresse.png');
+	margin-right: 6px;
+}
+
+/*Numéros de téléphone sur une ligne + CP et ville + sécu*/
 .main.formulaire-2 .form-zone .tel-candidat,
-.main.formulaire-2 .form-zone .CP-ville {
+.main.formulaire-2 .form-zone .CP-ville,
+.main.formulaire-2 .form-zone .champ-secu {
 	display: flex;
 	justify-content: space-between;
 }
 
+/**/
+.main.formulaire-2 .form-zone .champ-secu .info {
+	width: 30px;
+	height: 30px;
+}
 
+/*Alignement boutons radios permis*/
+.main.formulaire-2 .form-zone .champ-permis {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/*Boutons radio permis*/
+.main.formulaire-2 .form-zone .champ-permis input[type=radio]{
+    display: none;
+}
+
+/* Affichage par défaut du bouton radio personnalisé oui*/
+.main.formulaire-2 .form-zone .champ-permis .permis-oui input[type=radio] + label:before {
+    content: url('../elements/permis-oui.png');
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+/* Affichage du bouton radio personnalisé oui quand il est sélectionné */
+.main.formulaire-2 .form-zone .champ-permis .permis-oui input[type=radio]:checked + label:before {
+	content: url('../elements/permis-oui-hover.png');
+}
+
+
+/* Affichage par défaut du bouton radio personnalisé non*/
+.main.formulaire-2 .form-zone .champ-permis .permis-non input[type=radio] + label:before {
+    content: url('../elements/permis-non.png');
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+/* Affichage du bouton radio personnalisé non quand il est sélectionné */
+.main.formulaire-2 .form-zone .champ-permis .permis-non input[type=radio]:checked + label:before {
+	content: url('../elements/permis-non-hover.png');
+}
 
 
 /*Suppression margin bottom derniers input du form*/
