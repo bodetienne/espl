@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
 		<link rel="stylesheet" href="css/style-mds-structure.css">
 		<link rel="stylesheet" href="css/style-mds-etienne.css">
+		<link rel="stylesheet" href="css/style-mds-eva.css">
+		<link rel="stylesheet" href="css/style-mds-alex.css">
 		<link rel="stylesheet" href="css/style-mds-header-footer.css">
 		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
@@ -149,6 +151,15 @@
 									  </div>
 									</div>
 								</div>
+							</div>
+
+							<div class="container-button">
+								<a class="lien precedent" href="#">
+									<button id="previous" class="btn-previous" type="button">Enregistrer</button>
+								</a>
+								<a class="lien suivant" href="#">
+									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
+								</a>
 							</div>
 
 						</div>
