@@ -117,10 +117,12 @@
 
 
 /*Barre de progression*/
+.main .progression-mds,
 .main.formulaire-1 .progression-mds,
 .main.formulaire-2 .progression-mds {
-	margin: 40px auto;
+	margin: 40px auto 20px;
 	display: flex;
+	width: 42vw;
 }
 
 
