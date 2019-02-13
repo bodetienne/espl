@@ -23,6 +23,7 @@
 					<!-- FIN PARTIE ASIDE -->
 					<!-- PARTIE MAIN (droite)-->
 	        <div class="main">
+						<img class="progression-mds" src="elements/barre-progression-mds-3.png">
 
 						<div class="container-lgn">
 
@@ -155,7 +156,10 @@
 
 							<div class="container-button">
 								<a class="lien precedent" href="#">
-									<button id="previous" class="btn-previous" type="button">Enregistrer</button>
+									<button id="previous" class="btn-previous" type="button">Précédent</button>
+								</a>
+								<a class="lien save" href="#">
+									<button id="save" class="btn-save" type="button">Enregistrer</button>
 								</a>
 								<a class="lien suivant" href="#">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>

@@ -2,7 +2,12 @@
 
 @font-face {
 	font-family: "Ubuntu";
-	src: url('../fonts/ubuntu/UbuntuCondensed-Regular.ttf');
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
 }
 
 
@@ -74,12 +79,12 @@
 }
 
 .form-main .nom-form {
-	margin: 4vh auto;
-	font-size: 1.5rem;
-	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-	color: #7C7C7C;
+	font-size: 1.4em;
 	text-transform: uppercase;
-	font-weight: lighter;
+	font-family: "Ubuntu-condensed";
+	text-align: center;
+	margin-bottom: 4vh;
+	color: #363635;
 }
 
 .form-main .textfield {
@@ -209,7 +214,7 @@
 .form-main .container-lgn .lgn {
 	margin: auto;
 	display: flex;
-	height: 30vh;
+	max-height: 30vh;
 }
 
 .container-lgn .lgn .btn-choix {
