@@ -68,7 +68,7 @@
 }
 
 .page-presentation .container-button .doc:hover,
-.page-presentation .container-button .doc:active, 
+.page-presentation .container-button .doc:active,
 .page-presentation .container-button .doc:focus {
 	color: #FFBD1D;
 }
@@ -101,8 +101,8 @@
 }
 
 
-.page-presentation .container-button button:hover, 
-.page-presentation .container-button button:active, 
+.page-presentation .container-button button:hover,
+.page-presentation .container-button button:active,
 .page-presentation .container-button button:focus {
 	background-color: #ffffff;
 }
@@ -117,11 +117,18 @@
 
 
 /*Barre de progression*/
+.main .progression-mds,
 .main.formulaire-1 .progression-mds,
+<<<<<<< HEAD
 .main.formulaire-2 .progression-mds,
 .main.formulaire-3 .progression-mds {
 	margin: 40px auto;
+=======
+.main.formulaire-2 .progression-mds {
+	margin: 40px auto 20px;
+>>>>>>> 5e4e5d93931ed878de009583eacb4abb00383b45
 	display: flex;
+	width: 42vw;
 }
 
 
@@ -311,14 +318,14 @@ input[type=number] {
 
 /* Chrome */
 input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button { 
+input::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin:0;
 }
 
 /* Opéra*/
 input::-o-inner-spin-button,
-input::-o-outer-spin-button { 
+input::-o-outer-spin-button {
 	-o-appearance: none;
 	margin:0
 }
