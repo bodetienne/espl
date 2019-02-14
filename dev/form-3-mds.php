@@ -33,86 +33,80 @@
 							<div class="sol"></div>
 						</div>
 					</div>
-					<div class="main formulaire-2">
+					<div class="main formulaire-3">
 						<img class="progression-mds" src="elements/barre-progression-mds-2.png">
-						<h1 class="titre-mds">Présente-toi</h1>
-						<div class="form-2">
+						<h1 class="titre-mds">Tes garants 1/2</h1>
+						<div class="form-3">
 							<div class="form-zone">
 								<div class="form-gauche">
-									<div class="date-naissance">		
-										<label class="label label-date">Date de naissance<span class="required"> *</span></label>
-										<div class="champs-date">
-											<input class="number-input" type="number" min="1" max="31" placeholder="JJ" id="jour">
-											<input class="number-input" type="number" min="1" max="12" placeholder="MM" id="mois">
-											<input class="number-input" type="number" placeholder="AAAA" id="annee">
+									<div class="prenom-garant-1">		
+										<label class="label label-prenom">Prénom<span class="required"> *</span></label>
+										<div class="champ-prenom">
+											<input class="textfield-input" type="text" id="prenom-garant">
 										</div>						
 									</div>
-									<div class="lieu-naissance">		
-										<label class="label label-lieu">Lieu de naissance<span class="required"> *</span></label>
-										<div class="champs-lieu">
-											<input class="textfield-input" type="text" name="textfield"id="lieu">
+									<div class="nom-garant">		
+										<label class="label label-nom">Nom<span class="required"> *</span></label>
+										<div class="champ-nom">
+											<input class="textfield-input" type="text" name="textfield" id="nom">
 										</div>						
 									</div>
-									<div class="mail-candidat">		
-										<label class="label label-mail-candidat">E-mail<span class="required"> *</span></label>
-										<div class="champ-mail-candidat">
+									<div class="mail-garant">		
+										<label class="label label-mail-garant">E-mail<span class="required"> *</span></label>
+										<div class="champs-mail-garant">
 											<input class="textfield-input" type="text" name="textfield"id="mail">
 										</div>						
 									</div>
-									<div class="tel-candidat">
-										<div class="tel-fixe-candidat">		<label class="label label-tel-fixe">Tel. fixe</label>
-											<div class="champs-tel-fixe-candidat">
-												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-fixe">
-											</div>						
-										</div>
-										<div class="tel-port-candidat">		<label class="label label-tel-port">Tel. portable<span class="required"> *</span></label>
-											<div class="champs-tel-port-candidat">
-												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-port">
-											</div>						
-										</div>
+
+									<div class="tel-port-garant">		
+										<label class="label label-tel-port">Tel. portable<span class="required"> *</span></label>
+										<div class="champ-tel-port-garant">
+											<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-garant">
+										</div>						
 									</div>
-									
+									<div class="lien-parente">
+										<label class="label label-lien-parente">Lien de parenté<span class="required"> *</span></label>
+										<div class="champ-lien-parente">
+											<input class="textfield-input" type="text" name="textfield" id="lien"><a href="#" class="bouton-info"><img class="bouton" src="elements/info-button.png"></a>
+										</div>
+									</div>								
 								</div>
 								<div class="divider-milieu"></div>
 								<div class="form-droite">
-									<div class="adresse-candidat">		
+									<div class="meme-adresse">
+										<p class="text-adresse">Même adresse que précédemment ?</p>
+										<button class="button-input" type="button" name="button-adresse">Oui</button><label for="button-adresse"></label>
+									</div>
+									<div class="adresse-garant">		
 										<label class="label label-adresse">Adresse <span class="required"> *</span></label>
 										<div class="champs-adresse">
 											<input class="textfield-input" type="text" name="textfield"id="adresse">
 										</div>						
 									</div>
 									<div class="CP-ville">
-										<div class="cp-candidat">
+										<div class="cp-garant">
 											<label class="label label-cp">Code postal<span class="required"> *</span></label>
 											<div class="champ-cp">
 												<input class="number-input" type="number" id="cp">
 											</div>
 										</div>
-										<div class="ville-candidat">	
+										<div class="ville-garant">	
 											<label class="label label-ville">Ville<span class="required"> *</span></label>
 											<div class="champs-ville">
 												<input class="textfield-input" type="text" name="textfield" id="ville">
 											</div>						
 										</div>
 									</div>								
-									<div class="secu-candidat">	
-										<label class="label label-secu">Numéro de sécurité sociale<span class="required"> *</span></label>
-										<div class="champ-secu">
-											<input class="number-input" type="number" id="secu"><a href="#" class="bouton-info"><img class="bouton" src="elements/info-button.png"></a>
+									<div class="profession-garant">	
+										<label class="label label-profession">Profession</label>
+										<div class="champ-profession">
+											<input class="textfield-input" type="text" id="profession"><a href="#" class="bouton-info"><img class="bouton" src="elements/info-button.png"></a>
 										</div>			
 									</div>
-									<div class="permis">		
-										<label class="label label-permis">Permis<span class="required"> *</span></label>
-										<div class="champ-permis">
-											<div class="permis-oui">
-												<input type="radio" id="oui" name="radiofield" value="oui">
-												<label for="oui"></label>
-											</div>
-											<div class="permis-non">
-												<input type="radio" id="non" name="radiofield" value="non">
-												<label for="non"></label>
-											</div>
-											
+									<div class="entreprise">		
+										<label class="label label-entreprise">Entreprise</label>
+										<div class="champ-entreprise">
+											<input class="textfield-input" type="text" id="entreprise"><a href="#" class="bouton-info"><img class="bouton" src="elements/info-button.png"></a>
 										</div>						
 									</div>
 								</div>
@@ -122,7 +116,7 @@
 								<a class="lien precedent" href="form-1-mds.php">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
-								<a class="lien suivant" href="form-3-mds.php">
+								<a class="lien suivant" href="form-2-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>

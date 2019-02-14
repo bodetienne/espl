@@ -118,7 +118,8 @@
 
 /*Barre de progression*/
 .main.formulaire-1 .progression-mds,
-.main.formulaire-2 .progression-mds {
+.main.formulaire-2 .progression-mds,
+.main.formulaire-3 .progression-mds {
 	margin: 40px auto;
 	display: flex;
 }
@@ -126,7 +127,8 @@
 
 /*Titre*/
 .main.formulaire-1 .titre-mds,
-.main.formulaire-2 .titre-mds {
+.main.formulaire-2 .titre-mds,
+.main.formulaire-3 .titre-mds {
 	font-size: 1.4em;
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
@@ -144,14 +146,16 @@
 
 
 .main.formulaire-1 .form-1,
-.main.formulaire-2 .form-2 {
+.main.formulaire-2 .form-2,
+.main.formulaire-3 .form-3 {
 	display: flex;
 	flex-direction: column;
 }
 
 /*Container boutons*/
 .main.formulaire-1 .container-button,
-.main.formulaire-2 .container-button {
+.main.formulaire-2 .container-button,
+.main.formulaire-3 .container-button {
 	margin: auto;
 	display: flex;
 }
@@ -159,7 +163,8 @@
 
 /*Style général des boutons*/
 .main.formulaire-1 .container-button button,
-.main.formulaire-2 .container-button button {
+.main.formulaire-2 .container-button button,
+.main.formulaire-3 .container-button button {
 	margin: auto 1vw;
 	padding: 20px 30px;
 	border-style: solid;
@@ -170,7 +175,8 @@
 
 /*Bouton suivant*/
 .main.formulaire-1 .container-button .btn-next,
-.main.formulaire-2 .container-button .btn-next {
+.main.formulaire-2 .container-button .btn-next,
+.main.formulaire-3 .container-button .btn-next {
 	color: #ffffff;
 	background-color: #FF8A22;
 	border-color: #FF8A22;
@@ -179,21 +185,26 @@
 .main.formulaire-1 .container-button .btn-next:hover,
 .main.formulaire-1 .container-button .btn-next:focus,
 .main.formulaire-2 .container-button .btn-next:hover,
-.main.formulaire-2 .container-button .btn-next:focus {
+.main.formulaire-2 .container-button .btn-next:focus,
+.main.formulaire-3 .container-button .btn-next:hover,
+.main.formulaire-3 .container-button .btn-next:focus {
 	color: #FF8A22;
 	background-color: #ffffff;
 }
 
 
 /*Bouton précédent*/
-.main.formulaire-2 .container-button .btn-previous {
+.main.formulaire-2 .container-button .btn-previous,
+.main.formulaire-3 .container-button .btn-previous {
 	color: #A9A9A9;
 	background-color: #E7E7E7;
 	border-color: #E7E7E7;
 }
 
 .main.formulaire-2 .container-button .btn-previous:hover,
-.main.formulaire-2 .container-button .btn-previous:focus {
+.main.formulaire-2 .container-button .btn-previous:focus,
+.main.formulaire-3 .container-button .btn-previous:hover,
+.main.formulaire-3 .container-button .btn-previous:focus  {
 	color: #E7E7E7;
 	background-color: #A9A9A9;
 	border-color: #A9A9A9;
@@ -215,22 +226,26 @@
 
 
 
-/** PAGE FORMULAIRE 2 **/
-.main.formulaire-2 .form-zone {
+/** PAGES FORMULAIRE 2 + 3 **/
+.main.formulaire-2 .form-zone,
+.main.formulaire-3 .form-zone {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 8vh;
 }
 
 .main.formulaire-2 .form-zone .form-gauche,
-.main.formulaire-2 .form-zone .form-droite {
+.main.formulaire-2 .form-zone .form-droite,
+.main.formulaire-3 .form-zone .form-gauche,
+.main.formulaire-3 .form-zone .form-droite {
 	width: 30%;
 	margin: auto;
 }
 
 
 /*Style général des labels*/
-.main.formulaire-2 .form-zone .label {
+.main.formulaire-2 .form-zone .label,
+.main.formulaire-3 .form-zone .label {
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
 	font-size: 0.9em;
@@ -238,14 +253,16 @@
 }
 
 /*Style général des astérisques*/
-.main.formulaire-2 .form-zone .required {
+.main.formulaire-2 .form-zone .required,
+.main.formulaire-3 .form-zone .required {
 	font-family: "Ubuntu-condensed";
 	color: #FF8A22;
 }
 
 
 /*Style général des input*/
-.main.formulaire-2 .form-zone input {
+.main.formulaire-2 .form-zone input,
+.main.formulaire-3 .form-zone input {
 	border: 1px solid #DCDCDC;
 	padding: 10px 10px;
 	margin-top: 10px;
@@ -255,7 +272,10 @@
 
 .main.formulaire-2 .form-zone input:hover,
 .main.formulaire-2 .form-zone input:focus,
-.main.formulaire-2 .form-zone input:active {
+.main.formulaire-2 .form-zone input:active,
+.main.formulaire-3 .form-zone input:hover,
+.main.formulaire-3 .form-zone input:focus,
+.main.formulaire-3 .form-zone input:active {
 	border-color: #19E5F5;
 }
 
@@ -306,6 +326,7 @@ input::-o-outer-spin-button {
 
 /*Largeur max champs texte*/
 .main.formulaire-2 .form-zone .textfield-input,
+.main.formulaire-3 .form-zone .textfield-input,
 .main.formulaire-2 .form-zone .champ-secu .number-input {
 	width: 100%;
 }
@@ -313,12 +334,16 @@ input::-o-outer-spin-button {
 .main.formulaire-2 .form-zone #lieu,
 .main.formulaire-2 .form-zone #mail,
 .main.formulaire-2 .form-zone .form-droite .champs-adresse,
-.main.formulaire-2 .form-zone .form-droite .CP-ville {
+.main.formulaire-2 .form-zone .form-droite .CP-ville,
+.main.formulaire-3 .form-zone #mail,
+.main.formulaire-3 .form-zone .form-droite .champs-adresse,
+.main.formulaire-3 .form-zone .form-droite .CP-ville {
 	width: 94%;
 }
 
 /*Icône e-mail*/
-.main.formulaire-2 .form-zone .label-mail-candidat:before {
+.main.formulaire-2 .form-zone .label-mail-candidat:before,
+.main.formulaire-3 .form-zone .label-mail-garant:before {
 	content: url('../elements/enveloppe.png');
 	margin-right: 8px;
 }
@@ -331,21 +356,61 @@ input::-o-outer-spin-button {
 
 
 /*Icône tél portable*/
-.main.formulaire-2 .form-zone .label-tel-port:before {
+.main.formulaire-2 .form-zone .label-tel-port:before,
+.main.formulaire-3 .form-zone .label-tel-port:before {
 	content: url('../elements/tel-portable.png');
 	margin-right: 8px;
 }
 
 
+/*Question même adresse sur une ligne*/
+.main.formulaire-3 .form-zone .meme-adresse {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Style question même adresse*/
+.main.formulaire-3 .form-zone .meme-adresse .text-adresse {
+	font-family: "Ubuntu-condensed";
+	font-size: 1.1em;
+	color: #4BC4CF;
+}
+
+/*Style bouton même adresse*/
+.main.formulaire-3 .form-zone .meme-adresse input[type=button] {
+	display: none;
+}
+
+/* Affichage par défaut du bouton même adresse*/
+.main.formulaire-3 .form-zone .meme-adresse input[type=button] + label:before {
+    content: url('../elements/permis-oui.png');
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+/* Affichage du bouton radio personnalisé oui quand il est sélectionné */
+.main.formulaire-3 .form-zone ..meme-adresse input[type=button]:checked + label:before {
+	content: url('../elements/permis-oui-hover.png');
+}
+
+
+.main.formulaire-2 .form-zone .label-adresse,
+.main.formulaire-3 .form-zone .label-adresse {
+	display: flex;
+	align-items: flex-start;
+}
+
 /*Icône adresse*/
-.main.formulaire-2 .form-zone .label-adresse:before {
+.main.formulaire-2 .form-zone .label-adresse:before,
+.main.formulaire-3 .form-zone .label-adresse:before {
 	content: url('../elements/adresse.png');
 	margin-right: 6px;
 }
 
 /*Numéros de téléphone sur une ligne + CP et ville*/
 .main.formulaire-2 .form-zone .tel-candidat,
-.main.formulaire-2 .form-zone .CP-ville {
+.main.formulaire-2 .form-zone .CP-ville,
+.main.formulaire-3 .form-zone .CP-ville {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -358,7 +423,8 @@ input::-o-outer-spin-button {
 }
 
 /*Bouton info*/
-.main.formulaire-2 .form-zone .bouton-info .bouton {
+.main.formulaire-2 .form-zone .bouton-info .bouton,
+.main.formulaire-3 .form-zone .bouton-info .bouton {
 	width: 27px;
 	margin: -20px 0 10px 10px;
 	position: absolute;
@@ -368,7 +434,6 @@ input::-o-outer-spin-button {
 .main.formulaire-2 .form-zone .champ-permis {
 	display: flex;
 	margin-top: 10px;
-	margin-bottom: 15px;
 }
 
 /*Boutons radio permis*/
@@ -404,12 +469,16 @@ input::-o-outer-spin-button {
 
 /*Suppression margin bottom derniers input du form*/
 .main.formulaire-2 .form-zone .tel-candidat input,
-.main.formulaire-2 .form-zone .permis input, {
+.main.formulaire-2 .form-zone .permis input,
+.main.formulaire-3 .form-zone .lien-parente input,
+.main.formulaire-3 .form-zone .entreprise input {
 	margin-bottom: 0;
 }
 
+
 /*Séparateur deux parties du formulaire*/
-.main.formulaire-2 .form-zone .divider-milieu {
+.main.formulaire-2 .form-zone .divider-milieu, 
+.main.formulaire-3 .form-zone .divider-milieu {
 	background-color: #E4E4E4;
 	width: 10px;
 }
