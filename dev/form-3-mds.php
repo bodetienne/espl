@@ -75,7 +75,7 @@
 								<div class="form-droite">
 									<div class="meme-adresse">
 										<p class="text-adresse">Même adresse que précédemment ?</p>
-										<button class="button-input" type="button" name="button-adresse">Oui</button><label for="button-adresse"></label>
+										<input class="checkbox-input" type="checkbox" id="button-adresse"><label for="button-adresse"></label>
 									</div>
 									<div class="adresse-garant">		
 										<label class="label label-adresse">Adresse <span class="required"> *</span></label>
@@ -94,7 +94,7 @@
 											<label class="label label-ville">Ville<span class="required"> *</span></label>
 											<div class="champs-ville">
 												<input class="textfield-input" type="text" name="textfield" id="ville">
-											</div>						
+											</div>		
 										</div>
 									</div>								
 									<div class="profession-garant">	
@@ -113,10 +113,13 @@
 							</div>
 
 							<div class="container-button">
-								<a class="lien precedent" href="form-1-mds.php">
+								<a class="lien precedent" href="form-2-mds.php">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
-								<a class="lien suivant" href="form-2-mds.php">
+								<a class="lien sauvegarder" href="#">
+									<button id="save" class="btn-save" type="button">Sauvegarder</button>
+								</a>
+								<a class="lien suivant" href="form-4-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>

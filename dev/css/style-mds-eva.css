@@ -119,14 +119,9 @@
 /*Barre de progression*/
 .main .progression-mds,
 .main.formulaire-1 .progression-mds,
-<<<<<<< HEAD
 .main.formulaire-2 .progression-mds,
 .main.formulaire-3 .progression-mds {
 	margin: 40px auto;
-=======
-.main.formulaire-2 .progression-mds {
-	margin: 40px auto 20px;
->>>>>>> 5e4e5d93931ed878de009583eacb4abb00383b45
 	display: flex;
 	width: 42vw;
 }
@@ -374,6 +369,8 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .meme-adresse {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
 }
 
 /*Style question même adresse*/
@@ -384,20 +381,19 @@ input::-o-outer-spin-button {
 }
 
 /*Style bouton même adresse*/
-.main.formulaire-3 .form-zone .meme-adresse input[type=button] {
+.main.formulaire-3 .form-zone .meme-adresse input[type=checkbox] {
 	display: none;
 }
 
 /* Affichage par défaut du bouton même adresse*/
-.main.formulaire-3 .form-zone .meme-adresse input[type=button] + label:before {
-    content: url('../elements/permis-oui.png');
-    margin-right: 30px;
-    margin-top: 10px;
+.main.formulaire-3 .form-zone .meme-adresse input[type=checkbox] + label:before {
+    content: url('../elements/meme-adresse-non.png');
+    cursor: pointer;
 }
 
 /* Affichage du bouton radio personnalisé oui quand il est sélectionné */
-.main.formulaire-3 .form-zone ..meme-adresse input[type=button]:checked + label:before {
-	content: url('../elements/permis-oui-hover.png');
+.main.formulaire-3 .form-zone .meme-adresse input[type=checkbox]:checked + label:before {
+	content: url('../elements/meme-adresse-oui.png');
 }
 
 
