@@ -1,4 +1,4 @@
-* FONTS **/
+/** FONTS **/
 
 @font-face {
 	font-family: "Ubuntu-condensed";
@@ -41,7 +41,7 @@
 }
 
 .page-presentation .intro-mds .yellow {
-	color: #F7B60A;
+	color: #FFBD1D;
 }
 
 .page-presentation .intro-mds .orange {
