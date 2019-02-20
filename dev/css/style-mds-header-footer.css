@@ -17,7 +17,8 @@
 }
 
 .aside .logo-mds {
-    width: 15vw;
+/*    width: 15vw;*/
+	max-height: 8vh;
 }
 
 /* PAGE AIDE */

@@ -33,10 +33,10 @@
 							<div class="sol"></div>
 						</div>
 					</div>
-					<div class="main formulaire-3">
+					<div class="main formulaire-4">
 						<img class="progression-mds" src="elements/barre-progression-mds-2.png">
-						<h1 class="titre-mds">Tes garants <span class="etape-garant">1/2</span></h1>
-						<div class="form-3">
+						<h1 class="titre-mds">Tes garants <span class="etape-garant">2/2</span></h1>
+						<div class="form-4">
 							<div class="form-zone">
 								<div class="form-gauche">
 									<div class="prenom-garant-1">		
@@ -113,13 +113,13 @@
 							</div>
 
 							<div class="container-button">
-								<a class="lien precedent" href="form-2-mds.php">
+								<a class="lien precedent" href="form-3-mds.php">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
 								<a class="lien sauvegarder" href="#">
 									<button id="save" class="btn-save" type="button">Sauvegarder</button>
 								</a>
-								<a class="lien suivant" href="form-4-mds.php">
+								<a class="lien suivant" href="formation-1-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>

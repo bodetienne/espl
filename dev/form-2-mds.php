@@ -122,6 +122,9 @@
 								<a class="lien precedent" href="form-1-mds.php">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
+								<a class="lien sauvegarder" href="#">
+									<button id="save" class="btn-save" type="button">Sauvegarder</button>
+								</a>
 								<a class="lien suivant" href="form-3-mds.php">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
