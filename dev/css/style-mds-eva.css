@@ -123,7 +123,7 @@
 .main.formulaire-3 .progression-mds {
 	margin: 40px auto;
 	display: flex;
-	width: 42vw;
+	width: 35vw;
 }
 
 
@@ -236,12 +236,16 @@
 	margin-bottom: 8vh;
 }
 
+.main.formulaire-3 .form-zone {
+	margin-bottom: 4vh;
+}
+
 .main.formulaire-2 .form-zone .form-gauche,
 .main.formulaire-2 .form-zone .form-droite,
 .main.formulaire-3 .form-zone .form-gauche,
 .main.formulaire-3 .form-zone .form-droite {
 	width: 30%;
-	margin: auto;
+	margin: 0 auto;
 }
 
 
@@ -268,7 +272,7 @@
 	border: 1px solid #DCDCDC;
 	padding: 10px 10px;
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	font-size: 0.9em;
 }
 
@@ -365,6 +369,13 @@ input::-o-outer-spin-button {
 }
 
 
+/*Icône lien parenté*/
+.main.formulaire-3 .form-zone .label-lien-parente:before {
+	content: url('../elements/lien-parente.png');
+	margin-right: 8px;
+}
+
+
 /*Question même adresse sur une ligne*/
 .main.formulaire-3 .form-zone .meme-adresse {
 	display: flex;
@@ -376,8 +387,8 @@ input::-o-outer-spin-button {
 /*Style question même adresse*/
 .main.formulaire-3 .form-zone .meme-adresse .text-adresse {
 	font-family: "Ubuntu-condensed";
-	font-size: 1.1em;
 	color: #4BC4CF;
+	margin: 0;
 }
 
 /*Style bouton même adresse*/
@@ -431,6 +442,12 @@ input::-o-outer-spin-button {
 	width: 27px;
 	margin: -20px 0 10px 10px;
 	position: absolute;
+}
+
+/*Icône profession garant*/
+.main.formulaire-3 .form-zone .label-profession:before {
+	content: url('../elements/profession-garant.png');
+	margin-right: 8px;
 }
 
 /*Alignement boutons radios permis*/
