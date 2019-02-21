@@ -68,20 +68,17 @@
 }
 
 .page-presentation .container-button .doc:hover,
-.page-presentation .container-button .doc:active,
-.page-presentation .container-button .doc:focus {
+.page-presentation .container-button .doc:active {
 	color: #FFBD1D;
 }
 
 .page-presentation .container-button .begin:hover,
-.page-presentation .container-button .begin:active,
-.page-presentation .container-button .begin:focus {
+.page-presentation .container-button .begin:active {
 	color: #FF8A22;
 }
 
 .page-presentation .container-button .continue:hover,
-.page-presentation .container-button .continue:active,
-.page-presentation .container-button .continue:focus {
+.page-presentation .container-button .continue:active {
 	color: #4BC4CF;
 }
 
@@ -102,8 +99,7 @@
 
 
 .page-presentation .container-button button:hover,
-.page-presentation .container-button button:active,
-.page-presentation .container-button button:focus {
+.page-presentation .container-button button:active {
 	background-color: #ffffff;
 }
 
