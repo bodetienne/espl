@@ -22,5 +22,15 @@ $(function(){
   });
 
 
+  //Animation bouton help quand la souris passe dessus
+  $('.block-footer .help.mds .bouton-help img').mouseover(function() {
+    $(this).attr('src', './elements/help-button-hover.png');
+  });
+  
+  //Réinitialisation bouton help quand la souris quitte l'image
+  $('.block-footer .help.mds .bouton-help img').mouseout(function() {
+    $(this).attr('src', './elements/help-button.png');
+  });
+
 
 });
