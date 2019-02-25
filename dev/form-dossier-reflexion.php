@@ -59,7 +59,12 @@
 							<div class="bouton-upload">
 								<input type="file" id="UPLOAD" name="UPLOAD" accept=".pdf"/>
 								<label for="UPLOAD">IMPORTER FICHIER PDF</label>
+								<div class="preview">
+									<!-- contient texte avec une balise <p> quand un fichier est chargé
+									avec le bouton upload-->
+								</div>
 							</div>
+
 						</div>
 						<div class="boutons-nav">
 							<div class="boutons">
@@ -76,6 +81,7 @@
 		</main>
 	    <script type="text/javascript" src="js/jquery.min.js"></script>
       	<script type="text/javascript" src="js/effects.js"></script>
+				<script type="text/javascript" src="js/dossier-reflexion.js"></script>
 	</body>
 
 </html>
