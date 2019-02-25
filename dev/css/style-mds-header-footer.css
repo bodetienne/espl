@@ -17,8 +17,8 @@
 }
 
 .aside .logo-mds {
-    width: 200px;
-
+/*    width: 15vw;*/
+	max-height: 8vh;
 }
 
 /* PAGE AIDE */
@@ -89,7 +89,7 @@ body {
 
 .block-footer .footer.mds {
 	background-color: #363635;
-	height: inherit;
+	height: 9vh;
 }
 
 

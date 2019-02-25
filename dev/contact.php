@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
 <head>
     <link rel="stylesheet" href="css/normalize.css">
@@ -71,6 +71,8 @@
     </div>
     <?php include 'footer.php';?>
   </main>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/effects.js"></script>
 </body>
 
 </html>

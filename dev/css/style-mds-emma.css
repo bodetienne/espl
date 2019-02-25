@@ -33,7 +33,7 @@
   font-size: 45px;
   text-align: center;
 }
-.form-main .block-left h3{
+.contact .block-left h3{
   color: #4BC4CF;
   text-align: center;
   font-family: ubuntu condensed;
@@ -41,13 +41,13 @@
 }
 
 
-.form-main .block-right{
+.contact .block-right{
   margin-left: 50vw;
   width: 50%;
   position: absolute;
 }
 
-.form-main .block-right .cadre-contact{
+.contact .block-right .cadre-contact{
   padding: 25px;
   border-radius: 15px;
   background-color: white;
@@ -55,7 +55,7 @@
   margin-top: 3%;
 }
 
-.form-main .entire-block {
+.contact .entire-block {
   display: flex;
   max-height: 100vh;
 }

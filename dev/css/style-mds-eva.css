@@ -1,4 +1,4 @@
-* FONTS **/
+/** FONTS **/
 
 @font-face {
 	font-family: "Ubuntu-condensed";
@@ -41,7 +41,7 @@
 }
 
 .page-presentation .intro-mds .yellow {
-	color: #F7B60A;
+	color: #FFBD1D;
 }
 
 .page-presentation .intro-mds .orange {
@@ -68,20 +68,17 @@
 }
 
 .page-presentation .container-button .doc:hover,
-.page-presentation .container-button .doc:active,
-.page-presentation .container-button .doc:focus {
+.page-presentation .container-button .doc:active {
 	color: #FFBD1D;
 }
 
 .page-presentation .container-button .begin:hover,
-.page-presentation .container-button .begin:active,
-.page-presentation .container-button .begin:focus {
+.page-presentation .container-button .begin:active {
 	color: #FF8A22;
 }
 
 .page-presentation .container-button .continue:hover,
-.page-presentation .container-button .continue:active,
-.page-presentation .container-button .continue:focus {
+.page-presentation .container-button .continue:active {
 	color: #4BC4CF;
 }
 
@@ -102,8 +99,7 @@
 
 
 .page-presentation .container-button button:hover,
-.page-presentation .container-button button:active,
-.page-presentation .container-button button:focus {
+.page-presentation .container-button button:active {
 	background-color: #ffffff;
 }
 
@@ -119,16 +115,20 @@
 /*Barre de progression*/
 .main .progression-mds,
 .main.formulaire-1 .progression-mds,
-.main.formulaire-2 .progression-mds {
-	margin: 40px auto 20px;
+.main.formulaire-2 .progression-mds,
+.main.formulaire-3 .progression-mds,
+.main.formulaire-4 .progression-mds {
+	margin: 40px auto;
 	display: flex;
-	width: 42vw;
+	width: 35vw;
 }
 
 
 /*Titre*/
 .main.formulaire-1 .titre-mds,
-.main.formulaire-2 .titre-mds {
+.main.formulaire-2 .titre-mds,
+.main.formulaire-3 .titre-mds,
+.main.formulaire-4 .titre-mds {
 	font-size: 1.4em;
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
@@ -137,6 +137,13 @@
 	color: #363635;
 }
 
+/*Etape garants*/
+.main.formulaire-3 .titre-mds .etape-garant,
+.main.formulaire-4 .titre-mds .etape-garant {
+	font-size: 0.7em;
+	font-weight: lighter;
+	margin-left: 5px;
+}
 
 /*Champs de texte*/
 .main.formulaire-1 .textfield .input-group .textfield-input {
@@ -146,14 +153,18 @@
 
 
 .main.formulaire-1 .form-1,
-.main.formulaire-2 .form-2 {
+.main.formulaire-2 .form-2,
+.main.formulaire-3 .form-3,
+.main.formulaire-4 .form-4 {
 	display: flex;
 	flex-direction: column;
 }
 
 /*Container boutons*/
 .main.formulaire-1 .container-button,
-.main.formulaire-2 .container-button {
+.main.formulaire-2 .container-button,
+.main.formulaire-3 .container-button,
+.main.formulaire-4 .container-button {
 	margin: auto;
 	display: flex;
 }
@@ -161,7 +172,9 @@
 
 /*Style général des boutons*/
 .main.formulaire-1 .container-button button,
-.main.formulaire-2 .container-button button {
+.main.formulaire-2 .container-button button,
+.main.formulaire-3 .container-button button,
+.main.formulaire-4 .container-button button {
 	margin: auto 1vw;
 	padding: 20px 30px;
 	border-style: solid;
@@ -172,7 +185,9 @@
 
 /*Bouton suivant*/
 .main.formulaire-1 .container-button .btn-next,
-.main.formulaire-2 .container-button .btn-next {
+.main.formulaire-2 .container-button .btn-next,
+.main.formulaire-3 .container-button .btn-next,
+.main.formulaire-4 .container-button .btn-next {
 	color: #ffffff;
 	background-color: #FF8A22;
 	border-color: #FF8A22;
@@ -181,21 +196,31 @@
 .main.formulaire-1 .container-button .btn-next:hover,
 .main.formulaire-1 .container-button .btn-next:focus,
 .main.formulaire-2 .container-button .btn-next:hover,
-.main.formulaire-2 .container-button .btn-next:focus {
+.main.formulaire-2 .container-button .btn-next:focus,
+.main.formulaire-3 .container-button .btn-next:hover,
+.main.formulaire-3 .container-button .btn-next:focus,
+.main.formulaire-4 .container-button .btn-next:hover,
+.main.formulaire-4 .container-button .btn-next:focus {
 	color: #FF8A22;
 	background-color: #ffffff;
 }
 
 
 /*Bouton précédent*/
-.main.formulaire-2 .container-button .btn-previous {
+.main.formulaire-2 .container-button .btn-previous,
+.main.formulaire-3 .container-button .btn-previous,
+.main.formulaire-4 .container-button .btn-previous {
 	color: #A9A9A9;
 	background-color: #E7E7E7;
 	border-color: #E7E7E7;
 }
 
 .main.formulaire-2 .container-button .btn-previous:hover,
-.main.formulaire-2 .container-button .btn-previous:focus {
+.main.formulaire-2 .container-button .btn-previous:focus,
+.main.formulaire-3 .container-button .btn-previous:hover,
+.main.formulaire-3 .container-button .btn-previous:focus,
+.main.formulaire-4 .container-button .btn-previous:hover,
+.main.formulaire-4 .container-button .btn-previous:focus {
 	color: #E7E7E7;
 	background-color: #A9A9A9;
 	border-color: #A9A9A9;
@@ -203,61 +228,93 @@
 
 
 /*Bouton sauvegarder*/
-.main.formulaire-3 .container-button .btn-save {
+.main.formulaire-2 .container-button .btn-save,
+.main.formulaire-3 .container-button .btn-save,
+.main.formulaire-4 .container-button .btn-save {
 	color: #FFBD1D;
 	background-color: #ffffff;
 	border-color: #FFBD1D;
 }
 
+.main.formulaire-2 .container-button .btn-save:hover,
+.main.formulaire-2 .container-button .btn-save:focus,
 .main.formulaire-3 .container-button .btn-save:hover,
-.main.formulaire-3 .container-button .btn-save:focus {
+.main.formulaire-3 .container-button .btn-save:focus, 
+.main.formulaire-4 .container-button .btn-save:hover,
+.main.formulaire-4 .container-button .btn-save:focus {
 	color: #ffffff;
 	background-color: #FFBD1D;
 }
 
 
 
-/** PAGE FORMULAIRE 2 **/
-.main.formulaire-2 .form-zone {
+/** PAGES FORMULAIRE 2 + 3 + 4**/
+.main.formulaire-2 .form-zone,
+.main.formulaire-3 .form-zone,
+.main.formulaire-4 .form-zone {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 8vh;
 }
 
+.main.formulaire-3 .form-zone,
+.main.formulaire-4 .form-zone {
+	margin-bottom: 4vh;
+}
+
 .main.formulaire-2 .form-zone .form-gauche,
-.main.formulaire-2 .form-zone .form-droite {
+.main.formulaire-2 .form-zone .form-droite,
+.main.formulaire-3 .form-zone .form-gauche,
+.main.formulaire-3 .form-zone .form-droite,
+.main.formulaire-4 .form-zone .form-gauche,
+.main.formulaire-4 .form-zone .form-droite {
 	width: 30%;
-	margin: auto;
+	margin: 0 auto;
 }
 
 
 /*Style général des labels*/
-.main.formulaire-2 .form-zone .label {
+.main.formulaire-2 .form-zone .label,
+.main.formulaire-3 .form-zone .label,
+.main.formulaire-4 .form-zone .label {
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
 	font-size: 0.9em;
 	color: #7C7C7C;
+	display: flex;
+	align-items: center;
 }
 
 /*Style général des astérisques*/
-.main.formulaire-2 .form-zone .required {
+.main.formulaire-2 .form-zone .required,
+.main.formulaire-3 .form-zone .required,
+.main.formulaire-4 .form-zone .required {
 	font-family: "Ubuntu-condensed";
 	color: #FF8A22;
+	margin-left: 5px;
 }
 
 
 /*Style général des input*/
-.main.formulaire-2 .form-zone input {
+.main.formulaire-2 .form-zone input,
+.main.formulaire-3 .form-zone input,
+.main.formulaire-4 .form-zone input {
 	border: 1px solid #DCDCDC;
 	padding: 10px 10px;
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	font-size: 0.9em;
 }
 
 .main.formulaire-2 .form-zone input:hover,
 .main.formulaire-2 .form-zone input:focus,
-.main.formulaire-2 .form-zone input:active {
+.main.formulaire-2 .form-zone input:active,
+.main.formulaire-3 .form-zone input:hover,
+.main.formulaire-3 .form-zone input:focus,
+.main.formulaire-3 .form-zone input:active,
+.main.formulaire-4 .form-zone input:hover,
+.main.formulaire-4 .form-zone input:focus,
+.main.formulaire-4 .form-zone input:active {
 	border-color: #19E5F5;
 }
 
@@ -306,21 +363,25 @@ input::-o-outer-spin-button {
 }
 
 
-/*Largeur max champs texte*/
+/*Largeur max champs*/
 .main.formulaire-2 .form-zone .textfield-input,
+.main.formulaire-3 .form-zone .textfield-input,
+.main.formulaire-4 .form-zone .textfield-input,
 .main.formulaire-2 .form-zone .champ-secu .number-input {
-	width: 100%;
-}
-
-.main.formulaire-2 .form-zone #lieu,
-.main.formulaire-2 .form-zone #mail,
-.main.formulaire-2 .form-zone .form-droite .champs-adresse,
-.main.formulaire-2 .form-zone .form-droite .CP-ville {
 	width: 94%;
 }
 
+/*Largeur champs code postal + ville*/
+.main.formulaire-2 .form-zone .CP-ville,
+.main.formulaire-3 .form-zone .CP-ville,
+.main.formulaire-4 .form-zone .CP-ville {
+	width: 97%;
+}
+
 /*Icône e-mail*/
-.main.formulaire-2 .form-zone .label-mail-candidat:before {
+.main.formulaire-2 .form-zone .label-mail-candidat:before,
+.main.formulaire-3 .form-zone .label-mail-garant:before,
+.main.formulaire-4 .form-zone .label-mail-garant:before {
 	content: url('../elements/enveloppe.png');
 	margin-right: 8px;
 }
@@ -333,21 +394,80 @@ input::-o-outer-spin-button {
 
 
 /*Icône tél portable*/
-.main.formulaire-2 .form-zone .label-tel-port:before {
+.main.formulaire-2 .form-zone .label-tel-port:before,
+.main.formulaire-3 .form-zone .label-tel-port:before,
+.main.formulaire-4 .form-zone .label-tel-port:before {
 	content: url('../elements/tel-portable.png');
 	margin-right: 8px;
 }
 
 
+/*Icône lien parenté*/
+.main.formulaire-3 .form-zone .label-lien-parente:before,
+.main.formulaire-4 .form-zone .label-lien-parente:before {
+	content: url('../elements/lien-parente.png');
+	margin-right: 8px;
+}
+
+
+/*Question même adresse sur une ligne*/
+.main.formulaire-3 .form-zone .meme-adresse,
+.main.formulaire-4 .form-zone .meme-adresse {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+	font-size: 1.1em;
+}
+
+/*Style question même adresse*/
+.main.formulaire-3 .form-zone .meme-adresse .text-adresse,
+.main.formulaire-4 .form-zone .meme-adresse .text-adresse {
+	font-family: "Ubuntu-condensed";
+	color: #4BC4CF;
+	margin: 0;
+}
+
+/*Style bouton même adresse*/
+.main.formulaire-3 .form-zone .meme-adresse input[type=checkbox],
+.main.formulaire-4 .form-zone .meme-adresse input[type=checkbox] {
+	display: none;
+}
+
+/* Affichage par défaut du bouton même adresse*/
+.main.formulaire-3 .form-zone .meme-adresse input[type=checkbox] + label:before,
+.main.formulaire-4 .form-zone .meme-adresse input[type=checkbox] + label:before {
+    content: url('../elements/meme-adresse-non.png');
+    cursor: pointer;
+}
+
+/* Affichage du bouton radio personnalisé oui quand il est sélectionné */
+.main.formulaire-3 .form-zone .meme-adresse input[type=checkbox]:checked + label:before,
+.main.formulaire-4 .form-zone .meme-adresse input[type=checkbox]:checked + label:before {
+	content: url('../elements/meme-adresse-oui.png');
+}
+
+
+.main.formulaire-2 .form-zone .label-adresse,
+.main.formulaire-3 .form-zone .label-adresse,
+.main.formulaire-4 .form-zone .label-adresse {
+	display: flex;
+	align-items: flex-start;
+}
+
 /*Icône adresse*/
-.main.formulaire-2 .form-zone .label-adresse:before {
+.main.formulaire-2 .form-zone .label-adresse:before,
+.main.formulaire-3 .form-zone .label-adresse:before,
+.main.formulaire-4 .form-zone .label-adresse:before {
 	content: url('../elements/adresse.png');
 	margin-right: 6px;
 }
 
 /*Numéros de téléphone sur une ligne + CP et ville*/
 .main.formulaire-2 .form-zone .tel-candidat,
-.main.formulaire-2 .form-zone .CP-ville {
+.main.formulaire-2 .form-zone .CP-ville,
+.main.formulaire-3 .form-zone .CP-ville,
+.main.formulaire-4 .form-zone .CP-ville {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -366,11 +486,24 @@ input::-o-outer-spin-button {
 	position: absolute;
 }
 
+.main.formulaire-3 .form-zone .bouton-info .bouton,
+.main.formulaire-4 .form-zone .bouton-info .bouton {
+	width: 27px;
+	margin: 15px 0 0 10px;
+	position: absolute;
+}
+
+/*Icône profession garant*/
+.main.formulaire-3 .form-zone .label-profession:before,
+.main.formulaire-4 .form-zone .label-profession:before {
+	content: url('../elements/profession-garant.png');
+	margin-right: 8px;
+}
+
 /*Alignement boutons radios permis*/
 .main.formulaire-2 .form-zone .champ-permis {
 	display: flex;
 	margin-top: 10px;
-	margin-bottom: 15px;
 }
 
 /*Boutons radio permis*/
@@ -406,12 +539,19 @@ input::-o-outer-spin-button {
 
 /*Suppression margin bottom derniers input du form*/
 .main.formulaire-2 .form-zone .tel-candidat input,
-.main.formulaire-2 .form-zone .permis input, {
+.main.formulaire-2 .form-zone .permis input,
+.main.formulaire-3 .form-zone .lien-parente input,
+.main.formulaire-3 .form-zone .entreprise input,
+.main.formulaire-4 .form-zone .lien-parente input,
+.main.formulaire-4 .form-zone .entreprise input {
 	margin-bottom: 0;
 }
 
+
 /*Séparateur deux parties du formulaire*/
-.main.formulaire-2 .form-zone .divider-milieu {
+.main.formulaire-2 .form-zone .divider-milieu, 
+.main.formulaire-3 .form-zone .divider-milieu,
+.main.formulaire-4 .form-zone .divider-milieu {
 	background-color: #E4E4E4;
 	width: 10px;
 }
