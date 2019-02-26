@@ -26,12 +26,12 @@
 	text-transform: uppercase;
 	font-weight: bolder;
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 5vh;
 }
 
 .page-presentation .intro-mds p {
 	width: 45%;
-	margin: auto auto 20px;
+	margin: auto auto 3vh;
 	text-align: center;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .page-presentation .container-button button {
-    margin: auto 15px;
+    margin: auto 1vw;
     border-width: 1px;
     border-style: solid;
 	padding: 18px 15px;
@@ -142,12 +142,12 @@
 .main.formulaire-4 .titre-mds .etape-garant {
 	font-size: 0.7em;
 	font-weight: lighter;
-	margin-left: 5px;
+	margin-left: 0.3vw;
 }
 
 /*Champs de texte*/
 .main.formulaire-1 .textfield .input-group .textfield-input {
-	margin: auto auto 20px;
+	margin: auto auto 3vh;
 	width: 15vw;
 }
 
@@ -291,7 +291,7 @@
 .main.formulaire-4 .form-zone .required {
 	font-family: "Ubuntu-condensed";
 	color: #FF8A22;
-	margin-left: 5px;
+	margin-left: 0.5vw;
 }
 
 
@@ -301,8 +301,8 @@
 .main.formulaire-4 .form-zone input {
 	border: 1px solid #DCDCDC;
 	padding: 10px 10px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 1vh;
+	margin-bottom: 2.5vh;
 	font-size: 0.9em;
 }
 
@@ -329,7 +329,6 @@
 /*Largeur champs jour et mois de naissance*/
 #jour, #mois {
 	width: 3em;
-	margin-right: 20px;
 }
 
 /*Largeur champ année de naissance*/
@@ -383,13 +382,13 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .label-mail-garant:before,
 .main.formulaire-4 .form-zone .label-mail-garant:before {
 	content: url('../elements/enveloppe.png');
-	margin-right: 8px;
+	margin-right: 0.5vw;
 }
 
 /*Icône tél fixe*/
 .main.formulaire-2 .form-zone .label-tel-fixe:before {
 	content: url('../elements/tel-fixe.png');
-	margin-right: 8px;
+	margin-right: 0.5vw;
 }
 
 
@@ -398,7 +397,7 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .label-tel-port:before,
 .main.formulaire-4 .form-zone .label-tel-port:before {
 	content: url('../elements/tel-portable.png');
-	margin-right: 8px;
+	margin-right: 0.5vw;
 }
 
 
@@ -406,7 +405,7 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .label-lien-parente:before,
 .main.formulaire-4 .form-zone .label-lien-parente:before {
 	content: url('../elements/lien-parente.png');
-	margin-right: 8px;
+	margin-right: 0.5vw;
 }
 
 
@@ -416,7 +415,7 @@ input::-o-outer-spin-button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 25px;
+	margin-bottom: 3vh;
 	font-size: 1.1em;
 }
 
@@ -460,7 +459,7 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .label-adresse:before,
 .main.formulaire-4 .form-zone .label-adresse:before {
 	content: url('../elements/adresse.png');
-	margin-right: 6px;
+	margin-right: 0.5vw;
 }
 
 /*Numéros de téléphone sur une ligne + CP et ville*/
@@ -482,14 +481,14 @@ input::-o-outer-spin-button {
 /*Bouton info*/
 .main.formulaire-2 .form-zone .bouton-info .bouton {
 	width: 27px;
-	margin: -20px 0 10px 10px;
+	margin: -2.5vh 0 0 0.7vw;
 	position: absolute;
 }
 
 .main.formulaire-3 .form-zone .bouton-info .bouton,
 .main.formulaire-4 .form-zone .bouton-info .bouton {
 	width: 27px;
-	margin: 15px 0 0 10px;
+	margin: 2vh 0 0 0.7vw;
 	position: absolute;
 }
 
@@ -497,13 +496,13 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .label-profession:before,
 .main.formulaire-4 .form-zone .label-profession:before {
 	content: url('../elements/profession-garant.png');
-	margin-right: 8px;
+	margin-right: 0.5vw;
 }
 
 /*Alignement boutons radios permis*/
 .main.formulaire-2 .form-zone .champ-permis {
 	display: flex;
-	margin-top: 10px;
+	margin-top: 1vh;
 }
 
 /*Boutons radio permis*/
@@ -514,8 +513,7 @@ input::-o-outer-spin-button {
 /* Affichage par défaut du bouton radio personnalisé oui*/
 .main.formulaire-2 .form-zone .champ-permis .permis-oui input[type=radio] + label:before {
     content: url('../elements/permis-oui.png');
-    margin-right: 30px;
-    margin-top: 10px;
+    margin-right: 2vw;
 }
 
 /* Affichage du bouton radio personnalisé oui quand il est sélectionné */
@@ -527,8 +525,6 @@ input::-o-outer-spin-button {
 /* Affichage par défaut du bouton radio personnalisé non*/
 .main.formulaire-2 .form-zone .champ-permis .permis-non input[type=radio] + label:before {
     content: url('../elements/permis-non.png');
-    margin-right: 8px;
-    margin-top: 10px;
 }
 
 /* Affichage du bouton radio personnalisé non quand il est sélectionné */
@@ -553,5 +549,5 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .divider-milieu,
 .main.formulaire-4 .form-zone .divider-milieu {
 	background-color: #E4E4E4;
-	width: 10px;
+	width: 0.7vw;
 }
