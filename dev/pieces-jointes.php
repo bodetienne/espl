@@ -36,7 +36,7 @@
 		    </div>
 				<div class="main formulaire-2">
 					<img class="progression-mds" src="elements/barre-progression-mds-2.png">
-					<h1 class="titre-mds">PIÈCE A JOINDRE</h1>
+					<h1 class="titre-mds">PIÈCES A JOINDRE</h1>
 					<div class="form-block">
 					  <div class="form-zone">
               <div class="liste-pieces-jointes">
@@ -55,7 +55,7 @@
                   </div>
                 </div>
                 <div class="liste dernier-diplome">
-                  <label class="element element-3"><div class="round-list-orange"> </div>Dernier dimplôme obtenu</label>
+                  <label class="element element-3"><div class="round-list-orange"> </div>Dernier diplôme obtenu</label>
                   <div class="upload">
                     <label for="file" class="label-file-orange"> <img src="elements/upload-button.png" alt="upload-button"> Télécharger</label>
                     <input id="file" class="input-file" type="file">
