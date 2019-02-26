@@ -79,11 +79,11 @@
 }
 
 .form-main .nom-form {
-	font-size: 1.4em;
+	font-size: 1.1em;
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
 	text-align: center;
-	margin-bottom: 4vh;
+	margin-bottom: 1vh;
 	color: #363635;
 }
 
@@ -193,7 +193,7 @@
 .form-main .container-lgn {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	height: 73vh;
 }
 
 .form-main .container-lgn .container-titre {
@@ -213,6 +213,7 @@
 
 .form-main .container-lgn .lgn {
 	margin: auto;
+	margin-left: 0;
 	display: flex;
 	max-height: 30vh;
 }
@@ -223,8 +224,8 @@
 	/* padding: 18px 50px; */
 	text-transform: uppercase;
 	text-decoration: none;
-	height: 8vh;
-	width: 10vw;
+	height: 7vh;
+	width: 9vw;
 	transition: color .5s, border .5s, background .5s, transform 2s;
 }
 

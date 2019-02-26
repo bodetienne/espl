@@ -33,6 +33,7 @@
 .block-btn .btn-choix{
 	color: #707070;
 	background: #ffffff;
+	font-size: .8em;
 }
 
 .btn-school #btn1 {
@@ -45,7 +46,7 @@
 
 .block-btn #btn3 {
 	border: 2px solid #F74D9D;
-	margin-top: 2.8vh;
+	/*margin-top: 2.8vh;*/
 }
 
 .block-btn #btn4 {
@@ -67,7 +68,7 @@
 	margin: auto;
 	margin-bottom: .4rem;
 	font-family: "Ubuntu";
-	font-size: 18px;
+	font-size: 16px;
 	color: #707070;
 }
 
@@ -85,7 +86,7 @@
 .txt-bachelor .hashtag-groupe p {
 	margin: auto;
 	font-family: "Ubuntu";
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .txt-bachelor .hashtag-groupe span {
@@ -96,7 +97,7 @@
 .txt-bachelor .hashtag-groupe p {
 	margin-right: .4rem;
 	color: #707070;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 .lgn .check-group {
@@ -121,6 +122,8 @@
   font-weight: normal;
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   margin-bottom: 0.2em;
+	margin-top: 0.2em;
+	font-size: 1em;
 }
 
 .main .container-lgn .container-button {

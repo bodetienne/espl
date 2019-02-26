@@ -118,7 +118,7 @@
 .main.formulaire-2 .progression-mds,
 .main.formulaire-3 .progression-mds,
 .main.formulaire-4 .progression-mds {
-	margin: 40px auto;
+	margin: 3vh auto;
 	display: flex;
 	width: 35vw;
 }
@@ -239,7 +239,7 @@
 .main.formulaire-2 .container-button .btn-save:hover,
 .main.formulaire-2 .container-button .btn-save:focus,
 .main.formulaire-3 .container-button .btn-save:hover,
-.main.formulaire-3 .container-button .btn-save:focus, 
+.main.formulaire-3 .container-button .btn-save:focus,
 .main.formulaire-4 .container-button .btn-save:hover,
 .main.formulaire-4 .container-button .btn-save:focus {
 	color: #ffffff;
@@ -549,7 +549,7 @@ input::-o-outer-spin-button {
 
 
 /*Séparateur deux parties du formulaire*/
-.main.formulaire-2 .form-zone .divider-milieu, 
+.main.formulaire-2 .form-zone .divider-milieu,
 .main.formulaire-3 .form-zone .divider-milieu,
 .main.formulaire-4 .form-zone .divider-milieu {
 	background-color: #E4E4E4;
