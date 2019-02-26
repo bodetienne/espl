@@ -33,6 +33,7 @@
 							<div class="sol"></div>
 						</div>
 					</div>
+					
 					<div class="main formulaire-2">
 						<img class="progression-mds" src="elements/barre-progression-mds-2.png">
 						<h1 class="titre-mds">Présente-toi</h1>
