@@ -35,6 +35,8 @@ class MainController extends Controller
       return $this->render('formation-1-mds.html.twig');
     } elseif ($nomdepage == "form-dossier-reflexion") {
       return $this->render('form-dossier-reflexion.html.twig');
+    } elseif ($nomdepage == "aide-mds") {
+      return $this->render('aide-mds.html.twig');
     }else {
       var_dump($nomdepage);
     }
