@@ -1,0 +1,262 @@
+/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+
+/** FOND MARTIN **/
+
+/*Mur*/
+.fond-martin .mur {
+	height: 43vh;
+	display: flex;
+}
+
+.fond-martin .mur .col-1 {
+	background-color: #69B4D2;
+	height: 100%;
+	width: 41.5%;
+}
+
+.fond-martin .mur .col-2 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 38.5%;
+}
+
+	.fond-martin .mur .col-2 .blanc {
+		background-color: #ffffff;
+		height: 33.5%;
+	}
+
+	.fond-martin .mur .col-2 .bleu {
+		background-color: #24B7C4;
+		height: 66.5%;
+	}
+
+.fond-martin .mur .col-3 {
+	background-color: #363635;
+	height: 100%;
+	width: 25%;
+}
+
+/*Trottoir*/
+.fond-martin .trottoir .ligne-1 {
+	background-color: #666666;
+	height: 2vh;
+}
+
+.fond-martin .trottoir .ligne-2 {
+	background-color: #585858;
+	height: 2vh;
+}
+
+
+/*Sol*/
+.fond-martin .sol {
+	background-color: #397694;
+	height: 30vh;
+}
+
+
+
+/** STYLE FUNCTIONS **/
+
+
+/** INPUT TEXT **/
+
+.form-main {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-main .nom-form {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-family: "Ubuntu-condensed";
+	text-align: center;
+	margin-bottom: 1vh;
+	color: #363635;
+}
+
+.form-main .textfield {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.textfield .input-group {
+	margin: auto;
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.textfield .input-group a {
+	margin: auto;
+	margin-left: 2rem;
+	display: flex;
+}
+
+.info-button {
+	margin: auto;
+	width: 27px;
+}
+
+.textfield .textfield-label {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	color: #7C7C7C;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 1.1rem;
+	padding: 1rem 0;
+}
+
+.textfield .input-group .textfield-input {
+	border: 1px solid rgba(112, 112, 112, .4);
+	padding : 1rem 7rem 1rem 1.5rem;
+	margin: auto;
+	margin-right: 2rem;
+}
+
+.textfield .input-group .textfield-input:focus {
+	border: 1px solid #17E5F5;
+	outline: none;
+}
+
+/** NAV FORM **/
+
+.form-main .nav-form {
+	display: flex;
+	margin: auto;
+	margin-top: 1.5rem;
+}
+
+.form-main .nav-form .btn-form {
+	margin: auto 1rem;
+	border: none;
+	padding: .8rem 2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .5s, border .5s, background .5s, transform 2s;
+}
+
+
+.form-main .nav-form .btn-precedent {
+	background: #E7E7E7;
+	color: #A9A9A9;
+}
+
+.form-main .nav-form .btn-precedent:hover,
+.form-main .nav-form .btn-precedent:focus,
+.form-main .nav-form .btn-precedent:active {
+	color: #E7E7E7;
+	background: #A9A9A9;
+}
+
+.form-main .nav-form .btn-enregistrer {
+	color: #F7B60A;
+	border: 1px solid #F7B60A;
+}
+
+.form-main .nav-form .btn-enregistrer:hover,
+.form-main .nav-form .btn-enregistrer:focus,
+.form-main .nav-form .btn-enregistrer:active {
+	color: #ffffff;
+	background: #F7B60A;
+}
+
+.form-main .nav-form .btn-suivant {
+	color: #ffffff;
+	background: #FF8A22;
+}
+
+.form-main .nav-form .btn-suivant:hover,
+.form-main .nav-form .btn-suivant:focus,
+.form-main .nav-form .btn-suivant:active {
+	background: #E76D00;
+}
+
+.form-star {
+	color: #FF8A22;
+}
+
+/** BOUTON CHOIX **/
+
+.form-main .container-lgn {
+	display: flex;
+	flex-direction: column;
+	height: 73vh;
+}
+
+.form-main .container-lgn .container-titre {
+	width: 80%;
+	margin: 2vh auto;
+}
+
+.form-main .container-titre h2 {
+	/* margin: 1rem auto; */
+	margin: 0;
+	font-size: 1.2rem;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	color: #7C7C7C;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.form-main .container-lgn .lgn {
+	margin: auto;
+	margin-left: 0;
+	display: flex;
+	max-height: 30vh;
+}
+
+.container-lgn .lgn .btn-choix {
+	margin: auto 2.5vw;
+	border: none;
+	/* padding: 18px 50px; */
+	text-transform: uppercase;
+	text-decoration: none;
+	height: 7vh;
+	width: 9vw;
+	transition: color .5s, border .5s, background .5s, transform 2s;
+}
+
+button:focus {
+	outline:0;
+}
+
+/** CHECKLIST **/
+
+.form-main .form-checklist {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+}
+
+.form-main .form-checklist .check-ligne {
+	display: flex;
+	margin: auto;
+}
+
+.form-checklist .checkmark-école {
+	margin: auto 1rem;
+}
+
+/* .form-checklist input[type="radio"]:not(:checked),
+.form-checklist input[type="radio"]:checked */
+.form-checklist .radio-école,
+.form-checklist .check-école {
+	margin: auto;
+	margin-left: 0;
+	padding: 1.5em;
+	background: none;
+	border: none;
+}

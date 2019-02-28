@@ -1,0 +1,192 @@
+	²/** FONTS **/
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url('../fonts/ubuntu/UbuntuCondensed-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+/**  PAGE FORMATION **/
+
+.page-presentation .boutons {
+	display: flex;
+}
+
+.block-main .groupe-formation {
+	background: #EBEBEB;
+	display: flex;
+	flex-direction: column;
+	/* margin: 0 3rem 0 0; */
+	padding: 0 1vw;
+}
+
+.block-main .groupe-formation .btn-school {
+	margin: auto;
+	display: flex;
+}
+
+.btn-school .btn-choix,
+.block-btn .btn-choix{
+	color: #707070;
+	background: #ffffff;
+	font-size: .8em;
+}
+
+.btn-school #btn1 {
+	border: 2px solid #17E5F5;
+}
+
+.btn-school #btn2 {
+	border: 2px solid #50A7FF;
+}
+
+.block-btn #btn3 {
+	border: 2px solid #F74D9D;
+	/*margin-top: 2.8vh;*/
+}
+
+.block-btn #btn4 {
+	border: 2px solid #9B9B9B;
+}
+
+.block-btn #btn5 {
+	border: 2px solid #343434;
+}
+
+
+.block-main .groupe-formation .txt-bachelor {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+}
+
+.groupe-formation .txt-bachelor .cycle-mds {
+	margin: auto;
+	margin-bottom: .4rem;
+	font-family: "Ubuntu";
+	font-size: 16px;
+	color: #707070;
+}
+
+.groupe-formation .txt-bachelor .hashtag-groupe {
+		display: flex;
+		margin: 0 auto;
+}
+
+.groupe-formation .txt-bachelor .ligne-hashtag {
+	display: flex;
+	margin: auto;
+}
+
+.txt-bachelor .hashtag-groupe span,
+.txt-bachelor .hashtag-groupe p {
+	margin: auto;
+	font-family: "Ubuntu";
+	font-size: 15px;
+}
+
+.txt-bachelor .hashtag-groupe span {
+	color: #17E5F5;
+	margin-right: 0;
+}
+
+.txt-bachelor .hashtag-groupe p {
+	margin-right: .4rem;
+	color: #707070;
+	font-size: 15px;
+}
+
+.lgn .check-group {
+	margin: 0 3vw;
+}
+
+.spé-grp .checkmark-école {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  padding: 0 .3em;
+	font-size: 14px;
+}
+
+.containe-lgn .spé-grp .check-ligne {
+  padding: .4em 0;
+}
+
+.spé-grp .check-ligne .more-button {
+  width: 1.2em;
+}
+
+.lgn .spé-grp .spé-title{
+  font-weight: normal;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.2em;
+	margin-top: 0.2em;
+	font-size: 1em;
+}
+
+.main .container-lgn .container-button {
+	display: flex;
+	margin-top: 3vh;
+}
+
+.container-lgn .container-button .precedent {
+	display: flex;
+	margin: auto 1vw auto auto;
+	text-decoration: none;
+}
+
+.container-lgn .container-button .suivant {
+	display: flex;
+	margin: auto auto auto 1vw;
+	text-decoration: none;
+}
+
+.container-lgn .container-button button {
+	margin: auto;
+	padding: 20px 30px;
+	border-style: solid;
+	border-width: 1px;
+	text-transform: uppercase;
+}
+
+
+.container-lgn .container-button .btn-next,
+.container-lgn .container-button .btn-next {
+	color: #ffffff;
+	background-color: #FF8A22;
+	border-color: #FF8A22;
+}
+
+.container-lgn .container-button .btn-next:hover,
+.container-lgn .container-button .btn-next:focus {
+	color: #FF8A22;
+	background-color: #ffffff;
+}
+
+.container-lgn .container-button .btn-previous {
+	color: #A9A9A9;
+	background-color: #E7E7E7;
+	border-color: #E7E7E7;
+}
+
+.container-lgn .container-button .btn-previous:hover,
+.container-lgn .container-button .btn-previous:focus {
+	color: #E7E7E7;
+	background-color: #A9A9A9;
+	border-color: #A9A9A9;
+}
+
+.container-lgn .container-button .btn-save {
+	color: #F7B60A;
+	background-color: #ffffff;
+	border-color: #F7B60A;
+}
+
+.container-lgn .container-button .btn-save:hover,
+.container-lgn .container-button .btn-save:focus {
+	color: #ffffff;
+	background-color: #F7B60A;
+	border-color: #F7B60A;
+}

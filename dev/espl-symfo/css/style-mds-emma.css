@@ -1,0 +1,258 @@
+.form-main{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.block-main .entireblock {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.form-main{
+  background-color: #2B2B2B;
+  position:none;
+
+
+  }
+.form-main .block-left {
+  width: 50%;
+  position: relative;
+}
+
+.form-main .block-left .logo-ecole-contact img{
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+.form-main .block-left h2{
+  color: white;
+  font-family: ubuntu condensed;
+  font-size: 45px;
+  text-align: center;
+}
+.contact .block-left h3{
+  color: #4BC4CF;
+  text-align: center;
+  font-family: ubuntu condensed;
+  font-weight: lighter;
+}
+
+
+.contact .block-right{
+  margin-left: 50vw;
+  width: 50%;
+  position: absolute;
+}
+
+.contact .block-right .cadre-contact{
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  width: 35vw;
+  margin-top: 3%;
+}
+
+.contact .entire-block {
+  display: flex;
+  max-height: 100vh;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+
+
+/* Titre : Envoie nous un message ! */
+.contact2-form {
+  width: 100%;
+}
+
+.contact2-form-title {
+  display: block;
+  font-family: ubuntu condensed;
+  font-size: 25px;
+  color:#24B7C4;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 37px;
+}
+
+
+
+/*------------------------------------------------------------------
+[  ]*/
+
+.wrap-input2 {
+  max-width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+
+.input2 {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  font-family: ubuntu condensed;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.focus-input2 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #24B7C4;
+  background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
+  background: -o-linear-gradient(45deg, #d5007d, #e53935);
+  background: -moz-linear-gradient(45deg, #d5007d, #e53935);
+  background: linear-gradient(45deg, #d5007d, #e53935);
+}
+
+.focus-input2::after {
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+
+  top: 0px;
+  left: 0;
+
+  font-family: ubuntu condensed;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+/*---------------------------------------------*/
+input.input2 {
+  height: 45px;
+}
+
+input.input2 + .focus-input2::after {
+  top: 16px;
+  left: 0;
+}
+
+textarea.input2 {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+textarea.input2 + .focus-input2::after {
+  top: 16px;
+  left: 0;
+}
+
+.input2:focus + .focus-input2::after {
+  top: -13px;
+}
+
+.input2:focus + .focus-input2::before {
+  width: 100%;
+}
+
+.has-val.input2 + .focus-input2::after {
+  top: -13px;
+}
+
+.has-val.input2 + .focus-input2::before {
+  width: 100%;
+}
+
+
+
+.container-contact2-form-btn{
+  text-align: center;
+  font-family: ubuntu condensed;
+  color: white;
+}
+
+.wrap-contact2-form-btn{
+  border-radius: 12px;
+  width: auto;
+  position: relative;
+}
+.contact2-form-bgbtn{
+
+}
+.contact2-form-btn {
+  display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 20px;
+min-width: 244px;
+height: 50px;
+border: none;
+
+  background: #24B7C4;
+  padding: 13px;
+}
