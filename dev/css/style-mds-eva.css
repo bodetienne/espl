@@ -367,7 +367,7 @@ input::-o-outer-spin-button {
 .main.formulaire-3 .form-zone .textfield-input,
 .main.formulaire-4 .form-zone .textfield-input,
 .main.formulaire-2 .form-zone .champ-secu .number-input {
-	width: 94%;
+	width: 90%;
 }
 
 /*Largeur champs code postal + ville*/
