@@ -3,21 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Candidature My Digital School</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
-		<link rel="stylesheet" href="css/style-mds-eva.css"> 
-		<link rel="stylesheet" href="css/style-mds-alex.css"> 
-		<link rel="stylesheet" href="css/style-mds-structure.css"> 		
-		<link rel="stylesheet" href="css/style-mds-header-footer.css"> 
-		<link rel="icon" type="img" href="elements/favicon.ico.png">
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+		{% endblock %}
 	</head>
 
 	<body>
 		<main class="form-main">
 			<div class="block-main">
-		
+				{% include "header.html.twig" %}
+
 					<div class="aside">
-						<?php include 'header.php'; ?>
 						<div class="fond-martin">
 							<div class="mur">
 								<div class="col-1"></div>
@@ -35,36 +36,36 @@
 						</div>
 					</div>
 					<div class="main formulaire-1">
-						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
+						<img class="progression-mds" src="{{ asset('../elements/barre-progression-mds-1.png') }}">
 						<h1 class="titre-mds">Présente-toi</h1>
 						<div class="form-1">
 							<div class="nom-prenom">
 								<div class="textfield">
 									<div class="input-group">
 										<input class="textfield-input" type="text" name="textfield" placeholder="Prénom *">
-									</div>								
+									</div>
 								</div>
 								<div class="textfield">
 									<div class="input-group">
 										<input class="textfield-input" type="text" name="textfield" placeholder="Nom *">
-									</div>								
+									</div>
 								</div>
 							</div>
 
 							<div class="container-button">
-								<a class="lien suivant" href="form-2-mds.php">
+								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/form-2-mds">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>
-						</div>						
+						</div>
 					</div>
 				</div>
-							
 
-			<?php include 'footer.php';?>
+
+			{% include "footer.html.twig" %}
 		</main>
-	    <script type="text/javascript" src="js/jquery.min.js"></script>
-      	<script type="text/javascript" src="js/effects.js"></script>
+
+
 	</body>
 
 </html>

@@ -18,6 +18,28 @@ class MainController extends Controller
     return $this->render('home.html.twig');
   }
 
+  public function pageName($nomdepage){
+    if($nomdepage == "presentation"){
+      return $this->render('presentation-mds.html.twig');
+    } elseif ($nomdepage == "form-1-mds") {
+      return $this->render('form-1-mds.html.twig');
+    } elseif ($nomdepage == "connexion-mds") {
+      return $this->render('home.html.twig');
+    } elseif ($nomdepage == "form-2-mds") {
+      return $this->render('form-2-mds.html.twig');
+    } elseif ($nomdepage == "form-3-mds") {
+      return $this->render('form-3-mds.html.twig');
+    } elseif ($nomdepage == "form-4-mds") {
+      return $this->render('form-4-mds.html.twig');
+    } elseif ($nomdepage == "formation-1-mds") {
+      return $this->render('formation-1-mds.html.twig');
+    } elseif ($nomdepage == "form-dossier-reflexion") {
+      return $this->render('form-dossier-reflexion.html.twig');
+    }else {
+      var_dump($nomdepage);
+    }
+  }
+
 }
 
 ?>

@@ -1,6 +1,6 @@
 <footer class="block-footer">
 	<div class="help mds">
-		<a href="aide-mds.php" class="bouton-help"><img src="./elements/help-button.png"></a>
+		<a href="aide-mds.php" class="bouton-help"><img src="{{ asset('../elements/help-button.png') }}"</a>
 	</div>
 	<div class="footer mds">
 		<ul>
@@ -12,3 +12,89 @@
 		</ul>
 	</div>
 </footer>
+{% block javascript %}
+<script type="text/javascript" src="{{ asset('../js/jquery.min.js')}}"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".btn-choix").mouseover(function(){
+				var id1 = $(this).attr('id');
+				console.log(id1);
+				var color1 = $(this).css('color');
+				var bg1 = $(this).css('background');
+				var border1 = $(this).css('border-color');
+				var newcolor = bg1;
+				var newbg = border1;
+				$('#'+id1).click(function(){
+					console.log(newcolor);
+					console.log(newbg);
+					$(this).css('color', "white");
+					$(this).css('background', newbg);
+				});
+			});
+			//Animation bouton help quand la souris passe dessus
+			$('.block-footer .help.mds .bouton-help img').mouseover(function() {
+				$(this).attr('src', "{{ asset('../elements/help-button-hover.png') }}");
+			});
+			//Réinitialisation bouton help quand la souris quitte l'image
+			$('.block-footer .help.mds .bouton-help img').mouseout(function() {
+				$(this).attr('src', "{{ asset('../elements/help-button.png') }}");
+			});
+		});
+
+		var input = document.querySelector('input');
+		var preview = document.querySelector('.preview');
+
+		var img = new Image(50, 50);
+		img.src = "elements/permis-oui-hover.png";
+
+		input.style.opacity = 0;
+
+		input.addEventListener('change', updateImageDisplay);
+
+		function updateImageDisplay(){
+		  while(preview.firstChild){
+		    preview.removeChild(preview.firstChild);
+		  }
+
+		  var curFiles = input.files;
+		  if (curFiles.length === 0) {
+		    var para = document.createElement('p');
+		    para.textContent = 'Pas de fichier chargé pour le moment';
+		    preview.appendChild(para);
+		  }
+		  else {
+		    var list = document.createElement('p');
+		    preview.appendChild(list);
+		    for (var i = 0; i < curFiles.length; i++){
+		      var fileTypes = [
+		        'application/pdf'
+		      ]
+
+
+
+		      function validFileType(file) {
+		        for(var i = 0; i < fileTypes.length; i++) {
+		          if(file.type === fileTypes[i]) {
+		            return true;
+		          }
+		        }
+		        return false;
+		      }
+
+
+		      if(validFileType(curFiles[i])){
+
+		        list.textContent = curFiles[i].name + img;
+		      }
+		      else {
+		        list.textContent = curFiles[i].name + ' : Fichier non valide.';
+		      }
+
+		      list;
+		    }
+		  }
+		}
+
+	</script>
+{% endblock %}

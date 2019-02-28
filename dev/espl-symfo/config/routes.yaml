@@ -1,3 +1,7 @@
 index:
    path: /home/
    controller: App\Controller\MainController::index
+
+presentation:
+    path: /{nomdepage}/
+    controller: App\Controller\MainController::pageName

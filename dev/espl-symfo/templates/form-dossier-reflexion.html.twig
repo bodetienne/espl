@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Candidature My Digital School</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
-		<link rel="stylesheet" href="css/style-mds-eva.css">
-		<link rel="stylesheet" href="css/style-mds-alex.css">
-		<link rel="stylesheet" href="css/style-mds-structure.css">
-		<link rel="stylesheet" href="css/style-mds-header-footer.css">
-		<link rel="icon" type="img" href="elements/favicon.ico.png">
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-alex.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+		{% endblock %}
 	</head>
 
 	<body>
@@ -17,7 +19,7 @@
 			<div class="block-main">
 
 					<div class="aside">
-						<?php include 'header.php'; ?>
+						{% include "header.html.twig" %}
 						<div class="fond-martin">
 							<div class="mur">
 								<div class="col-1"></div>
@@ -35,7 +37,7 @@
 						</div>
 					</div>
 					<div class="main dossier-reflexion">
-						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
+						<img class="progression-mds" src="{{ asset('../elements/barre-progression-mds-1.png') }}">
 						<h1 class="titre-mds">Dossier de Reflexion</h1>
             <h3 class="renseignement-mds">Réponds aux questions suivantes sur un documents à part (format PDF), en précisant clairement ton nom, prénom et le numéro de la question traitée.</h3>
 						<div class="dossier-questions">
@@ -77,11 +79,8 @@
 				</div>
 
 
-			<?php include 'footer.php';?>
+				{% include "footer.html.twig" %}
 		</main>
-	    <script type="text/javascript" src="js/jquery.min.js"></script>
-      	<script type="text/javascript" src="js/effects.js"></script>
-				<script type="text/javascript" src="js/dossier-reflexion.js"></script>
 	</body>
 
 </html>
