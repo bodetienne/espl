@@ -3,14 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Candidature My Digital School</title>
-		{% block stylesheets %}
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-alex.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
-			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
-		{% endblock %}
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
+		<link rel="stylesheet" href="css/style-mds-structure.css">
+		<link rel="stylesheet" href="css/style-mds-header-footer.css">
+		<link rel="stylesheet" href="css/style-mds-alex.css">
+		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
 
 	<body>
@@ -22,7 +20,7 @@
 							<div class="infos_perso">
 								<button class="title perso">
 									<h2 class="perso">1 - Infos personnelles</h2>
-									<img class="fleche" src="{{ asset('../elements/angle-arrow-down.png') }}">
+									<img src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -34,7 +32,7 @@
 							<div class="infos_garants">
 								<button class="title garant">
 									<h2 class="garant">2 - Infos garants </h2>
-									<img class="fleche" src="{{ asset('../elements/angle-arrow-down.png') }}">
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -46,7 +44,7 @@
 							<div class="infos_formation">
 								<button class="title formation">
 									<h2 class="formation">3 - Formation souhaitée</h2>
-									<img class="fleche" src="{{ asset('../elements/angle-arrow-down.png') }}">
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -58,7 +56,7 @@
 							<div class="infos_dossier">
 								<button class="title dossier">
 									<h2 class="dossier">4 - Dossier de réflexion</h2>
-									<img class="fleche" src="{{ asset('../elements/angle-arrow-down.png') }}">
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -70,7 +68,7 @@
 							<div class="infos_pj">
 								<button class="title pj">
 									<h2 class="pj">5 - Pièces jointes</h2>
-									<img class="fleche" src="{{ asset('../elements/angle-arrow-down.png') }}">
+									<img class="fleche" src="elements/angle-arrow-down.png">
 								</button>
 								<div class="questions">
 									<ul>
@@ -84,7 +82,7 @@
 					<!-- FIN PARTIE ASIDE -->
 					<!-- PARTIE MAIN (droite)-->
 	        <div class="main aide">
-						{% include "header.html.twig" %}
+						<?php include 'header.php';?>
 						<div class="questions">
 							<div class="title_question">
 								<h1 class="titre-mds">Besoin d'aide ou d'une réponse à une question ?</h1>
@@ -106,27 +104,10 @@
 					</div>
 				</div>
 				<!-- FIN PARTIE MAIN -->
-			{% include "footer.html.twig" %}
+			<?php include 'footer.php';?>
 		</main>
-		{% block javascript %}
-			<script>
-			$('.title').click(function(e) {
-			  	e.preventDefault();
-
-			    var $this = $(this);
-
-			    if ($this.next().hasClass('show')) {
-			        $this.next().removeClass('show');
-			        $this.next().slideUp(350);
-
-			    } else {
-			        $this.parent().parent().find('.questions').removeClass('show');
-			        $this.parent().parent().find('.questions').slideUp(350);
-			        $this.next().toggleClass('show');
-			        $this.next().slideToggle(350);
-			    }
-			});
-		</script>
-	{% endblock %}
+	    <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/effects.js"></script>
+			<script type="text/javascript" src="js/aide.js"></script>
 	</body>
 </html>

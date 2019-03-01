@@ -3,15 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Candidature My Digital School</title>
-		{% block stylesheets %}
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-alex.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
-			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
-		{% endblock %}
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
+		<link rel="stylesheet" href="css/style-mds-eva.css">
+		<link rel="stylesheet" href="css/style-mds-alex.css">
+		<link rel="stylesheet" href="css/style-mds-structure.css">
+		<link rel="stylesheet" href="css/style-mds-header-footer.css">
+		<link rel="icon" type="img" href="elements/favicon.ico.png">
 	</head>
 
 	<body>
@@ -19,7 +17,7 @@
 			<div class="block-main">
 
 					<div class="aside">
-						{% include "header.html.twig" %}
+						<?php include 'header.php'; ?>
 						<div class="fond-martin">
 							<div class="mur">
 								<div class="col-1"></div>
@@ -37,7 +35,7 @@
 						</div>
 					</div>
 					<div class="main dossier-reflexion">
-						<img class="progression-mds" src="{{ asset('../elements/barre-progression-mds-1.png') }}">
+						<img class="progression-mds" src="elements/barre-progression-mds-1.png">
 						<h1 class="titre-mds">Dossier de Reflexion</h1>
             <h3 class="renseignement-mds">Réponds aux questions suivantes sur un documents à part (format PDF), en précisant clairement ton nom, prénom et le numéro de la question traitée.</h3>
 						<div class="dossier-questions">
@@ -79,65 +77,11 @@
 				</div>
 
 
-				{% include "footer.html.twig" %}
-				{% block javascript %}
-					<script>
-						var input = document.querySelector('input');
-						var preview = document.querySelector('.preview');
-
-						var img = new Image(50, 50);
-						img.src = "elements/permis-oui-hover.png";
-
-						input.style.opacity = 0;
-
-						input.addEventListener('change', updateImageDisplay);
-
-						function updateImageDisplay(){
-							while(preview.firstChild){
-								preview.removeChild(preview.firstChild);
-							}
-
-							var curFiles = input.files;
-							if (curFiles.length === 0) {
-								var para = document.createElement('p');
-								para.textContent = 'Pas de fichier chargé pour le moment';
-								preview.appendChild(para);
-							}
-							else {
-								var list = document.createElement('p');
-								preview.appendChild(list);
-								for (var i = 0; i < curFiles.length; i++){
-									var fileTypes = [
-										'application/pdf'
-									]
-
-
-
-									function validFileType(file) {
-										for(var i = 0; i < fileTypes.length; i++) {
-											if(file.type === fileTypes[i]) {
-												return true;
-											}
-										}
-										return false;
-									}
-
-
-									if(validFileType(curFiles[i])){
-
-										list.textContent = curFiles[i].name + img;
-									}
-									else {
-										list.textContent = curFiles[i].name + ' : Fichier non valide.';
-									}
-
-									list;
-								}
-							}
-						}
-					</script>
-				{% endblock %}
+			<?php include 'footer.php';?>
 		</main>
+	    <script type="text/javascript" src="js/jquery.min.js"></script>
+      	<script type="text/javascript" src="js/effects.js"></script>
+				<script type="text/javascript" src="js/dossier-reflexion.js"></script>
 	</body>
 
 </html>
