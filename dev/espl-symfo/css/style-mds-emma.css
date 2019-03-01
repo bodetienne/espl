@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Ubuntu-condensed";
+	src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
 .form-main{
   height: 100%;
   width: 100%;
@@ -29,14 +34,14 @@
 
 .form-main .block-left h2{
   color: white;
-  font-family: ubuntu condensed;
+  font-family:  "Ubuntu-condensed";
   font-size: 45px;
   text-align: center;
 }
 .contact .block-left h3{
   color: #4BC4CF;
   text-align: center;
-  font-family: ubuntu condensed;
+  font-family:  "Ubuntu-condensed";
   font-weight: lighter;
 }
 
@@ -105,7 +110,7 @@ textarea:-ms-input-placeholder { color: #999999; }
 
 .contact2-form-title {
   display: block;
-  font-family: ubuntu condensed;
+  font-family:  "Ubuntu-condensed";
   font-size: 25px;
   color:#24B7C4;
   line-height: 1.2;
@@ -130,7 +135,7 @@ textarea:-ms-input-placeholder { color: #999999; }
   display: block;
   width: 100%;
   padding-top: 15px;
-  font-family: ubuntu condensed;
+  font-family: "Ubuntu-condensed";
   font-size: 18px;
   color: #555555;
   line-height: 1.2;
@@ -175,7 +180,7 @@ textarea:-ms-input-placeholder { color: #999999; }
   top: 0px;
   left: 0;
 
-  font-family: ubuntu condensed;
+  font-family:  "Ubuntu-condensed";
   font-size: 13px;
   color: #999999;
   line-height: 1.2;
@@ -228,7 +233,7 @@ textarea.input2 + .focus-input2::after {
 
 .container-contact2-form-btn{
   text-align: center;
-  font-family: ubuntu condensed;
+  font-family:  "Ubuntu-condensed";
   color: white;
 }
 
