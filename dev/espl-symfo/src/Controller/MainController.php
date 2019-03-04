@@ -39,7 +39,9 @@ class MainController extends Controller
       return $this->render('contact.html.twig');
     } elseif ($nomdepage == "pieces-jointes") {
       return $this->render('pieces-jointes.html.twig');
-    }  else {
+    } elseif ($nomdepage == "connexion-mds") {
+      return $this->render('connexion-mds.html.twig');
+    } else {
       return $this->render('error404.html.twig');
     }
   }
