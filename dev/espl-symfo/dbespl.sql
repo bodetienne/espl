@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 04 mars 2019 à 15:08
+-- Généré le :  lun. 04 mars 2019 à 15:19
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.10
 
@@ -32,17 +32,17 @@ CREATE TABLE `candidat` (
   `id` int(11) NOT NULL,
   `nom_candidat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `prenom_candidat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `jour_naissance_candidat` int(11) NOT NULL,
-  `mois_naissance_candidat` int(11) NOT NULL,
-  `annee_naissance_candidat` int(11) NOT NULL,
+  `jour_naissance_candidat` int(2) NOT NULL,
+  `mois_naissance_candidat` int(2) NOT NULL,
+  `annee_naissance_candidat` int(4) NOT NULL,
   `lieu_naissance_candidat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `mail_candidat` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `fixe_candidat` int(11) NOT NULL,
-  `mobile_candidat` int(11) NOT NULL,
+  `fixe_candidat` int(10) NOT NULL,
+  `mobile_candidat` int(10) NOT NULL,
   `adresse_candidat` varchar(70) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `cp_candidat` int(11) NOT NULL,
+  `cp_candidat` int(5) NOT NULL,
   `ville_candidat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `secu_candidat` int(11) NOT NULL,
+  `secu_candidat` int(15) NOT NULL,
   `permis_candidat` tinyint(1) NOT NULL,
   `code_acces_candidat` varchar(6) COLLATE utf8mb4_unicode_ci NOT NULL,
   `etat_dossier_candidat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -97,10 +97,10 @@ CREATE TABLE `garant` (
   `nom_garant` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `prenom_garant` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `mail_garant` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tel_garant` int(11) NOT NULL,
+  `tel_garant` int(10) NOT NULL,
   `lien_parente` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `adresse_garant` varchar(70) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `cp_garant` int(11) NOT NULL,
+  `cp_garant` int(5) NOT NULL,
   `ville_garant` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `profession_garant` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `entreprise_garant` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
