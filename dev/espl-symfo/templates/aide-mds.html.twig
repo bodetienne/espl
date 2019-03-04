@@ -26,8 +26,8 @@
 								</button>
 								<div class="questions">
 									<ul>
-										<p>Pourquoi me demande-t-on mon numéro de sécurité sociale ?</p>
-										<p>Pourquoi me demandez-vous si j'ai mon permis ?</p>
+										<a href="#part1_answer1" class="question_aide"><p>Pourquoi me demande-t-on mon numéro de sécurité sociale ?</p></a>
+										<a href="#part1_answer2" class="question_aide"><p>Pourquoi me demandez-vous si j'ai mon permis ?<p></a>
 									</ul>
 								</div>
 							</div>
@@ -38,8 +38,8 @@
 								</button>
 								<div class="questions">
 									<ul>
-										<p>Pourquoi me demande-t-on 2 garants ?</p>
-										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+										<a href="#part2_answer1" class="question_aide"><p>Pourquoi me demande-t-on 2 garants ?</p></a>
+										<a href="#part2_answer2" class="question_aide"><p>Pourquoi me demandez-vous le métier de mes parents ?</p></a>
 									</ul>
 								</div>
 							</div>
@@ -50,8 +50,8 @@
 								</button>
 								<div class="questions">
 									<ul>
-										<p>Pourquoi me demande-t-on 2 garants ?</p>
-										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+										<a href="#part3_answer1" class="question_aide"><p>Pourquoi me demande-t-on 2 garants ?</p></a>
+										<a href="#part3_answer2" class="question_aide">	<p>Pourquoi me demandez-vous le métier de mes parents ?</p></a>
 									</ul>
 								</div>
 							</div>
@@ -62,8 +62,8 @@
 								</button>
 								<div class="questions">
 									<ul>
-										<p>Pourquoi me demande-t-on 2 garants ?</p>
-										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+										<a href="#part4_answer1" class="question_aide"><p>Pourquoi me demande-t-on 2 garants ?</p></a>
+										<a href="#part4_answer2" class="question_aide"><p>Pourquoi me demandez-vous le métier de mes parents ?</p></a>
 									</ul>
 								</div>
 							</div>
@@ -74,8 +74,8 @@
 								</button>
 								<div class="questions">
 									<ul>
-										<p>Pourquoi me demande-t-on 2 garants ?</p>
-										<p>Pourquoi me demandez-vous le métier de mes parents ?</p>
+										<a href="#part5_answer1" class="question_aide"><p>Pourquoi me demande-t-on 2 garants ?</p></a>
+										<a href="#part5_answer2" class="question_aide"><p>Pourquoi me demandez-vous le métier de mes parents ?</p></a>
 									</ul>
 								</div>
 							</div>
@@ -85,7 +85,7 @@
 					<!-- PARTIE MAIN (droite)-->
 	        <div class="main aide">
 						{% include "header.html.twig" %}
-						<div class="questions">
+						<div class="question">
 							<div class="title_question">
 								<h1 class="titre-mds">Besoin d'aide ou d'une réponse à une question ?</h1>
 							</div>
@@ -95,38 +95,164 @@
 									sinon tu peux nous contacter à travers le formulaire de contact en cliquant
 									sur le bouton ci-dessous
 								</p>
-
-							</div>
-							<div class="contact">
-								<a href="contact.php">
-									<button type="button" name="contact">CONTACT</button>
-								</a>
+								<div class="contact">
+									<a href="/espl/dev/espl-symfo/public/index.php/contact">
+										<button type="button" name="contact">CONTACT</button>
+									</a>
+								</div>
 							</div>
 						</div>
+						<!-- REPONSES PARTIE 1 -->
+						<div id="part1_answer1" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demande-t-on mon numéro de sécurité sociale ?</h1>
+							</div>
+							<hr></hr>
+							<div class="answer_question">
+								<p>Trouver réponse
+								</p>
+							</div>
+						</div>
+						<div id="part1_answer2" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demandez-vous si j'ai mon Permis ?</h1>
+							</div>
+							<hr></hr>
+							<div  class="answer_question">
+								<p>Tu trouveras toutes tes réponses en parcourant le menu sur ta gauche,
+									sinon tu peux nous contacter à travers le formulaire de contact en cliquant
+									sur le bouton ci-dessous
+								</p>
+							</div>
+						</div>
+						<!-- FIN REPONSES PARTIE 1 -->
+
+						<!-- REPONSES PARTIE 2 -->
+						<div id="part2_answer1" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demande-t-on 2 garants ?</h1>
+							</div>
+							<hr></hr>
+							<div class="answer_question">
+								<p>Trouver réponse
+								</p>
+							</div>
+						</div>
+						<div id="part2_answer2" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demandez-vous le métier de mes parents ?</h1>
+							</div>
+							<hr></hr>
+							<div  class="answer_question">
+								<p>Tu trouveras toutes tes réponses en parcourant le menu sur ta gauche,
+									sinon tu peux nous contacter à travers le formulaire de contact en cliquant
+									sur le bouton ci-dessous
+								</p>
+							</div>
+						</div>
+						<!-- FIN REPONSES PARTIE 2 -->
+
+						<!-- REPONSES PARTIE 3 -->
+						<div id="part3_answer1" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demande-t-on 2 garants ?</h1>
+							</div>
+							<hr></hr>
+							<div class="answer_question">
+								<p>Trouver réponse
+								</p>
+							</div>
+						</div>
+						<div id="part3_answer2" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demandez-vous le métier de mes parents ?</h1>
+							</div>
+							<hr></hr>
+							<div  class="answer_question">
+								<p>Tu trouveras toutes tes réponses en parcourant le menu sur ta gauche,
+									sinon tu peux nous contacter à travers le formulaire de contact en cliquant
+									sur le bouton ci-dessous
+								</p>
+							</div>
+						</div>
+						<!-- FIN REPONSES PARTIE 3 -->
+
+						<!-- REPONSES PARTIE 4 -->
+						<div id="part4_answer1" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demande-t-on 2 garants ?</h1>
+							</div>
+							<hr></hr>
+							<div class="answer_question">
+								<p>Trouver réponse
+								</p>
+							</div>
+						</div>
+						<div id="part4_answer2" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demandez-vous le métier de mes parents ?</h1>
+							</div>
+							<hr></hr>
+							<div  class="answer_question">
+								<p>Tu trouveras toutes tes réponses en parcourant le menu sur ta gauche,
+									sinon tu peux nous contacter à travers le formulaire de contact en cliquant
+									sur le bouton ci-dessous
+								</p>
+							</div>
+						</div>
+						<!-- FIN REPONSES PARTIE 4 -->
+
+						<!-- REPONSES PARTIE 5 -->
+						<div id="part5_answer1" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demande-t-on 2 garants ?</h1>
+							</div>
+							<hr></hr>
+							<div class="answer_question">
+								<p>Trouver réponse
+								</p>
+							</div>
+						</div>
+						<div id="part5_answer2" class="questions">
+							<div class="title_question">
+								<h1 class="titre-mds">Pourquoi me demandez-vous le métier de mes parents ?</h1>
+							</div>
+							<hr></hr>
+							<div  class="answer_question">
+								<p>Tu trouveras toutes tes réponses en parcourant le menu sur ta gauche,
+									sinon tu peux nous contacter à travers le formulaire de contact en cliquant
+									sur le bouton ci-dessous
+								</p>
+							</div>
+						</div>
+						<!-- FIN REPONSES PARTIE 5 -->
 					</div>
-				</div>
 				<!-- FIN PARTIE MAIN -->
 			{% include "footer.html.twig" %}
 		</main>
 		{% block javascript %}
-			<script>
+		<script>
+
 			$('.title').click(function(e) {
-			  	e.preventDefault();
+			e.preventDefault();
+			var $this = $(this);
 
-			    var $this = $(this);
-
-			    if ($this.next().hasClass('show')) {
-			        $this.next().removeClass('show');
-			        $this.next().slideUp(350);
-
-			    } else {
-			        $this.parent().parent().find('.questions').removeClass('show');
-			        $this.parent().parent().find('.questions').slideUp(350);
-			        $this.next().toggleClass('show');
-			        $this.next().slideToggle(350);
-			    }
+			if ($this.next().hasClass('show')) {
+				$this.next().removeClass('show');
+			  $this.next().slideUp(350);
+			} else {
+			   $this.parent().parent().find('.questions').removeClass('show');
+			   $this.parent().parent().find('.questions').slideUp(350);
+			   $this.next().toggleClass('show');
+			   $this.next().slideToggle(350);
+			}
 			});
+
+			$('.question_aide').click(function(){
+			$(".question").css("display", "none");
+			});
+
 		</script>
-	{% endblock %}
+		{% endblock %}
 	</body>
 </html>

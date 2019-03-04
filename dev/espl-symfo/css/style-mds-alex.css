@@ -80,13 +80,23 @@
 	overflow: hidden;
 }
 
+.menu .questions a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu .questions a:visited {
+	color: black;
+}
+
 .menu .questions p {
 	font-size: 1.1em;
 	font-family: "Ubuntu-condensed";
 	font-weight: lighter;
+	text-decoration: none;
 }
 
-/* FIN PARTIE ASIDE  */
+/* FIN PARTIE ASIDE */
 
 /* PARTIE MAIN */
 
@@ -94,7 +104,6 @@
 .main.aide .header {
 	margin-top: 12vh;
 }
-
 
 .main.aide .titre-mds {
 	font-size: 1.4em;
@@ -117,8 +126,17 @@
 .main .answer_question {
 	margin: 8vh auto;
 	width: 45vw;
+	overflow: hidden;
 }
 
+
+.main .questions {
+	display: none;
+}
+
+.main .questions:target {
+	display: block;
+}
 .main .answer_question p{
 	font-size: 1.1em;
 	font-family: "Ubuntu-condensed";
