@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 04 mars 2019 à 15:19
+-- Généré le :  lun. 04 mars 2019 à 16:51
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.10
 
@@ -49,6 +49,13 @@ CREATE TABLE `candidat` (
   `id_formation` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Déchargement des données de la table `candidat`
+--
+
+INSERT INTO `candidat` (`id`, `nom_candidat`, `prenom_candidat`, `jour_naissance_candidat`, `mois_naissance_candidat`, `annee_naissance_candidat`, `lieu_naissance_candidat`, `mail_candidat`, `fixe_candidat`, `mobile_candidat`, `adresse_candidat`, `cp_candidat`, `ville_candidat`, `secu_candidat`, `permis_candidat`, `code_acces_candidat`, `etat_dossier_candidat`, `id_formation`) VALUES
+(1, 'Bodet', 'Etienne', 20, 7, 1999, 'Cholet', 'etienne.bodet@my-digital-school.org', 0, 0, 'Loublande', 79700, 'Mauléon', 0, 1, '497985', 'en_cours', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -63,6 +70,13 @@ CREATE TABLE `charge_recrutement` (
   `id_ecole` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Déchargement des données de la table `charge_recrutement`
+--
+
+INSERT INTO `charge_recrutement` (`id`, `nom_cdr`, `prenom_cdr`, `mail_cdr`, `id_ecole`) VALUES
+(1, 'Belsoeur', 'Géraldine', 'geraldine.belsoeur@espl.fr', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -73,6 +87,13 @@ CREATE TABLE `ecole` (
   `id` int(11) NOT NULL,
   `nom_ecole` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `ecole`
+--
+
+INSERT INTO `ecole` (`id`, `nom_ecole`) VALUES
+(1, 'MyDigitalSchool');
 
 -- --------------------------------------------------------
 
@@ -85,6 +106,13 @@ CREATE TABLE `formation` (
   `nom_formation` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_ecole` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `formation`
+--
+
+INSERT INTO `formation` (`id`, `nom_formation`, `id_ecole`) VALUES
+(1, 'B3 Spécialisation Développeur Web', 1);
 
 -- --------------------------------------------------------
 
@@ -106,6 +134,13 @@ CREATE TABLE `garant` (
   `entreprise_garant` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `id_candidat` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `garant`
+--
+
+INSERT INTO `garant` (`id`, `nom_garant`, `prenom_garant`, `mail_garant`, `tel_garant`, `lien_parente`, `adresse_garant`, `cp_garant`, `ville_garant`, `profession_garant`, `entreprise_garant`, `id_candidat`) VALUES
+(1, 'Bodet', 'Fabienne', 'fabienne.bodet@gmail.com', 0, 'Mère', 'Loublande', 79700, 'Mauléon', NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -238,31 +273,31 @@ ALTER TABLE `sous_question`
 -- AUTO_INCREMENT pour la table `candidat`
 --
 ALTER TABLE `candidat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `charge_recrutement`
 --
 ALTER TABLE `charge_recrutement`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `ecole`
 --
 ALTER TABLE `ecole`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `formation`
 --
 ALTER TABLE `formation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `garant`
 --
 ALTER TABLE `garant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `piece_jointe`
