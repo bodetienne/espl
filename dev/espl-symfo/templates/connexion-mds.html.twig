@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+ {% block stylesheets %}
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-emma.css') }}" media="all" />
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-etienne.css') }}" media="all" />
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+   <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+   <link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+ {% endblock %}
+
+   <meta charset="utf-8">
+   <title>Contact</title>
+</head>
+
+<body>
+ <main class="form-main contact connexion">
+   <div class="block-main">
+
+     <div class="entire-block">
+
+       <div class="block-left">
+         <div class="logo-ecole-contact">
+           <a href="/espl/dev/espl-symfo/public/index.php/presentation">
+             <img src="{{ asset('../elements/logo-mds-blanc.png') }}" alt="logo-mds-blanc">
+           </a>
+         </div>
+         <h2>Connecte-toi !</h2>
+         <h3>Tu pourras reprendre ta candidature là où tu l'avais laissée</h3>
+
+       <div class="block-right">
+         <div class="cadre-contact">
+           <form class="contact2-form validate-form"> <!-- contact2-form validate-form -->
+             <span class="contact2-form-title"><!-- contact2-form-title -->
+               Connexion
+             </span>
+
+             <div class="wrap-input2 validate-input" data-validate = "Une adresse mail valide est nécessaire: abc@lif.fr">
+               <input class="input2" type="text" name="email">
+               <span class="focus-input2" data-placeholder="Email"></span>
+             </div>
+             <div class="wrap-input2 validate-input" data-validate="Ton nom est nécessaire">
+               <input class="input2" type="password" name="password">
+               <span class="focus-input2" data-placeholder="Mot de passe"></span>
+             </div>
+
+            <a href="/espl/dev/espl-symfo/public/index.php/presentation">
+              <button class="connexion-mds" type="submit" name="submit">Se connecter</button>
+            </a>
+             <div class="no-code">
+               <input type="checkbox" name="no-code" value="code">
+               <span>Je n'ai pas reçu mon code</span>
+             </div>
+             <div class="re-start">
+               <span class="span-new">Je n'ai pas encore commencer de candidature : </span>
+             </div>
+             <a href="/espl/dev/espl-symfo/public/index.php/presentation">
+               <button class="connexion-mds new-candid">Candidater</button>
+             </a>
+           </form>
+
+         </div>
+       </div>
+     </div>
+
+   </div>
+     {% include "footer.html.twig" %}  </main>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+/*BARRE PROGRESSION*/
+.mds-bp .barre-progression {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.mds-bp .barre-progression .barre {
+	height: 0.8vh;
+	width: 35vw;
+	background-color: #E4E4E4;
+	display: flex;
+}
+
+.mds-bp .barre-progression .barre .bg-candidat {
+	background-image: linear-gradient(to right, #FFBD1D, #FF8A22);
+	display: flex;
+	flex-direction: column;
+	height: 0.8vh;
+	width: 0%;
+}
+
+.mds-bp .barre-progression .barre .bg-garants {
+	background-image: linear-gradient(to right, #FF8A22, #4BC4CF);
+	display: flex;
+	flex-direction: column;
+	height: 0.8vh;
+	width: 0%;
+}
+
+
+.mds-bp .barre-progression .barre .bg-formation {
+	background-image: linear-gradient(to right, #4BC4CF, #46A2FF);
+	display: flex;
+	flex-direction: column;
+	height: 0.8vh;
+	width: 0%;
+}
+
+
+.mds-bp .barre-progression .barre .bg-dossier {
+	background-image: linear-gradient(to right, #46A2FF, #F74D9D);
+	display: flex;
+	flex-direction: column;
+	height: 0.8vh;
+	width: 0%;
+}
+
+.mds-bp .barre-progression .ronds {
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+	position: absolute;
+	width: 35vw;
+}
+
+.mds-bp .barre-progression .rond {
+	width: 2.2vw;
+	height: 2.2vw;
+}

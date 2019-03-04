@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PieceJointe index{% endblock %}
+
+{% block body %}
+    <h1>PieceJointe index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>PhotoIdentite</th>
+                <th>ReleveNotes</th>
+                <th>Diplome</th>
+                <th>Cv</th>
+                <th>LettreMotivation</th>
+                <th>PieceIdentite</th>
+                <th>CreditsEcts</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for piece_jointe in piece_jointes %}
+            <tr>
+                <td>{{ piece_jointe.id }}</td>
+                <td>{{ piece_jointe.photoIdentite }}</td>
+                <td>{{ piece_jointe.releveNotes }}</td>
+                <td>{{ piece_jointe.diplome }}</td>
+                <td>{{ piece_jointe.cv }}</td>
+                <td>{{ piece_jointe.lettreMotivation }}</td>
+                <td>{{ piece_jointe.pieceIdentite }}</td>
+                <td>{{ piece_jointe.creditsEcts }}</td>
+                <td>
+                    <a href="{{ path('piece_jointe_show', {'id': piece_jointe.id}) }}">show</a>
+                    <a href="{{ path('piece_jointe_edit', {'id': piece_jointe.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('piece_jointe_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ReponseSpecifique index{% endblock %}
+
+{% block body %}
+    <h1>ReponseSpecifique index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>DossierReflexion</th>
+                <th>ConnaissanceEcole</th>
+                <th>ParticipationJpo</th>
+                <th>QuestionsPrealables</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for reponse_specifique in reponse_specifiques %}
+            <tr>
+                <td>{{ reponse_specifique.id }}</td>
+                <td>{{ reponse_specifique.dossierReflexion }}</td>
+                <td>{{ reponse_specifique.connaissanceEcole }}</td>
+                <td>{{ reponse_specifique.participationJpo ? 'Yes' : 'No' }}</td>
+                <td>{{ reponse_specifique.questionsPrealables }}</td>
+                <td>
+                    <a href="{{ path('reponse_specifique_show', {'id': reponse_specifique.id}) }}">show</a>
+                    <a href="{{ path('reponse_specifique_edit', {'id': reponse_specifique.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('reponse_specifique_new') }}">Create new</a>
+{% endblock %}

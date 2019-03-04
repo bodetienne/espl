@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Candidat{% endblock %}
+
+{% block body %}
+    <h1>Candidat</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ candidat.id }}</td>
+            </tr>
+            <tr>
+                <th>NomCandidat</th>
+                <td>{{ candidat.nomCandidat }}</td>
+            </tr>
+            <tr>
+                <th>PrenomCandidat</th>
+                <td>{{ candidat.prenomCandidat }}</td>
+            </tr>
+            <tr>
+                <th>JourNaissanceCandidat</th>
+                <td>{{ candidat.jourNaissanceCandidat }}</td>
+            </tr>
+            <tr>
+                <th>MoisNaissanceCandidat</th>
+                <td>{{ candidat.moisNaissanceCandidat }}</td>
+            </tr>
+            <tr>
+                <th>AnneeNaissanceCandidat</th>
+                <td>{{ candidat.anneeNaissanceCandidat }}</td>
+            </tr>
+            <tr>
+                <th>LieuNaissanceCandidat</th>
+                <td>{{ candidat.lieuNaissanceCandidat }}</td>
+            </tr>
+            <tr>
+                <th>MailCandidat</th>
+                <td>{{ candidat.mailCandidat }}</td>
+            </tr>
+            <tr>
+                <th>FixeCandidat</th>
+                <td>{{ candidat.fixeCandidat }}</td>
+            </tr>
+            <tr>
+                <th>MobileCandidat</th>
+                <td>{{ candidat.mobileCandidat }}</td>
+            </tr>
+            <tr>
+                <th>AdresseCandidat</th>
+                <td>{{ candidat.adresseCandidat }}</td>
+            </tr>
+            <tr>
+                <th>CpCandidat</th>
+                <td>{{ candidat.cpCandidat }}</td>
+            </tr>
+            <tr>
+                <th>VilleCandidat</th>
+                <td>{{ candidat.villeCandidat }}</td>
+            </tr>
+            <tr>
+                <th>SecuCandidat</th>
+                <td>{{ candidat.secuCandidat }}</td>
+            </tr>
+            <tr>
+                <th>PermisCandidat</th>
+                <td>{{ candidat.permisCandidat ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>CodeAccesCandidat</th>
+                <td>{{ candidat.codeAccesCandidat }}</td>
+            </tr>
+            <tr>
+                <th>EtatDossierCandidat</th>
+                <td>{{ candidat.etatDossierCandidat }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('candidat_index') }}">back to list</a>
+
+    <a href="{{ path('candidat_edit', {'id': candidat.id}) }}">edit</a>
+
+    {{ include('candidat/_delete_form.html.twig') }}
+{% endblock %}

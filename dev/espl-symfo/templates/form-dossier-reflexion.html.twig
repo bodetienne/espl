@@ -37,7 +37,7 @@
 						</div>
 					</div>
 					<div class="main dossier-reflexion">
-						<img class="progression-mds" src="{{ asset('../elements/barre-progression-mds-1.png') }}">
+						{% include "barre-progression.html.twig" %}
 						<h1 class="titre-mds">Dossier de Reflexion</h1>
             <h3 class="renseignement-mds">Réponds aux questions suivantes sur un documents à part (format PDF), en précisant clairement ton nom, prénom et le numéro de la question traitée.</h3>
 						<div class="dossier-questions">
@@ -72,7 +72,9 @@
 							<div class="boutons">
 								<button type="button" name="precedent" class="precedent">PRECEDENT</button>
 								<button type="button" name="enregistrer" class="enregistrer">ENREGISTRER</button>
-								<button type="button" name="suivant" class="suivant">SUIVANT</button>
+								<a href="/espl/dev/espl-symfo/public/index.php/pieces-jointes/">
+									<button type="button" name="suivant" class="suivant">SUIVANT</button>
+								</a>
 							</div>
 						</div>
 					</div>

@@ -1,0 +1,28 @@
+<head>		
+	{% block stylesheets %}
+	<link rel="stylesheet" href="/espl/dev/espl-symfo/public/../css/style-mds-bp.css"> 
+	{% endblock %}
+</head>
+<body>
+	<div class="mds-bp">
+		<div class="barre-progression">
+			<div class="barre">
+				<div class="progress-bar bg-candidat" role="progressbar" id="partie1" aria-valuenow="15%" aria-valuemin="0" aria-valuemax="100"></div>
+				<div class="progress-bar bg-garants" role="progressbar" id="partie2" aria-valuenow="15%" aria-valuemin="0" aria-valuemax="100"></div>
+				<div class="progress-bar bg-formation" role="progressbar" id="partie3" aria-valuenow="15%" aria-valuemin="0" aria-valuemax="100"></div>
+				<div class="progress-bar bg-dossier" role="progressbar" id="partie4" aria-valuenow="15%" aria-valuemin="0" aria-valuemax="100"></div>
+				<div class="progress-bar bg-pieces" role="progressbar" id="partie5" aria-valuenow="15%" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+
+			<div class="ronds">
+				<img src="/espl/dev/espl-symfo/public/../elements/rond-jaune-plein.png" class="rond rond-jaune">
+				<img src="/espl/dev/espl-symfo/public/../elements/rond-orange-vide.png" class="rond rond-orange">
+				<img src="/espl/dev/espl-symfo/public/../elements/rond-turquoise-vide.png" class="rond rond-bleu-clair">
+				<img src="/espl/dev/espl-symfo/public/../elements/rond-bleu-vide.png" class="rond rond-bleu">
+				<img src="/espl/dev/espl-symfo/public/../elements/rond-rose-vide.png" class="rond rond-rose">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/espl/dev/espl-symfo/public/../js/jquery.min.js"></script>
+    <script type="text/javascript" src="/espl/dev/espl-symfo/public/../js/bp-mds.js"></script>
+</body>

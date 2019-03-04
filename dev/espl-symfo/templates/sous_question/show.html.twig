@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SousQuestion{% endblock %}
+
+{% block body %}
+    <h1>SousQuestion</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ sous_question.id }}</td>
+            </tr>
+            <tr>
+                <th>OptionSsQuestion</th>
+                <td>{{ sous_question.optionSsQuestion }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('sous_question_index') }}">back to list</a>
+
+    <a href="{{ path('sous_question_edit', {'id': sous_question.id}) }}">edit</a>
+
+    {{ include('sous_question/_delete_form.html.twig') }}
+{% endblock %}

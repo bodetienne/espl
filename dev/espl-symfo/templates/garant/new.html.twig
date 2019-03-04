@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Garant{% endblock %}
+
+{% block body %}
+    <h1>Create new Garant</h1>
+
+    {{ include('garant/_form.html.twig') }}
+
+    <a href="{{ path('garant_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Garant{% endblock %}
+
+{% block body %}
+    <h1>Garant</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ garant.id }}</td>
+            </tr>
+            <tr>
+                <th>NomGarant</th>
+                <td>{{ garant.nomGarant }}</td>
+            </tr>
+            <tr>
+                <th>PrenomGarant</th>
+                <td>{{ garant.prenomGarant }}</td>
+            </tr>
+            <tr>
+                <th>MailGarant</th>
+                <td>{{ garant.mailGarant }}</td>
+            </tr>
+            <tr>
+                <th>TelGarant</th>
+                <td>{{ garant.telGarant }}</td>
+            </tr>
+            <tr>
+                <th>LienParente</th>
+                <td>{{ garant.lienParente }}</td>
+            </tr>
+            <tr>
+                <th>AdresseGarant</th>
+                <td>{{ garant.adresseGarant }}</td>
+            </tr>
+            <tr>
+                <th>CpGarant</th>
+                <td>{{ garant.cpGarant }}</td>
+            </tr>
+            <tr>
+                <th>VilleGarant</th>
+                <td>{{ garant.villeGarant }}</td>
+            </tr>
+            <tr>
+                <th>ProfessionGarant</th>
+                <td>{{ garant.professionGarant }}</td>
+            </tr>
+            <tr>
+                <th>EntrepriseGarant</th>
+                <td>{{ garant.entrepriseGarant }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('garant_index') }}">back to list</a>
+
+    <a href="{{ path('garant_edit', {'id': garant.id}) }}">edit</a>
+
+    {{ include('garant/_delete_form.html.twig') }}
+{% endblock %}

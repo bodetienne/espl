@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ReponseSpecifique{% endblock %}
+
+{% block body %}
+    <h1>Create new ReponseSpecifique</h1>
+
+    {{ include('reponse_specifique/_form.html.twig') }}
+
+    <a href="{{ path('reponse_specifique_index') }}">back to list</a>
+{% endblock %}

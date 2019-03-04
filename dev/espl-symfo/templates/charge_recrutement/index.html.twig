@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ChargeRecrutement index{% endblock %}
+
+{% block body %}
+    <h1>ChargeRecrutement index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NomCdr</th>
+                <th>PrenomCdr</th>
+                <th>MailCdr</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for charge_recrutement in charge_recrutements %}
+            <tr>
+                <td>{{ charge_recrutement.id }}</td>
+                <td>{{ charge_recrutement.nomCdr }}</td>
+                <td>{{ charge_recrutement.prenomCdr }}</td>
+                <td>{{ charge_recrutement.mailCdr }}</td>
+                <td>
+                    <a href="{{ path('charge_recrutement_show', {'id': charge_recrutement.id}) }}">show</a>
+                    <a href="{{ path('charge_recrutement_edit', {'id': charge_recrutement.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('charge_recrutement_new') }}">Create new</a>
+{% endblock %}
