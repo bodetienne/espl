@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit ReponseSpecifique{% endblock %}
+
+{% block body %}
+    <h1>Edit ReponseSpecifique</h1>
+
+    {{ include('reponse_specifique/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('reponse_specifique_index') }}">back to list</a>
+
+    {{ include('reponse_specifique/_delete_form.html.twig') }}
+{% endblock %}

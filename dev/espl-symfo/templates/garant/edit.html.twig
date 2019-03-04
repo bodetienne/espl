@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Garant{% endblock %}
+
+{% block body %}
+    <h1>Edit Garant</h1>
+
+    {{ include('garant/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('garant_index') }}">back to list</a>
+
+    {{ include('garant/_delete_form.html.twig') }}
+{% endblock %}

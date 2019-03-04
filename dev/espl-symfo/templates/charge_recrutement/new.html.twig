@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ChargeRecrutement{% endblock %}
+
+{% block body %}
+    <h1>Create new ChargeRecrutement</h1>
+
+    {{ include('charge_recrutement/_form.html.twig') }}
+
+    <a href="{{ path('charge_recrutement_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit PieceJointe{% endblock %}
+
+{% block body %}
+    <h1>Edit PieceJointe</h1>
+
+    {{ include('piece_jointe/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('piece_jointe_index') }}">back to list</a>
+
+    {{ include('piece_jointe/_delete_form.html.twig') }}
+{% endblock %}

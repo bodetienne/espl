@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Candidat index{% endblock %}
+
+{% block body %}
+    <h1>Candidat index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NomCandidat</th>
+                <th>PrenomCandidat</th>
+                <th>JourNaissanceCandidat</th>
+                <th>MoisNaissanceCandidat</th>
+                <th>AnneeNaissanceCandidat</th>
+                <th>LieuNaissanceCandidat</th>
+                <th>MailCandidat</th>
+                <th>FixeCandidat</th>
+                <th>MobileCandidat</th>
+                <th>AdresseCandidat</th>
+                <th>CpCandidat</th>
+                <th>VilleCandidat</th>
+                <th>SecuCandidat</th>
+                <th>PermisCandidat</th>
+                <th>CodeAccesCandidat</th>
+                <th>EtatDossierCandidat</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for candidat in candidats %}
+            <tr>
+                <td>{{ candidat.id }}</td>
+                <td>{{ candidat.nomCandidat }}</td>
+                <td>{{ candidat.prenomCandidat }}</td>
+                <td>{{ candidat.jourNaissanceCandidat }}</td>
+                <td>{{ candidat.moisNaissanceCandidat }}</td>
+                <td>{{ candidat.anneeNaissanceCandidat }}</td>
+                <td>{{ candidat.lieuNaissanceCandidat }}</td>
+                <td>{{ candidat.mailCandidat }}</td>
+                <td>{{ candidat.fixeCandidat }}</td>
+                <td>{{ candidat.mobileCandidat }}</td>
+                <td>{{ candidat.adresseCandidat }}</td>
+                <td>{{ candidat.cpCandidat }}</td>
+                <td>{{ candidat.villeCandidat }}</td>
+                <td>{{ candidat.secuCandidat }}</td>
+                <td>{{ candidat.permisCandidat ? 'Yes' : 'No' }}</td>
+                <td>{{ candidat.codeAccesCandidat }}</td>
+                <td>{{ candidat.etatDossierCandidat }}</td>
+                <td>
+                    <a href="{{ path('candidat_show', {'id': candidat.id}) }}">show</a>
+                    <a href="{{ path('candidat_edit', {'id': candidat.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="18">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('candidat_new') }}">Create new</a>
+{% endblock %}

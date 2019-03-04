@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PieceJointe{% endblock %}
+
+{% block body %}
+    <h1>PieceJointe</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ piece_jointe.id }}</td>
+            </tr>
+            <tr>
+                <th>PhotoIdentite</th>
+                <td>{{ piece_jointe.photoIdentite }}</td>
+            </tr>
+            <tr>
+                <th>ReleveNotes</th>
+                <td>{{ piece_jointe.releveNotes }}</td>
+            </tr>
+            <tr>
+                <th>Diplome</th>
+                <td>{{ piece_jointe.diplome }}</td>
+            </tr>
+            <tr>
+                <th>Cv</th>
+                <td>{{ piece_jointe.cv }}</td>
+            </tr>
+            <tr>
+                <th>LettreMotivation</th>
+                <td>{{ piece_jointe.lettreMotivation }}</td>
+            </tr>
+            <tr>
+                <th>PieceIdentite</th>
+                <td>{{ piece_jointe.pieceIdentite }}</td>
+            </tr>
+            <tr>
+                <th>CreditsEcts</th>
+                <td>{{ piece_jointe.creditsEcts }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('piece_jointe_index') }}">back to list</a>
+
+    <a href="{{ path('piece_jointe_edit', {'id': piece_jointe.id}) }}">edit</a>
+
+    {{ include('piece_jointe/_delete_form.html.twig') }}
+{% endblock %}
