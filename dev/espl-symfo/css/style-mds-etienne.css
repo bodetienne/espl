@@ -190,3 +190,107 @@
 	background-color: #F7B60A;
 	border-color: #F7B60A;
 }
+
+/** PAGE ERROR 404 **/
+.error-main .main {
+	display: flex;
+	flex-direction: column;
+}
+
+.error-main .main h1 {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin: 4vh auto;
+	font-family: "Ubuntu-condensed";
+}
+
+.error-main .main img {
+	max-height: 55vh;
+	margin: auto;
+}
+
+.error-main .main a {
+	display: flex;
+	margin: auto;
+	text-decoration: none;
+}
+
+.error-main a button {
+	padding: 18px 15px;
+	text-transform: uppercase;
+	color: white;
+	background-color: #FF8A22;
+  border: 1px solid #FF8A22;
+	margin: 4vh auto;
+}
+
+
+.error-main a button:hover {
+	color: #FF8A22;
+	background-color: white;
+}
+
+/** CONNEXION **/
+.contact .block-right {
+    margin-left: 50vw;
+    width: 50%;
+    top: 5%;
+    position: absolute;
+}
+
+.block-right .validate-input .input2 {
+	padding: 0;
+}
+
+.block-right .cadre-contact .connexion-mds {
+		padding: 15px 18px;
+		background: #24B7C4;
+		color: white;
+		border: 1px solid #24B7C4;
+		text-transform: uppercase;
+		font-family: "Ubuntu-condensed";
+}
+
+.block-right .cadre-contact .connexion-mds:hover {
+	background: white;
+	color: #24B7C4;
+}
+
+.block-right .cadre-contact .new-candid {
+	width: 100%;
+	background: #363635;
+	border-color: #363635;
+}
+
+.block-right .cadre-contact .new-candid:hover {
+	background: white;
+	color: #363635;
+}
+
+.block-right .cadre-contact .no-code {
+	display: flex;
+}
+
+.cadre-contact .no-code input {
+	margin: 3% 0 3% 2%;
+}
+
+.cadre-contact .no-code span {
+	color: #707070;
+	font-family: "Ubuntu-condensed";
+	margin: auto;
+	margin-left: 2%;
+	font-weight: lighter;
+}
+
+.block-right .cadre-contact .span-new {
+	color: #707070;
+	font-family: "Ubuntu-condensed";
+	margin: 1%;
+	font-weight: lighter;
+}
+
+.block-right .cadre-contact .re-start {
+	margin: 3% 0;
+}
