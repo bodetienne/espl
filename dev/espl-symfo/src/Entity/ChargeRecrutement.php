@@ -5,31 +5,52 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ChargeRecrutementRepository")
+ * ChargeRecrutement
+ *
+ * @ORM\Table(name="charge_recrutement", indexes={@ORM\Index(name="FKecole2", columns={"id_ecole"})})
+ * @ORM\Entity
  */
 class ChargeRecrutement
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="nom_cdr", type="string", length=50, nullable=false)
      */
     private $nomCdr;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="prenom_cdr", type="string", length=50, nullable=false)
      */
     private $prenomCdr;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string
+     *
+     * @ORM\Column(name="mail_cdr", type="string", length=255, nullable=false)
      */
     private $mailCdr;
+
+    /**
+     * @var \Ecole
+     *
+     * @ORM\ManyToOne(targetEntity="Ecole")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_ecole", referencedColumnName="id")
+     * })
+     */
+    private $idEcole;
 
     public function getId(): ?int
     {
@@ -60,7 +81,6 @@ class ChargeRecrutement
         return $this;
     }
 
-
     public function getMailCdr(): ?string
     {
         return $this->mailCdr;
@@ -72,4 +92,18 @@ class ChargeRecrutement
 
         return $this;
     }
+
+    public function getIdEcole(): ?Ecole
+    {
+        return $this->idEcole;
+    }
+
+    public function setIdEcole(?Ecole $idEcole): self
+    {
+        $this->idEcole = $idEcole;
+
+        return $this;
+    }
+
+
 }

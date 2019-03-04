@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\Garant;
 use App\Form\GarantType;
-use App\Repository\GarantRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class GarantController extends AbstractController
     /**
      * @Route("/", name="garant_index", methods={"GET"})
      */
-    public function index(GarantRepository $garantRepository): Response
+    public function index(): Response
     {
+        $garants = $this->getDoctrine()
+            ->getRepository(Garant::class)
+            ->findAll();
+
         return $this->render('garant/index.html.twig', [
-            'garants' => $garantRepository->findAll(),
+            'garants' => $garants,
         ]);
     }
 

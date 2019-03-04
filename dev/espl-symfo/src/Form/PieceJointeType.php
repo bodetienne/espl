@@ -19,6 +19,7 @@ class PieceJointeType extends AbstractType
             ->add('lettreMotivation')
             ->add('pieceIdentite')
             ->add('creditsEcts')
+            ->add('idCandidat')
         ;
     }
 

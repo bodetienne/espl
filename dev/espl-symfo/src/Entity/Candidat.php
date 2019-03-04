@@ -5,96 +5,143 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\CandidatRepository")
+ * Candidat
+ *
+ * @ORM\Table(name="candidat", indexes={@ORM\Index(name="FKformation", columns={"id_formation"})})
+ * @ORM\Entity
  */
 class Candidat
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="nom_candidat", type="string", length=50, nullable=false)
      */
     private $nomCandidat;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="prenom_candidat", type="string", length=50, nullable=false)
      */
     private $prenomCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="jour_naissance_candidat", type="integer", nullable=false)
      */
     private $jourNaissanceCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="mois_naissance_candidat", type="integer", nullable=false)
      */
     private $moisNaissanceCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="annee_naissance_candidat", type="integer", nullable=false)
      */
     private $anneeNaissanceCandidat;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="lieu_naissance_candidat", type="string", length=50, nullable=false)
      */
     private $lieuNaissanceCandidat;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string
+     *
+     * @ORM\Column(name="mail_candidat", type="string", length=255, nullable=false)
      */
     private $mailCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="fixe_candidat", type="integer", nullable=false)
      */
     private $fixeCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="mobile_candidat", type="integer", nullable=false)
      */
     private $mobileCandidat;
 
     /**
-     * @ORM\Column(type="string", length=70)
+     * @var string
+     *
+     * @ORM\Column(name="adresse_candidat", type="string", length=70, nullable=false)
      */
     private $adresseCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="cp_candidat", type="integer", nullable=false)
      */
     private $cpCandidat;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="ville_candidat", type="string", length=50, nullable=false)
      */
     private $villeCandidat;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="secu_candidat", type="integer", nullable=false)
      */
     private $secuCandidat;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @var bool
+     *
+     * @ORM\Column(name="permis_candidat", type="boolean", nullable=false)
      */
     private $permisCandidat;
 
     /**
-     * @ORM\Column(type="string", length=6)
+     * @var string
+     *
+     * @ORM\Column(name="code_acces_candidat", type="string", length=6, nullable=false)
      */
     private $codeAccesCandidat;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="etat_dossier_candidat", type="string", length=50, nullable=false)
      */
     private $etatDossierCandidat;
+
+    /**
+     * @var \Formation
+     *
+     * @ORM\ManyToOne(targetEntity="Formation")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_formation", referencedColumnName="id")
+     * })
+     */
+    private $idFormation;
 
     public function getId(): ?int
     {
@@ -292,4 +339,18 @@ class Candidat
 
         return $this;
     }
+
+    public function getIdFormation(): ?Formation
+    {
+        return $this->idFormation;
+    }
+
+    public function setIdFormation(?Formation $idFormation): self
+    {
+        $this->idFormation = $idFormation;
+
+        return $this;
+    }
+
+
 }

@@ -5,51 +5,80 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\PieceJointeRepository")
+ * PieceJointe
+ *
+ * @ORM\Table(name="piece_jointe", indexes={@ORM\Index(name="FKcandidat2", columns={"id_candidat"})})
+ * @ORM\Entity
  */
 class PieceJointe
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="blob")
+     * @var string
+     *
+     * @ORM\Column(name="photo_identite", type="blob", length=0, nullable=false)
      */
     private $photoIdentite;
 
     /**
-     * @ORM\Column(type="blob", nullable=true)
+     * @var string|null
+     *
+     * @ORM\Column(name="releve_notes", type="blob", length=0, nullable=true)
      */
     private $releveNotes;
 
     /**
-     * @ORM\Column(type="blob", nullable=true)
+     * @var string|null
+     *
+     * @ORM\Column(name="diplome", type="blob", length=0, nullable=true)
      */
     private $diplome;
 
     /**
-     * @ORM\Column(type="blob")
+     * @var string
+     *
+     * @ORM\Column(name="cv", type="blob", length=0, nullable=false)
      */
     private $cv;
 
     /**
-     * @ORM\Column(type="blob")
+     * @var string
+     *
+     * @ORM\Column(name="lettre_motivation", type="blob", length=0, nullable=false)
      */
     private $lettreMotivation;
 
     /**
-     * @ORM\Column(type="blob")
+     * @var string
+     *
+     * @ORM\Column(name="piece_identite", type="blob", length=0, nullable=false)
      */
     private $pieceIdentite;
 
     /**
-     * @ORM\Column(type="blob", nullable=true)
+     * @var string|null
+     *
+     * @ORM\Column(name="credits_ects", type="blob", length=0, nullable=true)
      */
     private $creditsEcts;
+
+    /**
+     * @var \Candidat
+     *
+     * @ORM\ManyToOne(targetEntity="Candidat")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_candidat", referencedColumnName="id")
+     * })
+     */
+    private $idCandidat;
 
     public function getId(): ?int
     {
@@ -139,4 +168,18 @@ class PieceJointe
 
         return $this;
     }
+
+    public function getIdCandidat(): ?Candidat
+    {
+        return $this->idCandidat;
+    }
+
+    public function setIdCandidat(?Candidat $idCandidat): self
+    {
+        $this->idCandidat = $idCandidat;
+
+        return $this;
+    }
+
+
 }

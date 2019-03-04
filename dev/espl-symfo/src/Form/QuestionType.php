@@ -13,6 +13,7 @@ class QuestionType extends AbstractType
     {
         $builder
             ->add('intituleQuestion')
+            ->add('idEcole')
         ;
     }
 

@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\Candidat;
 use App\Form\CandidatType;
-use App\Repository\CandidatRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class CandidatController extends AbstractController
     /**
      * @Route("/", name="candidat_index", methods={"GET"})
      */
-    public function index(CandidatRepository $candidatRepository): Response
+    public function index(): Response
     {
+        $candidats = $this->getDoctrine()
+            ->getRepository(Candidat::class)
+            ->findAll();
+
         return $this->render('candidat/index.html.twig', [
-            'candidats' => $candidatRepository->findAll(),
+            'candidats' => $candidats,
         ]);
     }
 

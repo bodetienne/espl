@@ -13,6 +13,7 @@ class SousQuestionType extends AbstractType
     {
         $builder
             ->add('optionSsQuestion')
+            ->add('idQuestion')
         ;
     }
 

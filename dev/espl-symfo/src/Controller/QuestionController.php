@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\Question;
 use App\Form\QuestionType;
-use App\Repository\QuestionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class QuestionController extends AbstractController
     /**
      * @Route("/", name="question_index", methods={"GET"})
      */
-    public function index(QuestionRepository $questionRepository): Response
+    public function index(): Response
     {
+        $questions = $this->getDoctrine()
+            ->getRepository(Question::class)
+            ->findAll();
+
         return $this->render('question/index.html.twig', [
-            'questions' => $questionRepository->findAll(),
+            'questions' => $questions,
         ]);
     }
 

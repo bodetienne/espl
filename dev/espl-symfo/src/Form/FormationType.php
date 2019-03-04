@@ -13,6 +13,7 @@ class FormationType extends AbstractType
     {
         $builder
             ->add('nomFormation')
+            ->add('idEcole')
         ;
     }
 

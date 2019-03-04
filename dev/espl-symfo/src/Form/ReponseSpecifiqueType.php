@@ -16,6 +16,7 @@ class ReponseSpecifiqueType extends AbstractType
             ->add('connaissanceEcole')
             ->add('participationJpo')
             ->add('questionsPrealables')
+            ->add('idCandidat')
         ;
     }
 

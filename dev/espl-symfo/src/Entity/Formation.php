@@ -5,21 +5,38 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\FormationRepository")
+ * Formation
+ *
+ * @ORM\Table(name="formation", indexes={@ORM\Index(name="FKecole", columns={"id_ecole"})})
+ * @ORM\Entity
  */
 class Formation
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
+     *
+     * @ORM\Column(name="nom_formation", type="string", length=100, nullable=false)
      */
     private $nomFormation;
+
+    /**
+     * @var \Ecole
+     *
+     * @ORM\ManyToOne(targetEntity="Ecole")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_ecole", referencedColumnName="id")
+     * })
+     */
+    private $idEcole;
 
     public function getId(): ?int
     {
@@ -37,4 +54,18 @@ class Formation
 
         return $this;
     }
+
+    public function getIdEcole(): ?Ecole
+    {
+        return $this->idEcole;
+    }
+
+    public function setIdEcole(?Ecole $idEcole): self
+    {
+        $this->idEcole = $idEcole;
+
+        return $this;
+    }
+
+
 }

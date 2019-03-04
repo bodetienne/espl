@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\PieceJointe;
 use App\Form\PieceJointeType;
-use App\Repository\PieceJointeRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class PieceJointeController extends AbstractController
     /**
      * @Route("/", name="piece_jointe_index", methods={"GET"})
      */
-    public function index(PieceJointeRepository $pieceJointeRepository): Response
+    public function index(): Response
     {
+        $pieceJointes = $this->getDoctrine()
+            ->getRepository(PieceJointe::class)
+            ->findAll();
+
         return $this->render('piece_jointe/index.html.twig', [
-            'piece_jointes' => $pieceJointeRepository->findAll(),
+            'piece_jointes' => $pieceJointes,
         ]);
     }
 

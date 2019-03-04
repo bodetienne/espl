@@ -15,6 +15,7 @@ class ChargeRecrutementType extends AbstractType
             ->add('nomCdr')
             ->add('prenomCdr')
             ->add('mailCdr')
+            ->add('idEcole')
         ;
     }
 

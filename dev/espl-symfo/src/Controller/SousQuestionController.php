@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\SousQuestion;
 use App\Form\SousQuestionType;
-use App\Repository\SousQuestionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class SousQuestionController extends AbstractController
     /**
      * @Route("/", name="sous_question_index", methods={"GET"})
      */
-    public function index(SousQuestionRepository $sousQuestionRepository): Response
+    public function index(): Response
     {
+        $sousQuestions = $this->getDoctrine()
+            ->getRepository(SousQuestion::class)
+            ->findAll();
+
         return $this->render('sous_question/index.html.twig', [
-            'sous_questions' => $sousQuestionRepository->findAll(),
+            'sous_questions' => $sousQuestions,
         ]);
     }
 

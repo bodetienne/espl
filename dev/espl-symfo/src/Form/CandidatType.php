@@ -28,6 +28,7 @@ class CandidatType extends AbstractType
             ->add('permisCandidat')
             ->add('codeAccesCandidat')
             ->add('etatDossierCandidat')
+            ->add('idFormation')
         ;
     }
 

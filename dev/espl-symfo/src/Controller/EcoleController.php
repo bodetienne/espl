@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\Ecole;
 use App\Form\EcoleType;
-use App\Repository\EcoleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class EcoleController extends AbstractController
     /**
      * @Route("/", name="ecole_index", methods={"GET"})
      */
-    public function index(EcoleRepository $ecoleRepository): Response
+    public function index(): Response
     {
+        $ecoles = $this->getDoctrine()
+            ->getRepository(Ecole::class)
+            ->findAll();
+
         return $this->render('ecole/index.html.twig', [
-            'ecoles' => $ecoleRepository->findAll(),
+            'ecoles' => $ecoles,
         ]);
     }
 

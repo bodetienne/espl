@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\ReponseSpecifique;
 use App\Form\ReponseSpecifiqueType;
-use App\Repository\ReponseSpecifiqueRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class ReponseSpecifiqueController extends AbstractController
     /**
      * @Route("/", name="reponse_specifique_index", methods={"GET"})
      */
-    public function index(ReponseSpecifiqueRepository $reponseSpecifiqueRepository): Response
+    public function index(): Response
     {
+        $reponseSpecifiques = $this->getDoctrine()
+            ->getRepository(ReponseSpecifique::class)
+            ->findAll();
+
         return $this->render('reponse_specifique/index.html.twig', [
-            'reponse_specifiques' => $reponseSpecifiqueRepository->findAll(),
+            'reponse_specifiques' => $reponseSpecifiques,
         ]);
     }
 

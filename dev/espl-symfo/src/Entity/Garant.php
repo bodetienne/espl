@@ -5,66 +5,101 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\GarantRepository")
+ * Garant
+ *
+ * @ORM\Table(name="garant", indexes={@ORM\Index(name="FKcandidat", columns={"id_candidat"})})
+ * @ORM\Entity
  */
 class Garant
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="nom_garant", type="string", length=50, nullable=false)
      */
     private $nomGarant;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="prenom_garant", type="string", length=50, nullable=false)
      */
     private $prenomGarant;
 
     /**
-     * @ORM\Column(type="string", length=250)
+     * @var string
+     *
+     * @ORM\Column(name="mail_garant", type="string", length=250, nullable=false)
      */
     private $mailGarant;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="tel_garant", type="integer", nullable=false)
      */
     private $telGarant;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="lien_parente", type="string", length=50, nullable=false)
      */
     private $lienParente;
 
     /**
-     * @ORM\Column(type="string", length=70)
+     * @var string
+     *
+     * @ORM\Column(name="adresse_garant", type="string", length=70, nullable=false)
      */
     private $adresseGarant;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="cp_garant", type="integer", nullable=false)
      */
     private $cpGarant;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="ville_garant", type="string", length=50, nullable=false)
      */
     private $villeGarant;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @var string|null
+     *
+     * @ORM\Column(name="profession_garant", type="string", length=50, nullable=true)
      */
     private $professionGarant;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @var string|null
+     *
+     * @ORM\Column(name="entreprise_garant", type="string", length=50, nullable=true)
      */
     private $entrepriseGarant;
+
+    /**
+     * @var \Garant
+     *
+     * @ORM\ManyToOne(targetEntity="Garant")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_candidat", referencedColumnName="id")
+     * })
+     */
+    private $idCandidat;
 
     public function getId(): ?int
     {
@@ -190,4 +225,18 @@ class Garant
 
         return $this;
     }
+
+    public function getIdCandidat(): ?self
+    {
+        return $this->idCandidat;
+    }
+
+    public function setIdCandidat(?self $idCandidat): self
+    {
+        $this->idCandidat = $idCandidat;
+
+        return $this;
+    }
+
+
 }

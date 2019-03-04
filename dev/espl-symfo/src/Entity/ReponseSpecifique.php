@@ -5,36 +5,59 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ReponseSpecifiqueRepository")
+ * ReponseSpecifique
+ *
+ * @ORM\Table(name="reponse_specifique", indexes={@ORM\Index(name="FKcandidat3", columns={"id_candidat"})})
+ * @ORM\Entity
  */
 class ReponseSpecifique
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="blob")
+     * @var string
+     *
+     * @ORM\Column(name="dossier_reflexion", type="blob", length=0, nullable=false)
      */
     private $dossierReflexion;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="connaissance_ecole", type="string", length=50, nullable=false)
      */
     private $connaissanceEcole;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @var bool
+     *
+     * @ORM\Column(name="participation_jpo", type="boolean", nullable=false)
      */
     private $participationJpo;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string
+     *
+     * @ORM\Column(name="questions_prealables", type="string", length=255, nullable=false)
      */
     private $questionsPrealables;
+
+    /**
+     * @var \Candidat
+     *
+     * @ORM\ManyToOne(targetEntity="Candidat")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_candidat", referencedColumnName="id")
+     * })
+     */
+    private $idCandidat;
 
     public function getId(): ?int
     {
@@ -88,4 +111,18 @@ class ReponseSpecifique
 
         return $this;
     }
+
+    public function getIdCandidat(): ?Candidat
+    {
+        return $this->idCandidat;
+    }
+
+    public function setIdCandidat(?Candidat $idCandidat): self
+    {
+        $this->idCandidat = $idCandidat;
+
+        return $this;
+    }
+
+
 }

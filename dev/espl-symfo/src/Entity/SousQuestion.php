@@ -5,21 +5,38 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\SousQuestionRepository")
+ * SousQuestion
+ *
+ * @ORM\Table(name="sous_question", indexes={@ORM\Index(name="FKquestion", columns={"id_question"})})
+ * @ORM\Entity
  */
 class SousQuestion
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @var string|null
+     *
+     * @ORM\Column(name="option_ss_question", type="string", length=255, nullable=true)
      */
     private $optionSsQuestion;
+
+    /**
+     * @var \Question
+     *
+     * @ORM\ManyToOne(targetEntity="Question")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_question", referencedColumnName="id")
+     * })
+     */
+    private $idQuestion;
 
     public function getId(): ?int
     {
@@ -37,4 +54,18 @@ class SousQuestion
 
         return $this;
     }
+
+    public function getIdQuestion(): ?Question
+    {
+        return $this->idQuestion;
+    }
+
+    public function setIdQuestion(?Question $idQuestion): self
+    {
+        $this->idQuestion = $idQuestion;
+
+        return $this;
+    }
+
+
 }

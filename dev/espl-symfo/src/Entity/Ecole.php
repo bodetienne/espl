@@ -5,19 +5,26 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\EcoleRepository")
+ * Ecole
+ *
+ * @ORM\Table(name="ecole")
+ * @ORM\Entity
  */
 class Ecole
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @var string
+     *
+     * @ORM\Column(name="nom_ecole", type="string", length=50, nullable=false)
      */
     private $nomEcole;
 
@@ -37,4 +44,6 @@ class Ecole
 
         return $this;
     }
+
+
 }

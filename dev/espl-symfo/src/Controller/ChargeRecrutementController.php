@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\ChargeRecrutement;
 use App\Form\ChargeRecrutementType;
-use App\Repository\ChargeRecrutementRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class ChargeRecrutementController extends AbstractController
     /**
      * @Route("/", name="charge_recrutement_index", methods={"GET"})
      */
-    public function index(ChargeRecrutementRepository $chargeRecrutementRepository): Response
+    public function index(): Response
     {
+        $chargeRecrutements = $this->getDoctrine()
+            ->getRepository(ChargeRecrutement::class)
+            ->findAll();
+
         return $this->render('charge_recrutement/index.html.twig', [
-            'charge_recrutements' => $chargeRecrutementRepository->findAll(),
+            'charge_recrutements' => $chargeRecrutements,
         ]);
     }
 
