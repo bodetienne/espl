@@ -23,8 +23,6 @@ class MainController extends Controller
       return $this->render('presentation-mds.html.twig');
     } elseif ($nomdepage == "form-1-mds") {
       return $this->render('form-1-mds.html.twig');
-    } elseif ($nomdepage == "connexion-mds") {
-      return $this->render('home.html.twig');
     } elseif ($nomdepage == "form-2-mds") {
       return $this->render('form-2-mds.html.twig');
     } elseif ($nomdepage == "form-3-mds") {
@@ -40,7 +38,7 @@ class MainController extends Controller
     } elseif ($nomdepage == "contact") {
       return $this->render('contact.html.twig');
     } else {
-      var_dump($nomdepage);
+      return $this->render('error404.html.twig');
     }
   }
 

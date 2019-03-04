@@ -190,3 +190,43 @@
 	background-color: #F7B60A;
 	border-color: #F7B60A;
 }
+
+/** PAGE ERROR 404 **/
+.error-main .main {
+	display: flex;
+	flex-direction: column;
+}
+
+.error-main .main h1 {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin: 4vh auto;
+	font-family: "Ubuntu-condensed";
+}
+
+.error-main .main img {
+	max-height: 55vh;
+	margin: auto;
+}
+
+.error-main .main a {
+	display: flex;
+	margin: auto;
+	text-decoration: none;
+}
+
+.error-main a button {
+	padding: 18px 15px;
+	text-transform: uppercase;
+	color: white;
+	background-color: #FF8A22;
+  border: 1px solid #FF8A22;
+	margin: 4vh auto;
+}
+
+
+.error-main a button:hover {
+	color: #FF8A22;
+	background-color: white;
+}
