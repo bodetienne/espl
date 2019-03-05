@@ -1,0 +1,59 @@
+<? xml version="1.0" encoding="UTF-8" ?>
+
+<!--Faire la doc en précisant pour chaque champ si c'est obligatoire et le type de champ (bool) -->
+<dossierEtudiant>
+  <etudiant>
+    <nom>Bodet</nom>
+    <prenom>Etienne</prenom>
+    <dateNaissance>20/07/1999</dateNaissance>
+    <lieuNaissance>Angers</lieuNaissance>
+    <email>bodet@gmail.com</email>
+    <telephoneFixe>0590876787</telephoneFixe>
+    <portable>0798431265</portable>
+    <adresse>10 rue de la Vie</adresse>
+    <codePostal>49000</codePostal>
+    <ville>Angers</ville>
+    <numsecu>199897374739</numsecu>
+    <permis>true</permis>
+  </etudiant>
+  <garant1>
+    <nom>Bodet</nom>
+    <prenom>Thierry</prenom>
+    <entreprise>SARL Joker</entreprise>
+    <adresse>10 rue de la Vie</adresse>
+    <codePostal>49000</codePostal>
+    <ville>Angers</ville>
+    <lien>Père</lien>
+    <telephone>0689487610</telephone>
+    <email>hello@gmail.com</email>
+  </garant1>
+  <garant2>
+    <nom>Bodet</nom>
+    <prenom>Odette</prenom>
+    <entreprise>SARL Joker</entreprise>
+    <adresse>10 rue de la Vie</adresse>
+    <codePostal>49000</codePostal>
+    <ville>Angers</ville>
+    <lien>Mère</lien>
+    <telephone>0689487610</telephone>
+    <email>hello@gmail.com</email>
+  </garant2>
+  <formation>
+    <actuelle>Bac S - Lycée de l'Europe</actuelle>
+    <souhait>Cycle Web et Digital - Année 1</souhait>
+    <ects></ects>
+  </formation>
+  <reflexion>
+    <dossier>dossier-reflexion.pdf</dossier>
+    <connaissance>Bouche à Oreiles</connaissance>
+    <jpo>false</jpo>
+    <questions>questions.pdf</questions>
+  </reflexion>
+  <pjetvalide>
+    <cv>cv.pdf</cv>
+    <lm>lm.pdf</lm>
+    <photo>photo.jpg</photo>
+    <notes>notes.pdf</notes>
+    <identite>identite.pdf</identite>
+  </pjetvalide>
+</dossierEtudiant>
