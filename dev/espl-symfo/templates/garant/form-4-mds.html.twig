@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Candidature My Digital School</title>
-
 		{% block stylesheets %}
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
 			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
@@ -35,10 +35,10 @@
 							<div class="sol"></div>
 						</div>
 					</div>
-					<div class="main formulaire-3">
+					<div class="main formulaire-4">
 						{% include "barre-progression.html.twig" %}
-						<h1 class="titre-mds">Tes garants <span class="etape-garant">1/2</span></h1>
-						<div class="form-3">
+						<h1 class="titre-mds">Tes garants <span class="etape-garant">2/2</span></h1>
+						<div class="form-4">
 							<div class="form-zone">
 								<div class="form-gauche">
 									{{ form_start(form) }}   
@@ -122,13 +122,13 @@
 							</div>
 							{{ form_end(form) }}
 							<div class="container-button">
-								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/garant/form-2-mds">
+								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/garant/form-3-mds">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
 								<a class="lien sauvegarder" href="#">
 									<button id="save" class="btn-save" type="button">Sauvegarder</button>
 								</a>
-								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/garant/form-4-mds">
+								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/formation/formation-1-mds">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>
@@ -137,7 +137,7 @@
 				</div>
 
 
-			{% include "footer.html.twig" %}
+		{% include "footer.html.twig" %}
 		</main>
 	</body>
 

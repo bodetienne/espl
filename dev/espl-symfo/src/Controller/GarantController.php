@@ -52,6 +52,29 @@ class GarantController extends AbstractController
     }
 
     /**
+     * @Route("/form-4-mds", name="garant_new2", methods={"GET","POST"})
+     */
+    public function new2(Request $request): Response
+    {
+        $garant = new Garant();
+        $form = $this->createForm(GarantType::class, $garant);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($garant);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('garant_index');
+        }
+
+        return $this->render('garant/form-4-mds.html.twig', [
+            'garant' => $garant,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
      * @Route("/{id}", name="garant_show", methods={"GET"})
      */
     public function show(Garant $garant): Response
