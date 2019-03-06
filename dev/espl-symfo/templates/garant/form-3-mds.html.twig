@@ -46,34 +46,37 @@
 									    
 
 									
-									<div class="prenom-garant-1">
-										<label class="label label-prenom">{{ form_label(form.nomGarant) }}<span class="required"> *</span></label>
-										<div class="champ-prenom">
-											{{ form_widget(form.nomGarant) }}
-										</div>
-									</div>
-									{{ form_end(form) }}
-									<div class="nom-garant">
-										<label class="label label-nom">Nom<span class="required"> *</span></label>
+									<div class="nom-garant-1">										
+										{{ form_label(form.nomGarant, 'Nom', {'label_attr': {'class': 'label label-nom'}}) }}
 										<div class="champ-nom">
-											<input class="textfield-input" type="text" name="textfield" id="nom">
+											{{ form_widget(form.nomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'nom'}}) }}
 										</div>
 									</div>
+									<div class="prenom-garant">										
+										{{ form_label(form.prenomGarant, 'Prénom', {'label_attr': {'class': 'label label-prenom'}}) }}
+										<div class="champ-prenom">
+											{{ form_widget(form.prenomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'prenom'}}) }}
+										</div>
+									</div>
+								
+									
 									<div class="mail-garant">
-										<label class="label label-mail-garant">E-mail<span class="required"> *</span></label>
+										{{ form_label(form.mailGarant, 'E-mail', {'label_attr': {'class': 'label label-mail-garant'}}) }}
 										<div class="champs-mail-garant">
-											<input class="textfield-input" type="text" name="textfield"id="mail">
+											{{ form_widget(form.mailGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'mail'}}) }}
 										</div>
 									</div>
 
 									<div class="tel-port-garant">
-										<label class="label label-tel-port">Tel. portable<span class="required"> *</span></label>
+										{{ form_label(form.telGarant, 'Tel. portable', {'label_attr': {'class': 'label label-tel-port-garant'}}) }}
 										<div class="champ-tel-port-garant">
-											<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-garant">
+											{{ form_widget(form.telGarant, {'attr': {'class': 'tel-input', 'name': 'telfield', 'id':'tel-garant'}}) }}
 										</div>
 									</div>
+
+										{{ form_end(form) }}
 									<div class="lien-parente">
-										<label class="label label-lien-parente">Lien de parenté<span class="required"> *</span></label>
+										<label class="label label-lien-parente">Lien de parenté</label>
 										<div class="champ-lien-parente">
 											<input class="textfield-input" type="text" name="textfield" id="lien"><a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
 										</div>
@@ -86,20 +89,20 @@
 										<input class="checkbox-input" type="checkbox" id="button-adresse"><label for="button-adresse"></label>
 									</div>
 									<div class="adresse-garant">
-										<label class="label label-adresse">Adresse <span class="required"> *</span></label>
+										<label class="label label-adresse">Adresse</label>
 										<div class="champs-adresse">
 											<input class="textfield-input" type="text" name="textfield"id="adresse">
 										</div>
 									</div>
 									<div class="CP-ville">
 										<div class="cp-garant">
-											<label class="label label-cp">Code postal<span class="required"> *</span></label>
+											<label class="label label-cp">Code postal</label>
 											<div class="champ-cp">
 												<input class="number-input" type="number" id="cp">
 											</div>
 										</div>
 										<div class="ville-garant">
-											<label class="label label-ville">Ville<span class="required"> *</span></label>
+											<label class="label label-ville">Ville</label>
 											<div class="champs-ville">
 												<input class="textfield-input" type="text" name="textfield" id="ville">
 											</div>

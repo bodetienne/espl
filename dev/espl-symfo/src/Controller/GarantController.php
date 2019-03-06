@@ -29,7 +29,7 @@ class GarantController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="garant_new", methods={"GET","POST"})
+     * @Route("/form-3-mds", name="garant_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -45,7 +45,7 @@ class GarantController extends AbstractController
             return $this->redirectToRoute('garant_index');
         }
 
-        return $this->render('garant/new.html.twig', [
+        return $this->render('garant/form-3-mds.html.twig', [
             'garant' => $garant,
             'form' => $form->createView(),
         ]);

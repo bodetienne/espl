@@ -22,7 +22,7 @@ class GarantType extends AbstractType
             ->add('villeGarant')
             ->add('professionGarant')
             ->add('entrepriseGarant')
-            ->add('idCandidat')
+            /*->add('idCandidat')*/
         ;
     }
 
