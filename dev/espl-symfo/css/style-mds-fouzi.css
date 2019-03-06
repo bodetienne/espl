@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Ubuntu-condensed";
+  src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+
 /* pour la popup de la button enregistrer */
 .bg-modal{
   width: 100%;
@@ -23,7 +29,7 @@
   position: relative;
   border-radius: 5%;
   padding-bottom: 59px;
-  font-family: arial;
+  font-family: "Ubuntu-condensed";
   box-shadow: 1px 8px 12px #272626;
 }
 
@@ -120,7 +126,7 @@
   position: relative;
   border-radius: 5%;
   padding-bottom: 59px;
-  font-family: arial;
+  font-family: "Ubuntu-condensed";
 }
 
 #fermer{
@@ -144,8 +150,7 @@
   padding: 10px;
   width: 119px;
   padding-left: 18px;
-  font-family: arial;
-  border-radius: 3px;
+  font-family: 'Ubuntu-condensed';
 }
 
 .content{
@@ -183,11 +188,11 @@
 }
 
 .h4{
-  color: #1495bc;
+  color: #46A2FF;
 }
 
 .b-1{
-  color: orange;
+  color: #FFB70E;
 }
 
 .content-check-p{
@@ -205,7 +210,7 @@
 }
 
 .barre-orange{
-  background-color: #f2aa18;
+  background-color: #FFCA4D;
   height: 30px;
   width: 144px;
   font-family: arial;
@@ -214,7 +219,7 @@
 .barre-blue{
   width: 11px;
   height: 118px;
-  background-color: #1495bc;
+  background-color: #46A2FF;
   margin-top: -118px;
   margin-left: -25px !important;
 }
