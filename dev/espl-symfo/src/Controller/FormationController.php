@@ -29,13 +29,19 @@ class FormationController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="formation_new", methods={"GET","POST"})
+     * @Route("/formation-1-mds", name="formation_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
         $formation = new Formation();
         $form = $this->createForm(FormationType::class, $formation);
         $form->handleRequest($request);
+
+        $repo = $this->getDoctrine()
+                ->getRepository(Formation::class);
+
+        // Récupérer tout les téléphones de la BDD
+        $tab = $repo->findAll();
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
@@ -45,8 +51,9 @@ class FormationController extends AbstractController
             return $this->redirectToRoute('formation_index');
         }
 
-        return $this->render('formation/new.html.twig', [
+        return $this->render('formation/formation-1-mds.html.twig', [
             'formation' => $formation,
+            'tab' => $tab,
             'form' => $form->createView(),
         ]);
     }

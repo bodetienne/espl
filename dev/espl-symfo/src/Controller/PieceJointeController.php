@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/piece/jointe")
+ * @Route("/piece_jointe")
  */
 class PieceJointeController extends AbstractController
 {
@@ -29,7 +29,7 @@ class PieceJointeController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="piece_jointe_new", methods={"GET","POST"})
+     * @Route("/pieces-jointes", name="piece_jointe_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -45,7 +45,7 @@ class PieceJointeController extends AbstractController
             return $this->redirectToRoute('piece_jointe_index');
         }
 
-        return $this->render('piece_jointe/new.html.twig', [
+        return $this->render('piece_jointe/pieces-jointes.html.twig', [
             'piece_jointe' => $pieceJointe,
             'form' => $form->createView(),
         ]);

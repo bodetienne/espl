@@ -1,0 +1,214 @@
+""<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Candidature My Digital School</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-etienne.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+		{% endblock %}
+	</head>
+
+	<body>
+		<main class="form-main structure formation-1">
+			<div class="block-main">
+				<div class="aside">
+				{% include "header.html.twig" %}
+					<div class="fond-martin">
+						<div class="mur">
+							<div class="col-1"></div>
+							<div class="col-2">
+								<div class="blanc"></div>
+								<div class="bleu"></div>
+							</div>
+							<div class="col-3"></div>
+						</div>
+						<div class="trottoir">
+							<div class="ligne-1"></div>
+							<div class="ligne-2"></div>
+						</div>
+						<div class="sol"></div>
+					</div>
+				</div>
+			<!-- PARTIE MAIN (droite)-->
+	        <div class="main">
+						{% include "barre-progression.html.twig" %}
+
+						<div class="container-lgn">
+
+							<h1 class="nom-form">Quelle est la formation de tes rêves ?</h1>
+							<?php// include 'functions/form-elements.php'; ?>
+							<div class="container-titre">
+								<h2>Bachelor Web et Digital</h2>
+							</div>
+							<div class="lgn lgn-1">
+								<a href="#" class="info-button">
+									<img class="info-button" src="{{ asset('../elements/info-button.png') }}" alt="bouton pour plus d\'informations">
+								</a>
+								<div class="groupe-formation">
+									<div class="btn-school">
+
+										<button type="button" name="button" class="btn-choix" id="{% for form in tab|slice(0,1) %}
+										{{ form.nomFormation }}
+    								{% endfor %}">Année 1</button>
+										<button type="button" name="button" class="btn-choix" id="{% for form in tab|slice(1, 1) %}
+										{{ form.nomFormation }}
+    								{% endfor %}">Année 2</button>
+									</div>
+									<div class="txt-bachelor">
+
+										<p class="cycle-mds">Cycle web et Digital : formation initiale</p>
+										<div class="hashtag-groupe">
+											<div class="ligne-hashtag">
+												<span class="hashtag">#</span><p>Développement</p>
+											</div>
+											<div class="ligne-hashtag">
+												<span class="hashtag">#</span><p>WebDesign</p>
+											</div>
+											<div class="ligne-hashtag">
+												<span class="hashtag">#</span><p>WebMarketing</p>
+											</div>
+											<div class="ligne-hashtag">
+												<span class="hashtag">#</span><p>Projet</p>
+											</div>
+											<div class="ligne-hashtag">
+												<span class="hashtag">#</span><p>Méthodologie</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="check-group">
+									<div class="block-btn">
+										<button type="button" name="button" class="btn-choix" id="btn3">Année 3</button>
+										<img class="info-button" src="{{ asset('../elements/info-button.png') }}" alt="bouton pour plus d\'informations">
+									</div>
+									<div class="spé-grp">
+										<h3 class="spé-title">Choisis ta spécialisation</h3>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école" id="{% for form in tab|slice(2, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">
+									    <span class="checkmark-école">Développeur Web</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école" id="{% for form in tab|slice(3, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">
+									    <span class="checkmark-école">WebDesign</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école" id="{% for form in tab|slice(4, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">
+									    <span class="checkmark-école">WebMarketing & Social Medias</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école" id="{% for form in tab|slice(5, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">
+									    <span class="checkmark-école">E-Business</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="container-titre">
+								<h2>MBA</h2>
+							</div>
+							<div class="lgn lgn-2">
+								<div class="check-group">
+									<div class="block-btn">
+										<img class="info-button" src="{{ asset('../elements/info-button.png') }}" alt="bouton pour plus d\'informations">
+										<button type="button" name="button" class="btn-choix" id="btn4">Année 1</button>
+									</div>
+									<div class="spé-grp">
+										<h3 class="spé-title">Choisis ta spécialisation</h3>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école">
+									    <span class="checkmark-école" id="{% for form in tab|slice(6, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">Entrepreunariat Web & Digital</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+										</div>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école">
+									    <span class="checkmark-école" id="{% for form in tab|slice(7, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">Expert Web & Digital</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+									 </div>
+									</div>
+								</div>
+								<div class="check-group">
+									<div class="block-btn">
+										<button type="button" name="button" class="btn-choix" id="btn5">Année 2</button>
+										<img class="info-button" src="{{ asset('../elements/info-button.png') }}" alt="bouton pour plus d\'informations">
+
+									</div>
+									<div class="spé-grp">
+										<h3 class="spé-title">Choisis ta spécialisation</h3>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école">
+									    <span class="checkmark-école" id="{% for form in tab|slice(8, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">Entrepreunariat Web & Digital</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+									  </div>
+										<div class="check-ligne">
+									    <input type="checkbox" class="check-école">
+									    <span class="checkmark-école" id="{% for form in tab|slice(9, 1) %}
+											{{ form.nomFormation }}
+	    								{% endfor %}">Expert Web & Digital</span>
+											<a href="#">
+												<img class="more-button" src="{{ asset('../elements/more-btn.png') }}" alt="bouton pour plus d\'informations">
+											</a>
+									  </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="container-button">
+								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/form-4-mds">
+									<button id="previous" class="btn-previous" type="button">Précédent</button>
+								</a>
+								<a class="lien save" href="#">
+									<button id="save" class="btn-save" type="button">Enregistrer</button>
+								</a>
+								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/form-dossier-reflexion">
+									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				<!-- FIN PARTIE MAIN -->
+				</div>
+
+			{% include "footer.html.twig" %}
+		</main>
+	</body>
+</html>
