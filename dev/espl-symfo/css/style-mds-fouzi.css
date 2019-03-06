@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   left:0;
+  z-index: 3;
 }
 /* pour la popup de la button ENREGISTRER */
 .modal-content{
