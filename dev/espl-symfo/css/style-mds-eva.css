@@ -338,7 +338,8 @@
 }
 
 /*Largeur champ code postal*/
-#cp {
+#cp,
+.champ-cp .number-input {
 	width: 5em;
 }
 

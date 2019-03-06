@@ -8,7 +8,6 @@
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
 			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
@@ -42,18 +41,12 @@
 						<div class="form-3">
 							<div class="form-zone">
 								<div class="form-gauche">
-									{{ form_start(form) }}
-									 
-									    
-
-									
 									<div class="prenom-garant-1">
-										<label class="label label-prenom">{{ form_label(form.nomGarant) }}<span class="required"> *</span></label>
+										<label class="label label-prenom">Prénom<span class="required"> *</span></label>
 										<div class="champ-prenom">
-											{{ form_widget(form.nomGarant) }}
+											<input class="textfield-input" type="text" id="prenom-garant">
 										</div>
 									</div>
-									{{ form_end(form) }}
 									<div class="nom-garant">
 										<label class="label label-nom">Nom<span class="required"> *</span></label>
 										<div class="champ-nom">
@@ -125,9 +118,9 @@
 								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/form-2-mds">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
-
-								<button id="save" class="btn-save" type="button">Sauvegarder</button>
-
+								<a class="lien sauvegarder" href="#">
+									<button id="save" class="btn-save" type="button">Sauvegarder</button>
+								</a>
 								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/form-4-mds">
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
