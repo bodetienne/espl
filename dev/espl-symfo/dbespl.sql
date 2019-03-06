@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 04 mars 2019 à 16:51
+-- Généré le :  mer. 06 mars 2019 à 14:10
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.10
 
@@ -54,7 +54,7 @@ CREATE TABLE `candidat` (
 --
 
 INSERT INTO `candidat` (`id`, `nom_candidat`, `prenom_candidat`, `jour_naissance_candidat`, `mois_naissance_candidat`, `annee_naissance_candidat`, `lieu_naissance_candidat`, `mail_candidat`, `fixe_candidat`, `mobile_candidat`, `adresse_candidat`, `cp_candidat`, `ville_candidat`, `secu_candidat`, `permis_candidat`, `code_acces_candidat`, `etat_dossier_candidat`, `id_formation`) VALUES
-(1, 'Bodet', 'Etienne', 20, 7, 1999, 'Cholet', 'etienne.bodet@my-digital-school.org', 0, 0, 'Loublande', 79700, 'Mauléon', 0, 1, '497985', 'en_cours', 1);
+(1, 'Bodet', 'Etienne', 20, 7, 1999, 'Cholet', 'etienne.bodet@my-digital-school.org', 0, 0, 'Loublande', 79700, 'Mauléon', 0, 1, '497985', 'en_cours', 3);
 
 -- --------------------------------------------------------
 
@@ -112,7 +112,16 @@ CREATE TABLE `formation` (
 --
 
 INSERT INTO `formation` (`id`, `nom_formation`, `id_ecole`) VALUES
-(1, 'B3 Spécialisation Développeur Web', 1);
+(1, 'Bachelor Cycle Web & Digital - Année 1', 1),
+(2, 'Bachelor Cycle Web & Digital - Année 2', 1),
+(3, 'B3 Spécialisation Développeur Web', 1),
+(4, 'B3 Spécialisation Webdesign', 1),
+(5, 'B3 Spécialisation Webmarketing & Social Media', 1),
+(6, 'B3 Spécialisation E-Business', 1),
+(7, 'MBA Entrepreneuriat Web & Digital - Année 1', 1),
+(8, 'MBA Expert Web & Digital - Année 1', 1),
+(9, 'MBA Entrepreneuriat Web & Digital - Année 2', 1),
+(10, 'MBA Expert Web & Digital - Année 2', 1);
 
 -- --------------------------------------------------------
 
@@ -291,7 +300,7 @@ ALTER TABLE `ecole`
 -- AUTO_INCREMENT pour la table `formation`
 --
 ALTER TABLE `formation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT pour la table `garant`

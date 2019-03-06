@@ -58,8 +58,7 @@
 											{{ form_widget(form.prenomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'prenom'}}) }}
 										</div>
 									</div>
-								
-									
+																	
 									<div class="mail-garant">
 										{{ form_label(form.mailGarant, 'E-mail', {'label_attr': {'class': 'label label-mail-garant'}}) }}
 										<div class="champs-mail-garant">
@@ -74,11 +73,11 @@
 										</div>
 									</div>
 
-										{{ form_end(form) }}
 									<div class="lien-parente">
-										<label class="label label-lien-parente">Lien de parenté</label>
+										{{ form_label(form.lienParente, 'Lien de parenté', {'label_attr': {'class': 'label label-lien-parente'}}) }}
 										<div class="champ-lien-parente">
-											<input class="textfield-input" type="text" name="textfield" id="lien"><a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
+											{{ form_widget(form.lienParente, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'lien'}}) }}
+											<a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
 										</div>
 									</div>
 								</div>
@@ -89,16 +88,16 @@
 										<input class="checkbox-input" type="checkbox" id="button-adresse"><label for="button-adresse"></label>
 									</div>
 									<div class="adresse-garant">
-										<label class="label label-adresse">Adresse</label>
+										{{ form_label(form.adresseGarant, 'Adresse', {'label_attr': {'class': 'label label-adresse'}}) }}
 										<div class="champs-adresse">
-											<input class="textfield-input" type="text" name="textfield"id="adresse">
+											{{ form_widget(form.adresseGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'adresse'}}) }}
 										</div>
 									</div>
 									<div class="CP-ville">
 										<div class="cp-garant">
-											<label class="label label-cp">Code postal</label>
+											{{ form_label(form.cpGarant, 'Code postal', {'label_attr': {'class': 'label label-cp'}}) }}
 											<div class="champ-cp">
-												<input class="number-input" type="number" id="cp">
+												{{ form_widget(form.cpGarant, {'attr': {'class': 'number-input', 'id':'cp'}}) }}
 											</div>
 										</div>
 										<div class="ville-garant">
@@ -122,7 +121,7 @@
 									</div>
 								</div>
 							</div>
-
+{{ form_end(form) }}
 							<div class="container-button">
 								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/form-2-mds">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
