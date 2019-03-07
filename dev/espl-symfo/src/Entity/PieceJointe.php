@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * PieceJointe
@@ -24,6 +25,7 @@ class PieceJointe
     /**
      * @var string
      *
+     *@Assert\File(mimeTypes={ "image/png", "image/jpeg" })
      * @ORM\Column(name="photo_identite", type="blob", length=0, nullable=false)
      */
     private $photoIdentite;
@@ -31,6 +33,7 @@ class PieceJointe
     /**
      * @var string|null
      *
+     *@Assert\File(mimeTypes={ "image/png", "image/jpeg", "file/pdf" })
      * @ORM\Column(name="releve_notes", type="blob", length=0, nullable=true)
      */
     private $releveNotes;
@@ -38,6 +41,7 @@ class PieceJointe
     /**
      * @var string|null
      *
+     *@Assert\File(mimeTypes={ "image/png", "image/jpeg", "file/pdf" })
      * @ORM\Column(name="diplome", type="blob", length=0, nullable=true)
      */
     private $diplome;
@@ -45,6 +49,7 @@ class PieceJointe
     /**
      * @var string
      *
+     *@Assert\File(mimeTypes={ "image/png", "image/jpeg", "file/pdf" })
      * @ORM\Column(name="cv", type="blob", length=0, nullable=false)
      */
     private $cv;
@@ -52,6 +57,7 @@ class PieceJointe
     /**
      * @var string
      *
+     *@Assert\File(mimeTypes={ "file/pdf" })
      * @ORM\Column(name="lettre_motivation", type="blob", length=0, nullable=false)
      */
     private $lettreMotivation;
@@ -59,6 +65,7 @@ class PieceJointe
     /**
      * @var string
      *
+     *@Assert\File(mimeTypes={ "image/png", "image/jpeg", "file/pdf" })
      * @ORM\Column(name="piece_identite", type="blob", length=0, nullable=false)
      */
     private $pieceIdentite;
@@ -66,6 +73,7 @@ class PieceJointe
     /**
      * @var string|null
      *
+     *@Assert\File(mimeTypes={ "image/png", "image/jpeg", "file/pdf" })
      * @ORM\Column(name="credits_ects", type="blob", length=0, nullable=true)
      */
     private $creditsEcts;
