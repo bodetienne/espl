@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit ChargeRecrutement{% endblock %}
+
+{% block body %}
+    <h1>Edit ChargeRecrutement</h1>
+
+    {{ include('charge_recrutement/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('charge_recrutement_index') }}">back to list</a>
+
+    {{ include('charge_recrutement/_delete_form.html.twig') }}
+{% endblock %}

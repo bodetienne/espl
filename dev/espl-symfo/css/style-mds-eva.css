@@ -286,12 +286,13 @@
 }
 
 /*Style général des astérisques*/
-.main.formulaire-2 .form-zone .required,
-.main.formulaire-3 .form-zone .required,
-.main.formulaire-4 .form-zone .required {
+.main.formulaire-2 .form-zone .required:after,
+.main.formulaire-3 .form-zone .required:after,
+.main.formulaire-4 .form-zone .required:after {
+	content: " *";
 	font-family: "Ubuntu-condensed";
 	color: #FF8A22;
-	margin-left: 0.5vw;
+	margin-left: 0.2vw;
 }
 
 
@@ -337,7 +338,8 @@
 }
 
 /*Largeur champ code postal*/
-#cp {
+#cp,
+.champ-cp .number-input {
 	width: 5em;
 }
 

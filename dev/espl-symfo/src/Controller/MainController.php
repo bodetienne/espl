@@ -23,8 +23,6 @@ class MainController extends Controller
       return $this->render('presentation-mds.html.twig');
     } elseif ($nomdepage == "form-1-mds") {
       return $this->render('form-1-mds.html.twig');
-    } elseif ($nomdepage == "connexion-mds") {
-      return $this->render('home.html.twig');
     } elseif ($nomdepage == "form-2-mds") {
       return $this->render('form-2-mds.html.twig');
     } elseif ($nomdepage == "form-3-mds") {
@@ -35,9 +33,18 @@ class MainController extends Controller
       return $this->render('formation-1-mds.html.twig');
     } elseif ($nomdepage == "form-dossier-reflexion") {
       return $this->render('form-dossier-reflexion.html.twig');
-    }else {
-      var_dump($nomdepage);
-    }
+    } elseif ($nomdepage == "aide-mds") {
+      return $this->render('aide-mds.html.twig');
+    } elseif ($nomdepage == "contact") {
+      return $this->render('contact.html.twig');
+    } elseif ($nomdepage == "pieces-jointes") {
+      return $this->render('pieces-jointes.html.twig');
+    } elseif ($nomdepage == "connexion-mds") {
+      return $this->render('connexion-mds.html.twig');
+    } 
+    /*else {
+      return $this->render('error404.html.twig');
+    }*/
   }
 
 }

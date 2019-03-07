@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ReponseSpecifique{% endblock %}
+
+{% block body %}
+    <h1>ReponseSpecifique</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ reponse_specifique.id }}</td>
+            </tr>
+            <tr>
+                <th>DossierReflexion</th>
+                <td>{{ reponse_specifique.dossierReflexion }}</td>
+            </tr>
+            <tr>
+                <th>ConnaissanceEcole</th>
+                <td>{{ reponse_specifique.connaissanceEcole }}</td>
+            </tr>
+            <tr>
+                <th>ParticipationJpo</th>
+                <td>{{ reponse_specifique.participationJpo ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>QuestionsPrealables</th>
+                <td>{{ reponse_specifique.questionsPrealables }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('reponse_specifique_index') }}">back to list</a>
+
+    <a href="{{ path('reponse_specifique_edit', {'id': reponse_specifique.id}) }}">edit</a>
+
+    {{ include('reponse_specifique/_delete_form.html.twig') }}
+{% endblock %}

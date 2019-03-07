@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Candidature My Digital School | Error 404</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-etienne.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+		{% endblock %}
+	</head>
+
+	<body>
+		<main class="error-main">
+			<div class="main">
+				<h1>Oops, cette page n'existe pas </h1>
+				<img src="{{ asset('../elements/chocked.png') }}" alt="Martin est choqué">
+				<a href="/espl/dev/espl-symfo/public/index.php/presentation">
+					<button type="button" name="button">Retourner à la page d'accueil</button>
+				</a>
+			</div>
+
+
+			{% include "footer.html.twig" %}
+		</main>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Ubuntu-condensed";
+  src: url('../fonts/ubuntu/Ubuntu-C.ttf');
+}
+
+
+/* pour la popup de la button enregistrer */
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left:0;
+  z-index: 3;
+}
+/* pour la popup de la button ENREGISTRER */
+.modal-content{
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  padding-left: 25px;
+  position: relative;
+  border-radius: 5%;
+  padding-bottom: 59px;
+  font-family: "Ubuntu-condensed";
+  box-shadow: 1px 8px 12px #272626;
+}
+
+/*    ####################################################################     */
+
+/* pour la popup de la button QUITTER */
+.check-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+/* pour la popup de la button QUITTER */
+.check-modal-content{
+  width: 400px;
+  height: 77px;
+  font-family: fantasy;
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+  padding: 38px;
+  padding-left: 24px;
+  position: absolute;
+  border-radius: 35px;
+  padding-bottom: 56px;
+  font-family: sans-serif;
+  font-size: 15px;
+  box-shadow: 1px 8px 12px #272626;
+}
+/* pour le mouvement visualisation
+
+.check-modal-content:hover{
+  transform: scale(1.1,1.1);
+}
+*/
+
+
+/*       ##########################################      */
+
+
+.continuer{
+    background-color: white;
+    border: 1.5px solid #2edaf3;
+    padding: 7px;
+    width: 83px;
+}
+
+.quitter{
+    background-color: #10a9ce;
+    border: 0;
+    padding: 8.3px;
+    width: 95px;
+    margin-left: 20px;
+    color: white;
+}
+
+.enregitre2{
+  margin-left: 10px;
+  height: 35px;
+  width: 100px;
+  background-color: rgba(33, 129, 252, 0.6);
+  color: rgba(33, 129, 252, 0.6);
+  border: 0px solid;
+  color: white;
+}
+..enregitre2 hover{
+  margin-left: 10px;
+  height: 35px;
+  width: 100px;
+  background-color: rgba(25, 158, 252, 0.7);
+  color: rgba(25, 158, 252, 0.7);
+  border: 0px solid;
+  color: white;
+}
+
+.content-check{
+  margin-top: -43px;
+    padding-left: 25px;
+}
+
+.modal-content2{
+  width: 480px;
+  height: 70px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  padding-left: 25px;
+  position: relative;
+  border-radius: 5%;
+  padding-bottom: 59px;
+  font-family: "Ubuntu-condensed";
+}
+
+#fermer{
+  background-color: white;
+  border: none;
+}
+
+.input{
+  display: block;
+  border: none;
+  border-bottom: 1px solid #908989;
+  width: 80%;
+  background-color: white;
+}
+
+.envoyer{
+  position: relative;
+  background-color: #46A2FF;
+  color: white;
+  border: 0;
+  padding: 10px;
+  width: 119px;
+  padding-left: 18px;
+  font-family: 'Ubuntu-condensed';
+}
+
+.content{
+  margin-top: -23px;
+  padding-left: 25px;
+}
+
+#fermer{
+  background-color: white;
+  border: none;
+}
+
+.input1{
+  display: block;
+  border: none;
+  border-bottom: 1px solid #908989;
+  width: 80%;
+  background-color: white;
+}
+
+.close{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.close1{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.h4{
+  color: #46A2FF;
+}
+
+.b-1{
+  color: #FFB70E;
+}
+
+.content-check-p{
+  font-family: 'dosis';
+  font-size: 20px;
+}
+.content-check-p2{
+  font-size: 11.76px;
+  padding-right: 0px;
+}
+
+.text{
+  padding-top: 23px;
+  padding-left: 35px;
+}
+
+.barre-orange{
+  background-color: #FFCA4D;
+  height: 30px;
+  width: 144px;
+  font-family: arial;
+}
+
+.barre-blue{
+  width: 11px;
+  height: 118px;
+  background-color: #46A2FF;
+  margin-top: -118px;
+  margin-left: -25px !important;
+}
+
+.barre-red{
+  width: 11px;
+  height: 100px;
+  background-color: red;
+  margin-top: -105px;
+  margin-left: -25px !important;
+}
+
+.msg-alert{
+  background: url("src=img/alert.png");
+  font-size: 16px;
+  font-family: Ubuntu;
+  color: grey;
+}
+
+.img-alert{
+  float: right;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  margin-right:100 px;
+  margin-top: -5px;
+  padding-right: 90px;
+}

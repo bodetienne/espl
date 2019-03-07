@@ -6,6 +6,7 @@
 		{% block stylesheets %}
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
@@ -210,7 +211,7 @@
 						</div>
 					</div>
 					<div class="main formulaire-1">
-						<img class="progression-mds" src="{{ asset('../elements/barre-progression-mds-1.png') }}">
+						{% include "barre-progression.html.twig" %}
 						<h1 class="titre-mds">Présente-toi</h1>
 						<div class="form-1">
 							<div class="nom-prenom">

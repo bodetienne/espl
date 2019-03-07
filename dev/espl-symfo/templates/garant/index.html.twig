@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Garant index{% endblock %}
+
+{% block body %}
+    <h1>Garant index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NomGarant</th>
+                <th>PrenomGarant</th>
+                <th>MailGarant</th>
+                <th>TelGarant</th>
+                <th>LienParente</th>
+                <th>AdresseGarant</th>
+                <th>CpGarant</th>
+                <th>VilleGarant</th>
+                <th>ProfessionGarant</th>
+                <th>EntrepriseGarant</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for garant in garants %}
+            <tr>
+                <td>{{ garant.id }}</td>
+                <td>{{ garant.nomGarant }}</td>
+                <td>{{ garant.prenomGarant }}</td>
+                <td>{{ garant.mailGarant }}</td>
+                <td>{{ garant.telGarant }}</td>
+                <td>{{ garant.lienParente }}</td>
+                <td>{{ garant.adresseGarant }}</td>
+                <td>{{ garant.cpGarant }}</td>
+                <td>{{ garant.villeGarant }}</td>
+                <td>{{ garant.professionGarant }}</td>
+                <td>{{ garant.entrepriseGarant }}</td>
+                <td>
+                    <a href="{{ path('garant_show', {'id': garant.id}) }}">show</a>
+                    <a href="{{ path('garant_edit', {'id': garant.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="12">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('garant_new') }}">Create new</a>
+{% endblock %}

@@ -1,14 +1,16 @@
  <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style-mds.css" media="all" />
-    <link rel="stylesheet" href="css/style-mds-structure" />
-    <link rel="stylesheet" href="css/style-mds-header-footer.css">
-    <link rel="stylesheet" href="css/style-mds-emma.css" />
-    <link rel="stylesheet" href="css/style-mds-alex.css">
-
-    <link rel="icon" type="img" href="elements/favicon.ico.png">
+  {% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-emma.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+    <link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+  {% endblock %}
 
 		<meta charset="utf-8">
 		<title>Contact</title>
@@ -22,7 +24,9 @@
 
         <div class="block-left">
           <div class="logo-ecole-contact">
-            <img src="elements/logo-mds-blanc.png" alt="logo-mds-blanc">
+            <a href="/espl/dev/espl-symfo/public/index.php/presentation">
+              <img src="{{ asset('../elements/logo-mds-blanc.png') }}" alt="logo-mds-blanc">
+            </a>
           </div>
           <h2>Contacte-nous !</h2>
           <h3>Tu peux aussi nous joindre par téléphone au 02.41.73.20.30</h3>
@@ -69,10 +73,7 @@
       </div>
 
     </div>
-    <?php include 'footer.php';?>
-  </main>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/effects.js"></script>
+			{% include "footer.html.twig" %}  </main>
 </body>
 
 </html>
