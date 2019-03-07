@@ -1,0 +1,24 @@
+#animation_container{
+  background-color:rgba(255, 255, 255, 0.00);
+  width:823px;
+  height:980px;
+  position: fixed;
+  max-height: 10vh;
+}
+
+#canvas{
+  position: absolute;
+  display: block;
+  background-color:rgba(255, 255, 255, 0.00);
+}
+
+#dom_overlay_container{
+  pointer-events:none;
+  overflow:hidden;
+  width:823px;
+  height:980px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
