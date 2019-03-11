@@ -1,13 +1,5 @@
 
 
-    <!-- <div>
-      <button id="button" type="button" name="button">Enregistre</button>
-    </div>
-
-    <div>
-      <button id="button2" type="button" name="button2">Quitter</button>
-    </div> -->
-
       <!-- Code de la button enregistre -->
 
     <div class="bg-modal">
@@ -24,11 +16,16 @@
                 <p>Vous pouvez sauvegarder votre candidature et revenir la compléter plus tard.</p>
                 <p>Laissez-nous votre adresse mail.</p>
                 <p>Nous vous enverrons un <b class="b-1">code</b> qui vous permettra de revenir à tout moment.</p>
-                  <form class="" action="index.html" method="post">
+                  <form class="form-popup" action="/espl/dev/espl-symfo/public/index.php/form-sent" method="post">
                     <h4 class="h4">ADRESSE MAIL</h4>
-                    <input class="input" type="mail" name="mail" placeholder="E-Mail@gmail.com" x>
-                    <br>
-                    <button class="envoyer" type="button" name="button">ENVOYER</button>
+                    {{ form_start(form) }}
+                      {{ form_widget(form) }}
+                    {{ form_end(form) }}
+
+
+
+          					<button class="envoyer" type="submit" name="button">ENVOYER</button>
+
                   </form>
         </div>
 
