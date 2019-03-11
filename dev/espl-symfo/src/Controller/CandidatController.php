@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Controller;
 
@@ -17,6 +17,14 @@ use Symfony\Component\HttpFoundation\Cookie;
  */
 class CandidatController extends AbstractController
 {
+
+    private $session;
+
+    public function __construct(SessionInterface $session) {
+        $this->session = $session; 
+    }
+
+
     /**
      * @Route("/", name="candidat_index", methods={"GET"})
      */
@@ -26,34 +34,38 @@ class CandidatController extends AbstractController
             ->getRepository(Candidat::class)
             ->findAll();
 
+
         return $this->render('candidat/index.html.twig', [
             'candidats' => $candidats,
         ]);
     }
 
+
     /**
      * @Route("/form-1-mds", name="candidat_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(SessionInterface $session, Request $request): Response
     {
 
-     $cookie = new Cookie('color', 'green', strtotime('tomorrow'), '/',
-       'somedomain.com', true, true);
-      //
+      
 
-      // $cookie = Cookie::fromString('color = green; expires = Web, time()+3600;
-      // path=/; domain = somedomain.com; secure; httponly');
+       /*$cookie = new Cookie('color', 'green', strtotime('now'), '/',
+         'http://localhost:8080/espl/dev/espl-symfo/public/index.php', true, true);
+        //
 
-      $response = new Response(
-        'Content',
-        Response::HTTP_OK,
-        ['content-type' => 'text/html']
-      );
+        // $cookie = Cookie::fromString('color = green; expires = Web, time()+3600;
+        // path=/; domain = somedomain.com; secure; httponly');
+
+        $response = new Response(
+          'Content',
+          Response::HTTP_OK,
+          ['content-type' => 'text/html']
+        );
 
 
-      $response->headers->setCookie($cookie);
-
-      var_dump($cookie);
+        $response->headers->setCookie($cookie);
+        $cookie = $request->cookie->get('color'); 
+        var_dump($cookie);*/
 
         $candidat = new Candidat();
         $form = $this->createForm(CandidatType::class, $candidat);
@@ -77,7 +89,12 @@ class CandidatController extends AbstractController
             return $this->redirectToRoute('candidat_index');
         }
 
+        // enregistrement du prénom dans la session
+        $session->set('prenomCandidat', 'Eva');
 
+        // création de la variable
+        $prenomCandidat = $session->get('prenomCandidat');
+        var_dump($prenomCandidat);
 
         return $this->render('candidat/form-1-mds.html.twig', [
             'candidat' => $candidat,
