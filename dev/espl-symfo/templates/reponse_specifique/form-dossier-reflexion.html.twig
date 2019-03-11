@@ -44,7 +44,7 @@
 						<div class="dossier-questions">
 							<div class="dossier-question 1">
 								<h3 class="dossier-numero">01.</h3>
-								<div class="questions">
+								<div class="questions-formation">
 									<p>Quel est ton projet professionnel ?</p>
 									<p>Quelles sont tes motivations pour la spécialisation choisie ?</p>
 									<p>Quels atouts as-tu pour cette formation ?</p>
@@ -53,13 +53,13 @@
 							</div>
 							<div class="dossier-question 2">
 								<h3 class="dossier-numero">02.</h3>
-								<div class="questions">
+								<div class="questions-formation">
 									<p>Répondre aux questions suivantes en Anglais.</p>
 									<p>Describe a difficult situation you met.</p>
 									<p>Explain the tools you used to solve this difficulty and what you learnt about it.</p>
 								</div>
 							</div>
-							{{ form_start(form) }} 
+							{{ form_start(form) }}
 							<div class="bouton-upload">
 								{{ form_widget(form.dossierReflexion, {'attr': {'class': 'FileType', 'type': 'file', 'name': 'UPLOAD', 'id':'UPLOAD', 'accept':'.pdf'}}) }}
 								{{ form_label(form.dossierReflexion, 'IMPORTER FICHIER PDF', {'label_attr': {'for': 'UPLOAD'}}) }}
@@ -72,10 +72,12 @@
 						</div>
 						<div class="boutons-nav">
 							<div class="boutons">
-								<a href="/espl/dev/espl-symfo/public/index.php/formation/formation-1/">
+								<a href="/espl/dev/espl-symfo/public/index.php/formation/formation-1-mds/">
 									<button type="button" name="precedent" class="precedent">PRECEDENT</button>
 								</a>
-								<button type="button" name="enregistrer" class="enregistrer">ENREGISTRER</button>
+								<a href="#">
+									<button type="button" name="enregistrer" class="enregistrer">ENREGISTRER</button>
+								</a>
 								<a href="/espl/dev/espl-symfo/public/index.php/piece_jointe/pieces-jointes/">
 									<button type="button" name="suivant" class="suivant">SUIVANT</button>
 								</a>

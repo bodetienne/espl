@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/piece-jointe")
+ * @Route("/piece_jointe")
  */
 class PieceJointeController extends AbstractController
 {

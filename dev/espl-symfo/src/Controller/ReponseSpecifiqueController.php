@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/reponse/specifique")
+ * @Route("/reponse_specifique")
  */
 class ReponseSpecifiqueController extends AbstractController
 {
