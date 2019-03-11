@@ -9,3 +9,7 @@ presentation:
 page:
     path: /{nomdossierpage}/{nomdepage}/
     controller: App\Controller\MainController::pageFormulaireName
+
+pdf:
+    path: /pdf/
+    controller: App\Controller\MainController::PdfController
