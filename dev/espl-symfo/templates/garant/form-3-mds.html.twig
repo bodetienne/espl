@@ -41,21 +41,21 @@
 						<div class="form-3">
 							<div class="form-zone">
 								<div class="form-gauche">
-									{{ form_start(form) }}   
-									
-									<div class="nom-garant-1">										
+									{{ form_start(form) }}
+
+									<div class="nom-garant-1">
 										{{ form_label(form.nomGarant, 'Nom', {'label_attr': {'class': 'label label-nom'}}) }}
 										<div class="champ-nom">
 											{{ form_widget(form.nomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'nom'}}) }}
 										</div>
 									</div>
-									<div class="prenom-garant">										
+									<div class="prenom-garant">
 										{{ form_label(form.prenomGarant, 'Prénom', {'label_attr': {'class': 'label label-prenom'}}) }}
 										<div class="champ-prenom">
 											{{ form_widget(form.prenomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'prenom'}}) }}
 										</div>
 									</div>
-																	
+
 									<div class="mail-garant">
 										{{ form_label(form.mailGarant, 'E-mail', {'label_attr': {'class': 'label label-mail-garant'}}) }}
 										<div class="champs-mail-garant">
@@ -122,7 +122,7 @@
 							</div>
 							{{ form_end(form) }}
 							<div class="container-button">
-								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/garant/form-2-mds">
+								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/candidat/form-2-mds">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
 								<a class="lien sauvegarder" href="#">

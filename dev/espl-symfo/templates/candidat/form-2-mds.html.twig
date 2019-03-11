@@ -6,11 +6,10 @@
 		{% block stylesheets %}
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-martin.css') }}" media="all" />
 			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
 		{% endblock %}
 
@@ -188,14 +187,12 @@
 					<div class="aside">
 						<div class="fond-martin">
 							{% include "header.html.twig" %}
-							<!-- martin -->
-							<div id="animation_container">
-								<canvas id="canvas" width="823" height="980"></canvas>
-								<div id="dom_overlay_container">
+							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:823px; height:980px; position:fixed">
+								<canvas id="canvas" width="823" height="980" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:823px; height:980px; position: absolute; left: 0px; top: 0px; display: block;">
 								</div>
 							</div>
-							<!--  -->
-							<div class="mur">
+							<!-- <div class="mur">
 								<div class="col-1"></div>
 								<div class="col-2">
 									<div class="blanc"></div>
@@ -207,40 +204,113 @@
 								<div class="ligne-1"></div>
 								<div class="ligne-2"></div>
 							</div>
-							<div class="sol"></div>
+							<div class="sol"></div> -->
 						</div>
 					</div>
-					<div class="main formulaire-1">
+
+					<div class="main formulaire-2">
 						{% include "barre-progression.html.twig" %}
 						<h1 class="titre-mds">Présente-toi</h1>
-						<div class="form-1">
-							{{ form_start(form) }}
-							<div class="nom-prenom">
-								<div class="textfield">
-									<div class="input-group">
-
-										{{ form_widget(form.prenomCandidat, {'attr': {'class': 'textfield-input', 'name': 'prenomCandidat', 'placeholder': 'Prénom *' }}) }}
+						<div class="form-2">
+							<div class="form-zone">
+								<div class="form-gauche">
+									<div class="date-naissance">
+										<label class="label label-date">Date de naissance<span class="required"> *</span></label>
+										<div class="champs-date">
+											<input class="number-input" type="number" min="1" max="31" placeholder="JJ" id="jour">
+											<input class="number-input" type="number" min="1" max="12" placeholder="MM" id="mois">
+											<input class="number-input" type="number" placeholder="AAAA" id="annee">
+										</div>
 									</div>
+									<div class="lieu-naissance">
+										<label class="label label-lieu">Lieu de naissance<span class="required"> *</span></label>
+										<div class="champs-lieu">
+											<input class="textfield-input" type="text" name="textfield"id="lieu">
+										</div>
+									</div>
+									<div class="mail-candidat">
+										<label class="label label-mail-candidat">E-mail<span class="required"> *</span></label>
+										<div class="champ-mail-candidat">
+											<input class="textfield-input" type="text" name="textfield"id="mail">
+										</div>
+									</div>
+									<div class="tel-candidat">
+										<div class="tel-fixe-candidat">		<label class="label label-tel-fixe">Tel. fixe</label>
+											<div class="champs-tel-fixe-candidat">
+												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-fixe">
+											</div>
+										</div>
+										<div class="tel-port-candidat">		<label class="label label-tel-port">Tel. portable<span class="required"> *</span></label>
+											<div class="champs-tel-port-candidat">
+												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-port">
+											</div>
+										</div>
+									</div>
+
 								</div>
-								<div class="textfield">
-									<div class="input-group">
-										{{ form_widget(form.nomCandidat, {'attr': {'class': 'textfield-input', 'name': 'nomCandidat', 'placeholder': 'Nom *' }}) }}
+								<div class="divider-milieu"></div>
+								<div class="form-droite">
+									<div class="adresse-candidat">
+										<label class="label label-adresse">Adresse <span class="required"> *</span></label>
+										<div class="champs-adresse">
+											<input class="textfield-input" type="text" name="textfield"id="adresse">
+										</div>
+									</div>
+									<div class="CP-ville">
+										<div class="cp-candidat">
+											<label class="label label-cp">Code postal<span class="required"> *</span></label>
+											<div class="champ-cp">
+												<input class="number-input" type="number" id="cp">
+											</div>
+										</div>
+										<div class="ville-candidat">
+											<label class="label label-ville">Ville<span class="required"> *</span></label>
+											<div class="champs-ville">
+												<input class="textfield-input" type="text" name="textfield" id="ville">
+											</div>
+										</div>
+									</div>
+									<div class="secu-candidat">
+										<label class="label label-secu">Numéro de sécurité sociale<span class="required"> *</span></label>
+										<div class="champ-secu">
+											<input class="number-input" type="number" id="secu"><a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
+										</div>
+									</div>
+									<div class="permis">
+										<label class="label label-permis">Permis<span class="required"> *</span></label>
+										<div class="champ-permis">
+											<div class="permis-oui">
+												<input type="radio" id="oui" name="radiofield" value="oui">
+												<label for="oui"></label>
+											</div>
+											<div class="permis-non">
+												<input type="radio" id="non" name="radiofield" value="non">
+												<label for="non"></label>
+											</div>
+
+										</div>
 									</div>
 								</div>
 							</div>
-							{{ form_end(form, {'render_rest': false}) }}
+
 							<div class="container-button">
-								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/candidat/form-2-mds">
-									<button id="suivant" class="btn-next" type="submit" name="button">Suivant</button>
+								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/candidat/form-1-mds">
+									<button id="previous" class="btn-previous" type="button">Précédent</button>
+								</a>
+
+								<button id="save" class="btn-save" type="button">Sauvegarder</button>
+
+								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/garant/form-3-mds">
+									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>
-
 						</div>
 					</div>
 				</div>
-			{% include "footer.html.twig" %}
-		</main>
 
+
+				{% include "footer.html.twig" %}
+		</main>
 
 	</body>
 
