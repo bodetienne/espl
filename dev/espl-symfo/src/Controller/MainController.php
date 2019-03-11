@@ -41,11 +41,48 @@ class MainController extends Controller
       return $this->render('pieces-jointes.html.twig');
     } elseif ($nomdepage == "connexion-mds") {
       return $this->render('connexion-mds.html.twig');
-    } 
+    }
     /*else {
       return $this->render('error404.html.twig');
-    }*/
+    }
   }
+
+    public function modify(Request $request){
+
+      $repo = $this->getDoctrine()->getRepository(Candidat::class);
+      $cand = find();
+      var_dump($cand);
+
+
+        // Nous précisons ici que nous voulons utiliser `TelephoneType` et hydrater $tel
+        $form = $this->createForm(PopupType::class, $cand, [
+          'action_name' => 'modify' // valeur a envoyer
+        ]);
+
+        // nous récupérons ici les informations du formulaire validée c'est-à-dire l'équivalent du $_POST
+        // ... et ce, grâce à l'objet $request qui représente les informations sur la requête HTTP reçue (voir l'explication après le code)
+        $form->handleRequest($request);
+
+        // Si nous venons de valider le formulaire et s'il est valide (problèmes de type, etc)
+        if ($form->isSubmitted() && $form->isValid()) {
+            // nous enregistrons directement l'objet $tel !
+            // En effet, il a été hydraté grâce au paramètre donné à la méthode createFormBuilder !
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($cand);
+            $em->flush();
+
+            // nous redirigeons l'utilisateur vers la route /telephone/
+            // nous utilisons ici l'identifiant de la route, créé dans le fichier yaml (il est peut-être différent pour vous, adaptez en conséquence)
+            // extrèmement pratique : si nous devons changer l'url en elle-même, nous n'avons pas à changer nos contrôleurs, mais juste les fichiers de configurations yaml
+            return $this->redirectToRoute('index');
+
+        return $this->render('.html.twig', array(
+            'form' => $form->createView(),
+        ));
+      }
+
+    }
+
 
 }
 

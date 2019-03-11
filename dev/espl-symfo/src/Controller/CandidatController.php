@@ -4,10 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Candidat;
 use App\Form\CandidatType;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Cookie;
 
 /**
  * @Route("/candidat")
@@ -29,10 +32,29 @@ class CandidatController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="candidat_new", methods={"GET","POST"})
+     * @Route("/form-1-mds", name="candidat_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
+
+     $cookie = new Cookie('color', 'green', strtotime('tomorrow'), '/',
+       'somedomain.com', true, true);
+      //
+
+      // $cookie = Cookie::fromString('color = green; expires = Web, time()+3600;
+      // path=/; domain = somedomain.com; secure; httponly');
+
+      $response = new Response(
+        'Content',
+        Response::HTTP_OK,
+        ['content-type' => 'text/html']
+      );
+
+
+      $response->headers->setCookie($cookie);
+
+      var_dump($cookie);
+
         $candidat = new Candidat();
         $form = $this->createForm(CandidatType::class, $candidat);
         $form->handleRequest($request);
@@ -42,10 +64,22 @@ class CandidatController extends AbstractController
             $entityManager->persist($candidat);
             $entityManager->flush();
 
+            // $session = new Session();
+            //
+            //
+            // $session->set('prenomCandidat', $entityManager->prenomCandidat);
+            // $session->set('nomCandidat', $entityManager->nomCandidat);
+            // $session->get('prenomCandidat');
+            // $session->get('prenomCandidat');
+            //
+            // var_dump($session);
+
             return $this->redirectToRoute('candidat_index');
         }
 
-        return $this->render('candidat/new.html.twig', [
+
+
+        return $this->render('candidat/form-1-mds.html.twig', [
             'candidat' => $candidat,
             'form' => $form->createView(),
         ]);
