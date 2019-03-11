@@ -44,7 +44,7 @@ class CandidatController extends AbstractController
      * @Route("/form-1-mds", name="form-1-mds", methods={"GET","POST"})
      */
 
-    public function newPart1(Request $request): Response
+    public function newPart1(SessionInterface $session, Request $request): Response
 
     {
 
