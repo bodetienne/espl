@@ -30,7 +30,7 @@ class MainController extends Controller
     }
     /*else {
       return $this->render('error404.html.twig');
-    }*/
+    }
   }
 
   public function pageFormulaireName($nomdepage, $nomdossierpage){
