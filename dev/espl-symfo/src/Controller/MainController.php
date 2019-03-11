@@ -27,10 +27,7 @@ class MainController extends Controller
       return $this->render('contact.html.twig');
     }  elseif ($nomdepage == "connexion-mds") {
       return $this->render('connexion-mds.html.twig');
-    } elseif ($nomdepage == "pdf") {
-      return $this->render('pdf.html.twig');
-    }
-    else {
+    } else {
       return $this->render('error404.html.twig');
     }
   }

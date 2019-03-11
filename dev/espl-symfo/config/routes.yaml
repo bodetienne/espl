@@ -2,6 +2,10 @@ index:
    path: /home/
    controller: App\Controller\MainController::index
 
+pdf:
+    path: /pdf/test/
+    controller: App\Controller\PdfController::index
+
 presentation:
     path: /{nomdepage}/
     controller: App\Controller\MainController::pageName
@@ -9,7 +13,3 @@ presentation:
 page:
     path: /{nomdossierpage}/{nomdepage}/
     controller: App\Controller\MainController::pageFormulaireName
-
-pdf:
-    path: /pdf/
-    controller: App\Controller\MainController::PdfController

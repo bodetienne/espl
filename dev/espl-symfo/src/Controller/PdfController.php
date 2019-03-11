@@ -21,7 +21,7 @@ class PdfController extends Controller
 
         // Retrieve the HTML generated in our twig file
         $html = $this->renderView('pdf.html.twig', [
-            'title' => "Welcome to our PDF Test"
+            'title' => "Suce pute"
         ]);
 
         // Load HTML to Dompdf
