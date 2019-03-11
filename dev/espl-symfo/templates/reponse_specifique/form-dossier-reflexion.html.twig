@@ -59,15 +59,16 @@
 									<p>Explain the tools you used to solve this difficulty and what you learnt about it.</p>
 								</div>
 							</div>
+							{{ form_start(form) }} 
 							<div class="bouton-upload">
-								<input type="file" id="UPLOAD" name="UPLOAD" accept=".pdf"/>
-								<label for="UPLOAD">IMPORTER FICHIER PDF</label>
+								{{ form_widget(form.dossierReflexion, {'attr': {'class': 'FileType', 'type': 'file', 'name': 'UPLOAD', 'id':'UPLOAD', 'accept':'.pdf'}}) }}
+								{{ form_label(form.dossierReflexion, 'IMPORTER FICHIER PDF', {'label_attr': {'for': 'UPLOAD'}}) }}
 								<div class="preview">
 									<!-- contient texte avec une balise <p> quand un fichier est chargé
 									avec le bouton upload-->
 								</div>
 							</div>
-
+							{{ form_end(form, {'render_rest': false}) }}
 						</div>
 						<div class="boutons-nav">
 							<div class="boutons">

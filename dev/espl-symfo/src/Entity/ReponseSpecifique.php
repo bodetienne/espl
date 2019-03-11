@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * ReponseSpecifique
@@ -24,6 +25,7 @@ class ReponseSpecifique
     /**
      * @var string
      *
+     * @Assert\File(mimeTypes={ "file/pdf" })
      * @ORM\Column(name="dossier_reflexion", type="blob", length=0, nullable=false)
      */
     private $dossierReflexion;

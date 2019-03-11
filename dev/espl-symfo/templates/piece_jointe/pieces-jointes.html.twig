@@ -45,22 +45,25 @@
                 <div class="liste photo-identite">
                   <label class="element element-1"><div class="round-list-jaune"> </div>Photo d'identité <span class="obligatoire-mention">*</span> </label>
                   <div class="upload">
-                    <label for="file" class="label-file-photo-identite"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-photo-identite'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                 </div>
                 <div class="liste dernier-releve">
                   <label class="element element-2"><div class="round-list-orange"> </div>Dernier relevé de notes</label>
                   <div class="upload">
-                    <label for="file" class="label-file-orange"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-orange'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                 </div>
                 <div class="liste dernier-diplome">
                   <label class="element element-3"><div class="round-list-orange"> </div>Dernier diplôme obtenu</label>
                   <div class="upload">
-                    <label for="file" class="label-file-orange"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-orange'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                   <div class="info">
                     <a href="/espl/dev/espl-symfo/public/index.php/-mds"><img src="{{ asset('../elements/info-button.png') }}" alt="bouton-info"></a>
@@ -69,29 +72,33 @@
                 <div class="liste cv">
                   <label class="element element-4"><div class="round-list-bleu"> </div>CV avec photo d'identité <span class="obligatoire-mention">*</span> </label>
                   <div class="upload">
-                    <label for="file" class="label-file-bleu"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-bleu'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                 </div>
                 <div class="liste lettre-motivation">
                   <label class="element element-5"><div class="round-list-bleu"> </div>Lettre de motivation <span class="obligatoire-mention">*</span> </label>
                   <div class="upload">
-                    <label for="file" class="label-file-bleu"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-bleu'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                 </div>
                 <div class="liste piece-identite">
                   <label class="element element-6"><div class="round-list-bleu-nuit"> </div>Pièce d'identité recto/verso <span class="obligatoire-mention">*</span> </label>
                   <div class="upload">
-                    <label for="file" class="label-file-bleu-nuit"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-bleu-nuit'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                 </div>
                 <div class="liste attestation-ECTS">
                   <label class="element element-7"><div class="round-list-rose"> </div>Attestation crédits ECTS acquis ou en cours d'acquisition </label>
                   <div class="upload">
-                    <label for="file" class="label-file-rose"> <img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button"> Télécharger</label>
-                    <input id="file" class="input-file" type="file">
+										<img src="{{ asset('../elements/upload-button.png') }}" alt="upload-button">
+										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-rose'}}) }}
+										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
                   <div class="info">
                     <a href="/espl/dev/espl-symfo/public/index.php/-mds"><img src="{{ asset('../elements/info-button.png') }}" alt="bouton-info"></a>
