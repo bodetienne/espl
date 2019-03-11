@@ -28,15 +28,9 @@ class MainController extends Controller
     }  elseif ($nomdepage == "connexion-mds") {
       return $this->render('connexion-mds.html.twig');
     }
-<<<<<<< HEAD
-    // else {
-    //   return $this->render('error404.html.twig');
-    // }
-=======
     else {
       return $this->render('error404.html.twig');
     }
->>>>>>> 3a36be28f3127a912a7f0ddb2c4df75ffebafe08
   }
 
   public function pageFormulaireName($nomdepage, $nomdossierpage){
