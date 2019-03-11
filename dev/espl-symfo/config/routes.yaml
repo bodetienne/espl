@@ -5,3 +5,7 @@ index:
 presentation:
     path: /{nomdepage}/
     controller: App\Controller\MainController::pageName
+
+page:
+    path: /{nomdossierpage}/{nomdepage}/
+    controller: App\Controller\MainController::pageFormulaireName
