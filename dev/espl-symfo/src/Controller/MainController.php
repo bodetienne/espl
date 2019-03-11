@@ -28,7 +28,7 @@ class MainController extends Controller
     }  elseif ($nomdepage == "connexion-mds") {
       return $this->render('connexion-mds.html.twig');
     }
-    /*else {
+    else {
       return $this->render('error404.html.twig');
     }
   }
