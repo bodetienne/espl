@@ -3,7 +3,7 @@
   width:823px;
   height:980px;
   position: fixed;
-  max-height: 10vh;
+  margin-top: -1vh;
 }
 
 #canvas{
