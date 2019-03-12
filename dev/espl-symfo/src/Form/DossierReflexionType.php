@@ -7,15 +7,12 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class ReponseSpecifiqueType extends AbstractType
+class DossierReflexionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
             ->add('dossierReflexion')
-            ->add('connaissanceEcole')
-            ->add('participationJpo')
-            ->add('questionsPrealables')
             /*->add('idCandidat')*/
         ;
     }

@@ -54,12 +54,12 @@
 
 					<div class="main formulaire-2">
 						{% include "barre-progression.html.twig" %}
-						<h1 class="titre-mds">Présente-toi</h1>
+						<h1 class="titre-mds">Présenteergregrgr-toi</h1>
 						<div class="form-2">
 							<div class="form-zone">
 								<div class="form-gauche">
 									<div class="date-naissance">
-										<label class="label label-date">Date de naissance<span class="required"> *</span></label>
+										{{ form_label(form.jourNaissanceCandidat, 'Date de naissance', {'label_attr': {'class': 'label label-date'}}) }}
 										<div class="champs-date">
 											<input class="number-input" type="number" min="1" max="31" placeholder="JJ" id="jour">
 											<input class="number-input" type="number" min="1" max="12" placeholder="MM" id="mois">

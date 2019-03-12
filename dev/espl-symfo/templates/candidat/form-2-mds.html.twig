@@ -212,37 +212,40 @@
 						{% include "barre-progression.html.twig" %}
 						<h1 class="titre-mds">Présente-toi</h1>
 						<div class="form-2">
+								{{ form_start(form) }}
 							<div class="form-zone">
 								<div class="form-gauche">
 									<div class="date-naissance">
-										<label class="label label-date">Date de naissance<span class="required"> *</span></label>
+										{{ form_label(form.jourNaissanceCandidat, 'Date de naissance', {'label_attr': {'class': 'label label-date'}}) }}
 										<div class="champs-date">
-											<input class="number-input" type="number" min="1" max="31" placeholder="JJ" id="jour">
-											<input class="number-input" type="number" min="1" max="12" placeholder="MM" id="mois">
-											<input class="number-input" type="number" placeholder="AAAA" id="annee">
+											{{ form_widget(form.jourNaissanceCandidat, {'attr': {'class': 'number-input', 'id': 'jour', 'type': 'number','min': '1', 'max': '31', 'placeholder': 'JJ' }}) }}
+											{{ form_widget(form.moisNaissanceCandidat, {'attr': {'class': 'number-input', 'id': 'mois', 'type': 'number','min': '1', 'max': '12', 'placeholder': 'MM' }}) }}
+											{{ form_widget(form.anneeNaissanceCandidat, {'attr': {'class': 'number-input', 'id': 'annee', 'type': 'number', 'placeholder': 'AAAA' }}) }}
 										</div>
 									</div>
 									<div class="lieu-naissance">
-										<label class="label label-lieu">Lieu de naissance<span class="required"> *</span></label>
+										{{ form_label(form.lieuNaissanceCandidat, 'Lieu de naissance', {'label_attr': {'class': 'label label-lieu'}}) }}
 										<div class="champs-lieu">
-											<input class="textfield-input" type="text" name="textfield"id="lieu">
+											{{ form_widget(form.lieuNaissanceCandidat, {'attr': {'class': 'textfield-input', 'id': 'lieu', 'type': 'text', 'name': 'textfield'}}) }}
 										</div>
 									</div>
 									<div class="mail-candidat">
-										<label class="label label-mail-candidat">E-mail<span class="required"> *</span></label>
+										{{ form_label(form.mailCandidat, 'E-mail', {'label_attr': {'class': 'label label-mail-candidat'}}) }}
 										<div class="champ-mail-candidat">
-											<input class="textfield-input" type="text" name="textfield"id="mail">
+											{{ form_widget(form.mailCandidat, {'attr': {'class': 'textfield-input', 'id': 'mail', 'type': 'text', 'name': 'textfield'}}) }}
 										</div>
 									</div>
 									<div class="tel-candidat">
-										<div class="tel-fixe-candidat">		<label class="label label-tel-fixe">Tel. fixe</label>
+										<div class="tel-fixe-candidat">
+											{{ form_label(form.fixeCandidat, 'Tel. fixe', {'label_attr': {'class': 'label label-tel-fixe'}}) }}
 											<div class="champs-tel-fixe-candidat">
-												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-fixe">
+												{{ form_widget(form.fixeCandidat, {'attr': {'class': 'tel-input','minlength': '10', 'maxlength': '10', 'id': 'tel-fixe', 'type': 'tel', 'name': 'telfield'}}) }}
 											</div>
 										</div>
-										<div class="tel-port-candidat">		<label class="label label-tel-port">Tel. portable<span class="required"> *</span></label>
+										<div class="tel-port-candidat">
+											{{ form_label(form.mobileCandidat, 'Tel. portable', {'label_attr': {'class': 'label label-tel-port'}}) }}
 											<div class="champs-tel-port-candidat">
-												<input class="tel-input" type="tel" minlength="10" maxlength="10" size="14" name="telfield"id="tel-port">
+													{{ form_widget(form.mobileCandidat, {'attr': {'class': 'tel-input','minlength': '10', 'maxlength': '14', 'id': 'tel-port', 'type': 'tel', 'name': 'telfield'}}) }}
 											</div>
 										</div>
 									</div>
@@ -251,33 +254,35 @@
 								<div class="divider-milieu"></div>
 								<div class="form-droite">
 									<div class="adresse-candidat">
-										<label class="label label-adresse">Adresse <span class="required"> *</span></label>
+										{{ form_label(form.adresseCandidat, 'Adresse', {'label_attr': {'class': 'label label-adresse'}}) }}
 										<div class="champs-adresse">
-											<input class="textfield-input" type="text" name="textfield"id="adresse">
+											{{ form_widget(form.adresseCandidat, {'attr': {'class': 'textfield-input', 'id': 'adresse', 'type': 'text', 'name': 'textfield'}}) }}
 										</div>
 									</div>
 									<div class="CP-ville">
 										<div class="cp-candidat">
-											<label class="label label-cp">Code postal<span class="required"> *</span></label>
+											{{ form_label(form.cpCandidat, 'Code postal', {'label_attr': {'class': 'label label-cp'}}) }}
 											<div class="champ-cp">
-												<input class="number-input" type="number" id="cp">
+												{{ form_widget(form.cpCandidat, {'attr': {'class': 'number-input', 'id': 'cp', 'type': 'number', 'name': 'number-input'}}) }}
 											</div>
 										</div>
 										<div class="ville-candidat">
-											<label class="label label-ville">Ville<span class="required"> *</span></label>
+											{{ form_label(form.villeCandidat, 'Ville', {'label_attr': {'class': 'label label-ville'}}) }}
 											<div class="champs-ville">
-												<input class="textfield-input" type="text" name="textfield" id="ville">
+												{{ form_widget(form.villeCandidat, {'attr': {'class': 'textfield-input','type': 'text', 'name': 'textfield', 'id': 'ville'}}) }}
 											</div>
 										</div>
 									</div>
 									<div class="secu-candidat">
-										<label class="label label-secu">Numéro de sécurité sociale<span class="required"> *</span></label>
+										{{ form_label(form.secuCandidat, 'Numéro de sécurité sociale', {'label_attr': {'class': 'label label-secu'}}) }}
 										<div class="champ-secu">
-											<input class="number-input" type="number" id="secu"><a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
+											{{ form_widget(form.secuCandidat, {'attr': {'class': 'number-input','type': 'number', 'id': 'secu'}}) }}
+											<a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
 										</div>
 									</div>
 									<div class="permis">
 										<label class="label label-permis">Permis<span class="required"> *</span></label>
+									{# {{ form_label(form.permisCandidat, 'Permis', {'label_attr': {'class': 'label label-permis'}}) }} #}
 										<div class="champ-permis">
 											<div class="permis-oui">
 												<input type="radio" id="oui" name="radiofield" value="oui">
@@ -304,6 +309,7 @@
 									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
 								</a>
 							</div>
+						{{ form_end(form) }}
 						</div>
 					</div>
 				</div>

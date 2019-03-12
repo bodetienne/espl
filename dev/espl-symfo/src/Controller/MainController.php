@@ -1,13 +1,10 @@
 <?php
-
 // le namespace des controllers sera toujours le même
 namespace App\Controller;
-
 // La classe Response nous sert pour renvoyer la réponse (voir après)
 use Symfony\Component\HttpFoundation\Response;
 // la classe Controller est la classe mère de tous les controllers
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 
 // notre controller doit forcément hériter de la classe Controller ("use" ci-dessus)
 // Le nom de la classe doit être exactement le même que celui du fichier
@@ -48,11 +45,13 @@ class MainController extends Controller
       return $this->render('formation/formation-1-mds.html.twig');
     } elseif ($nomdepage == "form-dossier-reflexion" && $nomdossierpage =="reponse_specifique") {
       return $this->render('reponse_specifique/form-dossier-reflexion.html.twig');
-    }elseif ($nomdepage == "pieces-jointes" && $nomdossierpage =="piece_jointe") {
+    } elseif ($nomdepage == "connnaissance-ecole" && $nomdossierpage =="reponse_specifique") {
+      return $this->render('reponse_specifique/connnaissance-ecole.html.twig');
+    }  elseif ($nomdepage == "questions-prealables" && $nomdossierpage =="reponse_specifique") {
+      return $this->render('reponse_specifique/questions-prealables.html.twig');
+    } elseif ($nomdepage == "pieces-jointes" && $nomdossierpage =="piece_jointe") {
       return $this->render('piece_jointe/pieces-jointes.html.twig');
     }
   }
-
 }
-
 ?>
