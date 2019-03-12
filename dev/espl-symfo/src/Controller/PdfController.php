@@ -19,9 +19,11 @@ class PdfController extends Controller
         // Instantiate Dompdf with our options
         $dompdf = new Dompdf($pdfOptions);
 
+        $dompdf->set_option('isHtml5ParserEnabled', true);
+
         // Retrieve the HTML generated in our twig file
         $html = $this->renderView('pdf.html.twig', [
-            'title' => "Suce pute"
+            'title' => "Dossier de candidature"
         ]);
 
         // Load HTML to Dompdf

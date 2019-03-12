@@ -3,13 +3,197 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Génération du pdf</title>
-		{% block stylesheets %}
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
-			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
-		{% endblock %}
+    <style>
+	    @font-face {
+	    	font-family: "Ubuntu-condensed";
+	    	src: url('../fonts/ubuntu/Ubuntu-C.ttf') format("truetype");
+	    }
+
+			@font-face {
+				font-family: "Ubuntu";
+				src: url('../fonts/ubuntu/UbuntuCondensed-Regular.ttf');
+			}
+
+			@font-face {
+				font-family: "Ubuntu-Mono";
+				src: url('../fonts/ubuntu/UbuntuMono-R.ttf');
+			}
+
+	    .flex-title .logo-mds {
+	      margin: auto;
+	      margin-left: 0;
+	      width: 15%;
+	    }
+
+	    .flex-title .title-pdf {
+	      text-transform: uppercase;
+	      font-family: "Ubuntu-condensed";
+				font-weight: normal;
+	    	font-size: 1.5em;
+	      margin: auto;
+				text-align: center;
+				padding-top: 5px;
+	    }
+
+			.bloc-intro {
+				padding-top: 130px;
+			}
+
+			.bloc-intro img {
+				width: 150px;
+			}
+
+			.bloc-intro .infos-intro {
+				left: 200px;
+				position: absolute;
+				font-family: "Ubuntu-Mono";
+			}
+
+			.bloc-intro .infos-intro span {
+				font-size: 1.2rem;
+			}
+
+			.maj {
+				text-transform: uppercase;
+			}
+
+			.content .block {
+				width: 45%;
+				font-family: "Ubuntu-Mono";
+			}
+
+			.content .block .infos-front {
+				margin: 2px 0;
+				color: #4d4d4d;
+			}
+
+			.content .block .infos-bdd {
+				color: #000;
+			}
+
+			.content .block .title-block {
+				font-family: "Ubuntu-Mono";
+				font-weight: normal;
+				margin: 0;
+				text-align: center;
+			}
+
+			.content .block .title-container {
+				margin-bottom: 10px;
+			}
+
+			.content .block-right {
+				right: 0;
+				position: absolute;
+				top: 360px;
+			}
+
+			.content .block-left {
+				left: 0;
+				position: absolute;
+				top: 360px;
+			}
+
+			.content .bottom-left {
+				top: 680px;
+			}
+
+			.content .title-container .title-yellow {
+				border-bottom: 1px solid #ffbd1d;
+			}
+
+			.content .title-container .title-orange {
+				border-bottom: 1px solid #ff8a22;
+			}
+
+			.content .title-container .title-blue {
+				border-bottom: 1px solid #17e5f5;
+			}
+
+			.content .bottom-left {
+				width: 100%;
+			}
+
+			.content .bottom-left .garant-1 {
+				left: 0;
+				position: absolute;
+			}
+
+			.content .bottom-left .garant-2 {
+				left: 400px;
+				position: absolute;
+			}
+
+			.content .block .garant-title {
+				font-size: 1.2rem;
+			}
+
+    </style>
   </head>
  <body>
-     <h4>{{title}}</h4>
-     <p>Lorem Ipsum</p>
+    <div class="flex-title">
+      <img class="logo-mds" src="../elements/logo-mds2.png"></img>
+      <h1 class="title-pdf">{{title}}</h1>
+    </div>
+		<div class="bloc-intro">
+			<img src="../elements/lucaptain.jpg" alt="Photo étudiant">
+			<div class="infos-intro">
+				<span>Lucas </span><span class="maj">Durand</span>
+				<p>18 ans</p>
+				<p>lucas.durand@gmail.com</p>
+				<p>07-07-07-07-07</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="block block-left top-left">
+				<div class="title-container">
+					<h2 class="title-block title-yellow">Informations étudiant</h2>
+				</div>
+				<div class="detail">
+					<p class="infos-front">Date de naissance : <span class="infos-bdd">24/06/2000</span></p>
+					<p class="infos-front">Lieu de naissance : <span class="infos-bdd">Angers</span></p>
+					<p class="infos-front">Tél. fixe : <span class="infos-bdd">02-41-05-49-81</span></p>
+					<p class="infos-front">Adresse : <span class="infos-bdd">17 rue quier, 49100 Angers</span></p>
+					<p class="infos-front">Num. de sécurité sociale : </br><span class="infos-bdd">1 00 00 123 456 78</span></p>
+					<p class="infos-front">Permis : <span class="infos-bdd">Oui</span></p>
+					<p class="infos-front">A connu l'école par : <span class="infos-bdd">Internet</span></p>
+					<p class="infos-front">A assisté à une JPO : <span class="infos-bdd">Non</span></p>
+				</div>
+			</div>
+			<div class="block block-right top-right">
+				<div class="title-container">
+					<h2 class="title-block title-orange">Formation souhaitée</h2>
+				</div>
+				<div class="detail">
+					<p class="infos-front">Diplôme préparé : <span class="infos-bdd">Baccalauréat ES</span></p>
+					<p class="infos-front">Formation demandée : </br><span class="infos-bdd">Bachelor année 1 cycle web et digital</span></p>
+				</div>
+			</div>
+			<div class="block block-left bottom-left">
+				<div class="title-container">
+					<h2 class="title-block title-blue">Informations garant(s)</h2>
+				</div>
+				<div class="detail garant-1">
+					<span class="infos-bdd garant-title">Garant 1 : </span>
+					<p class="infos-front">Nom - Prénom : <span class="infos-bdd">Marc <span class="maj">Durand</span></span></p>
+					<p class="infos-front">Profession : <span class="infos-bdd">Militaire</span></p>
+					<p class="infos-front">Entreprise : <span class="infos-bdd">Armée de l'air</span></p>
+					<p class="infos-front">Adresse : <span class="infos-bdd">17 rue quier, 49100 Angers</span></p>
+					<p class="infos-front">Lien de parenté : <span class="infos-bdd">Père</span></p>
+					<p class="infos-front">Tél. portable : <span class="infos-bdd">07-08-09-10-11</span></p>
+					<p class="infos-front">E-mail : <span class="infos-bdd">marc.durand@gmail.com</span></p>
+				</div>
+				<div class="detail garant-2">
+					<span class="infos-bdd garant-title">Garant 2 : </span>
+					<p class="infos-front">Nom - Prénom : <span class="infos-bdd">Jeanne <span class="maj">Durand</span></span></p>
+					<p class="infos-front">Profession : <span class="infos-bdd">Boulangère</span></p>
+					<p class="infos-front">Entreprise : <span class="infos-bdd">SARL Durand</span></p>
+					<p class="infos-front">Adresse : <span class="infos-bdd">17 rue quier, 49100 Angers</span></p>
+					<p class="infos-front">Lien de parenté : <span class="infos-bdd">Mère</span></p>
+					<p class="infos-front">Tél. portable : <span class="infos-bdd">06-07-08-09-10</span></p>
+					<p class="infos-front">E-mail : <span class="infos-bdd">durand.jeanne49@gmail.com</span></p>
+				</div>
+			</div>
+		</div>
  </body>
 </html>
