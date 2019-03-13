@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Controller;
 
@@ -21,7 +21,7 @@ class CandidatController extends AbstractController
     private $session;
 
     public function __construct(SessionInterface $session) {
-        $this->session = $session; 
+        $this->session = $session;
     }
 
     /**
@@ -48,7 +48,7 @@ class CandidatController extends AbstractController
 
     {
 
-      
+
 
        /*$cookie = new Cookie('color', 'green', strtotime('now'), '/',
          'http://localhost:8080/espl/dev/espl-symfo/public/index.php', true, true);
@@ -65,7 +65,7 @@ class CandidatController extends AbstractController
 
 
         $response->headers->setCookie($cookie);
-        $cookie = $request->cookie->get('color'); 
+        $cookie = $request->cookie->get('color');
         var_dump($cookie);*/
 
 
@@ -92,11 +92,11 @@ class CandidatController extends AbstractController
         }
 
         // enregistrement du prénom dans la session
-        $session->set('prenomCandidat', 'Eva');
-
-        // création de la variable
-        $prenomCandidat = $session->get('prenomCandidat');
-        var_dump($prenomCandidat);
+        // $session->set('prenomCandidat', 'Eva');
+        //
+        // // création de la variable
+        // $prenomCandidat = $session->get('prenomCandidat');
+        // var_dump($prenomCandidat);
 
         return $this->render('candidat/form-1-mds.html.twig', [
             'candidat' => $candidat,
