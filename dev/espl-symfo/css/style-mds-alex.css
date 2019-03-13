@@ -89,11 +89,17 @@
 	color: black;
 }
 
+
 .menu .questions p {
 	font-size: 1.1em;
 	font-family: "Ubuntu-condensed";
 	font-weight: lighter;
 	text-decoration: none;
+}
+
+.menu .questions p:hover{
+color:#4BC4CF;
+font-weight:200;
 }
 
 /* FIN PARTIE ASIDE */
