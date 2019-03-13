@@ -6,10 +6,11 @@
 		{% block stylesheets %}
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
-			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-martin.css') }}" media="all" />
 			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
 		{% endblock %}
 
@@ -187,12 +188,14 @@
 					<div class="aside">
 						<div class="fond-martin">
 							{% include "header.html.twig" %}
-							<div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:823px; height:980px; position:fixed">
-								<canvas id="canvas" width="823" height="980" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:823px; height:980px; position: absolute; left: 0px; top: 0px; display: block;">
+							<!-- martin -->
+							<div id="animation_container">
+								<canvas id="canvas" width="823" height="980"></canvas>
+								<div id="dom_overlay_container">
 								</div>
 							</div>
-							<!-- <div class="mur">
+							<!--  -->
+							<div class="mur">
 								<div class="col-1"></div>
 								<div class="col-2">
 									<div class="blanc"></div>
@@ -204,119 +207,53 @@
 								<div class="ligne-1"></div>
 								<div class="ligne-2"></div>
 							</div>
-							<div class="sol"></div> -->
+							<div class="sol"></div>
 						</div>
 					</div>
-
-					<div class="main formulaire-2">
+					<div class="main connaissance-ecole">
 						{% include "barre-progression.html.twig" %}
-						<h1 class="titre-mds">Présente-toi</h1>
-						<div class="form-2">
-								{{ form_start(form) }}
-							<div class="form-zone">
-								<div class="form-gauche">
-									<div class="date-naissance">
-										{{ form_label(form.jourNaissanceCandidat, 'Date de naissance', {'label_attr': {'class': 'label label-date'}}) }}
-										<div class="champs-date">
-											{{ form_widget(form.jourNaissanceCandidat, {'attr': {'class': 'number-input', 'id': 'jour', 'type': 'number','min': '1', 'max': '31', 'placeholder': 'JJ' }}) }}
-											{{ form_widget(form.moisNaissanceCandidat, {'attr': {'class': 'number-input', 'id': 'mois', 'type': 'number','min': '1', 'max': '12', 'placeholder': 'MM' }}) }}
-											{{ form_widget(form.anneeNaissanceCandidat, {'attr': {'class': 'number-input', 'id': 'annee', 'type': 'number', 'placeholder': 'AAAA' }}) }}
-										</div>
-									</div>
-									<div class="lieu-naissance">
-										{{ form_label(form.lieuNaissanceCandidat, 'Lieu de naissance', {'label_attr': {'class': 'label label-lieu'}}) }}
-										<div class="champs-lieu">
-											{{ form_widget(form.lieuNaissanceCandidat, {'attr': {'class': 'textfield-input', 'id': 'lieu', 'type': 'text', 'name': 'textfield'}}) }}
-										</div>
-									</div>
-									<div class="mail-candidat">
-										{{ form_label(form.mailCandidat, 'E-mail', {'label_attr': {'class': 'label label-mail-candidat'}}) }}
-										<div class="champ-mail-candidat">
-											{{ form_widget(form.mailCandidat, {'attr': {'class': 'textfield-input', 'id': 'mail', 'type': 'text', 'name': 'textfield'}}) }}
-										</div>
-									</div>
-									<div class="tel-candidat">
-										<div class="tel-fixe-candidat">
-											{{ form_label(form.fixeCandidat, 'Tel. fixe', {'label_attr': {'class': 'label label-tel-fixe'}}) }}
-											<div class="champs-tel-fixe-candidat">
-												{{ form_widget(form.fixeCandidat, {'attr': {'class': 'tel-input','minlength': '10', 'maxlength': '10', 'id': 'tel-fixe', 'type': 'tel', 'name': 'telfield'}}) }}
-											</div>
-										</div>
-										<div class="tel-port-candidat">
-											{{ form_label(form.mobileCandidat, 'Tel. portable', {'label_attr': {'class': 'label label-tel-port'}}) }}
-											<div class="champs-tel-port-candidat">
-													{{ form_widget(form.mobileCandidat, {'attr': {'class': 'tel-input','minlength': '10', 'maxlength': '14', 'id': 'tel-port', 'type': 'tel', 'name': 'telfield'}}) }}
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<div class="divider-milieu"></div>
-								<div class="form-droite">
-									<div class="adresse-candidat">
-										{{ form_label(form.adresseCandidat, 'Adresse', {'label_attr': {'class': 'label label-adresse'}}) }}
-										<div class="champs-adresse">
-											{{ form_widget(form.adresseCandidat, {'attr': {'class': 'textfield-input', 'id': 'adresse', 'type': 'text', 'name': 'textfield'}}) }}
-										</div>
-									</div>
-									<div class="CP-ville">
-										<div class="cp-candidat">
-											{{ form_label(form.cpCandidat, 'Code postal', {'label_attr': {'class': 'label label-cp'}}) }}
-											<div class="champ-cp">
-												{{ form_widget(form.cpCandidat, {'attr': {'class': 'number-input', 'id': 'cp', 'type': 'number', 'name': 'number-input'}}) }}
-											</div>
-										</div>
-										<div class="ville-candidat">
-											{{ form_label(form.villeCandidat, 'Ville', {'label_attr': {'class': 'label label-ville'}}) }}
-											<div class="champs-ville">
-												{{ form_widget(form.villeCandidat, {'attr': {'class': 'textfield-input','type': 'text', 'name': 'textfield', 'id': 'ville'}}) }}
-											</div>
-										</div>
-									</div>
-									<div class="secu-candidat">
-										{{ form_label(form.secuCandidat, 'Numéro de sécurité sociale', {'label_attr': {'class': 'label label-secu'}}) }}
-										<div class="champ-secu">
-											{{ form_widget(form.secuCandidat, {'attr': {'class': 'number-input','type': 'number', 'id': 'secu'}}) }}
-											<a href="#" class="bouton-info"><img class="bouton" src="{{ asset('../elements/info-button.png') }}"></a>
-										</div>
-									</div>
-									<div class="permis">
-										<label class="label label-permis">Permis<span class="required"> *</span></label>
-									{# {{ form_label(form.permisCandidat, 'Permis', {'label_attr': {'class': 'label label-permis'}}) }} #}
-										<div class="champ-permis">
-											<div class="permis-oui">
-												<input type="radio" id="oui" name="radiofield" value="oui">
-												<label for="oui"></label>
-											</div>
-											<div class="permis-non">
-												<input type="radio" id="non" name="radiofield" value="non">
-												<label for="non"></label>
-											</div>
-
-										</div>
-									</div>
-								</div>
+						<h1 class="titre-mds">Comment as-tu connu l'école ?</h1>
+						<div class="connaissance">
+							{{ form_start(form) }}
+							<div class="champ-internet">
+								{#{{ form_widget(formTitle.radioSet)  }}#}
+								{{ form_label(form.connaissanceEcole, 'Internet (Précise : moteur de recherche, sites...', {'label_attr': {'class': 'container internet'}}) }}
 							</div>
-
+							<div class="champ-forum">
+								{#{{ form_widget(formTitle.radioSet)  }}#}
+								{{ form_label(form.connaissanceEcole, 'Forum Lycée', {'label_attr': {'class': 'container forum'}}) }}
+							</div>
+							<div class="champ-relation">
+								{#{{ form_widget(formTitle.radioSet)  }}#}
+								{{ form_label(form.connaissanceEcole, 'Bouche à oreille / relation / étudiant (Précise)', {'label_attr': {'class': 'container relation'}}) }}
+							</div>
+							<div class="champ-salon">
+								{#{{ form_widget(formTitle.radioSet)  }}#}
+								{{ form_label(form.connaissanceEcole, 'Salon, lequel ? (Précise)', {'label_attr': {'class': 'container salon'}}) }}
+							</div>
+							<div class="champ-media">
+								{#{{ form_widget(formTitle.radioSet)  }}#}
+								{{ form_label(form.connaissanceEcole, 'Médias (Précise : presse, radio, cinéma, affiche... et quel support)', {'label_attr': {'class': 'container media'}}) }}
+							</div>
+							{{ form_end(form) }}
 							<div class="container-button">
-								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/candidat/form-1-mds">
+								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/formation/formation-1-mds">
 									<button id="previous" class="btn-previous" type="button">Précédent</button>
 								</a>
-
-								<button id="save" class="btn-save" type="button">Sauvegarder</button>
-
-								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/garant/form-3-mds">
-									<button id="suivant" class="btn-next" type="button" name="button">Suivant</button>
+								<a class="lien sauvegarder" href="#">
+									<button id="save" class="btn-save" type="button">Sauvegarder</button>
+								</a>
+								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/reponse_specifique/questions-prealables">
+									<button id="suivant" class="btn-next" type="submit" name="button">Suivant</button>
 								</a>
 							</div>
-						{{ form_end(form) }}
+
 						</div>
 					</div>
 				</div>
-
-
-				{% include "footer.html.twig" %}
+			{% include "footer.html.twig" %}
 		</main>
+
 
 	</body>
 

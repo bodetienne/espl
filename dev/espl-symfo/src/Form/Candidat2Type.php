@@ -23,7 +23,7 @@ class Candidat2Type extends AbstractType
             ->add('cpCandidat')
             ->add('villeCandidat')
             ->add('secuCandidat')
-            ->add('permisCandidat')
+            // A REVOIR ->add('permisCandidat')
             //->add('codeAccesCandidat')
             //->add('etatDossierCandidat')
             //->add('idFormation')

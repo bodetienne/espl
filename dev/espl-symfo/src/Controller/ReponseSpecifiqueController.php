@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\ReponseSpecifique;
-use App\Form\ReponseSpecifiqueType;
+use App\Form\QuestionsPrealablesType;
+use App\Form\ConnaissanceEcoleType;
+use App\Form\DossierReflexionType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -29,12 +31,58 @@ class ReponseSpecifiqueController extends AbstractController
     }
 
     /**
-     * @Route("/form-dossier-reflexion", name="reponse_specifique_new", methods={"GET","POST"})
+     * @Route("/connaissance-ecole", name="connaissance-ecole", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function newConnaissanceEcole(Request $request): Response
     {
         $reponseSpecifique = new ReponseSpecifique();
-        $form = $this->createForm(ReponseSpecifiqueType::class, $reponseSpecifique);
+        $form = $this->createForm(ConnaissanceEcoleType::class, $reponseSpecifique);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($reponseSpecifique);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('reponse_specifique_index');
+        }
+
+        return $this->render('reponse_specifique/connaissance-ecole.html.twig', [
+            'reponse_specifique' => $reponseSpecifique,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/questions-prealables", name="questions-prealables", methods={"GET","POST"})
+     */
+    public function newQuestionsPrealables(Request $request): Response
+    {
+        $reponseSpecifique = new ReponseSpecifique();
+        $form = $this->createForm(questionsPrealablesType::class, $reponseSpecifique);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($reponseSpecifique);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('reponse_specifique_index');
+        }
+
+        return $this->render('reponse_specifique/questions-prealables.html.twig', [
+            'reponse_specifique' => $reponseSpecifique,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/form-dossier-reflexion", name="reponse_specifique", methods={"GET","POST"})
+     */
+    public function newResponseSpecifique(Request $request): Response
+    {
+        $reponseSpecifique = new ReponseSpecifique();
+        $form = $this->createForm(DossierReflexionType::class, $reponseSpecifique);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
