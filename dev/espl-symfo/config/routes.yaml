@@ -3,7 +3,7 @@ index:
    controller: App\Controller\MainController::index
 
 pdf:
-    path: /pdf/test/
+    path: /pdf/{id}/
     controller: App\Controller\PdfController::index
 
 presentation:

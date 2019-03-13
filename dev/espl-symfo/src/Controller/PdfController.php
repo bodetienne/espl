@@ -7,11 +7,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 // Include Dompdf required namespaces
 use Dompdf\Dompdf;
 use Dompdf\Options;
+use App\Entity\Candidat;
+use App\Entity\Garant;
+use App\Entity\Formation;
 
 class PdfController extends Controller
 {
-    public function index()
+    public function index($id)
     {
+
+        $candidat = $this->getDoctrine()->getRepository(Candidat::class)->find($id);
+        
+
         // Configure Dompdf according to your needs
         $pdfOptions = new Options();
         $pdfOptions->set('defaultFont', 'Arial');
@@ -23,7 +30,8 @@ class PdfController extends Controller
 
         // Retrieve the HTML generated in our twig file
         $html = $this->renderView('pdf.html.twig', [
-            'title' => "Dossier de candidature"
+            'title' => "Dossier de candidature",
+            'candidat' => $candidat
         ]);
 
         // Load HTML to Dompdf
@@ -39,5 +47,8 @@ class PdfController extends Controller
         $dompdf->stream("mypdf.pdf", [
             "Attachment" => false
         ]);
+
+
+
     }
 }
