@@ -1,9 +1,10 @@
-<?php
+<?php 
 
 namespace App\Controller;
 
 use App\Entity\Candidat;
-use App\Form\CandidatType;
+use App\Form\Candidat1Type;
+use App\Form\Candidat2Type;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -17,46 +18,101 @@ use Symfony\Component\HttpFoundation\Cookie;
  */
 class CandidatController extends AbstractController
 {
+    private $session;
+
+    public function __construct(SessionInterface $session) {
+        $this->session = $session; 
+    }
+
     /**
      * @Route("/", name="candidat_index", methods={"GET"})
      */
-    public function index(): Response
+    /*public function index(): Response
     {
         $candidats = $this->getDoctrine()
             ->getRepository(Candidat::class)
             ->findAll();
 
+
         return $this->render('candidat/index.html.twig', [
             'candidats' => $candidats,
         ]);
-    }
+    }*/
+
 
     /**
-     * @Route("/form-1-mds", name="candidat_new", methods={"GET","POST"})
+     * @Route("/form-1-mds", name="form-1-mds", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+
+    public function newPart1(SessionInterface $session, Request $request): Response
+
     {
 
-     $cookie = new Cookie('color', 'green', strtotime('tomorrow'), '/',
-       'somedomain.com', true, true);
-      //
+      
 
-      // $cookie = Cookie::fromString('color = green; expires = Web, time()+3600;
-      // path=/; domain = somedomain.com; secure; httponly');
+       /*$cookie = new Cookie('color', 'green', strtotime('now'), '/',
+         'http://localhost:8080/espl/dev/espl-symfo/public/index.php', true, true);
+        //
 
-      $response = new Response(
-        'Content',
-        Response::HTTP_OK,
-        ['content-type' => 'text/html']
-      );
+        // $cookie = Cookie::fromString('color = green; expires = Web, time()+3600;
+        // path=/; domain = somedomain.com; secure; httponly');
+
+        $response = new Response(
+          'Content',
+          Response::HTTP_OK,
+          ['content-type' => 'text/html']
+        );
 
 
-      $response->headers->setCookie($cookie);
+        $response->headers->setCookie($cookie);
+        $cookie = $request->cookie->get('color'); 
+        var_dump($cookie);*/
 
-      var_dump($cookie);
 
         $candidat = new Candidat();
-        $form = $this->createForm(CandidatType::class, $candidat);
+        $form = $this->createForm(Candidat1Type::class, $candidat);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($candidat);
+            $entityManager->flush();
+
+            // $session = new Session();
+            //
+            //
+            // $session->set('prenomCandidat', $entityManager->prenomCandidat);
+            // $session->set('nomCandidat', $entityManager->nomCandidat);
+            // $session->get('prenomCandidat');
+            // $session->get('prenomCandidat');
+            //
+            // var_dump($session);
+
+            return $this->redirectToRoute('candidat_index');
+        }
+
+        // enregistrement du prénom dans la session
+        $session->set('prenomCandidat', 'Eva');
+
+        // création de la variable
+        $prenomCandidat = $session->get('prenomCandidat');
+        var_dump($prenomCandidat);
+
+        return $this->render('candidat/form-1-mds.html.twig', [
+            'candidat' => $candidat,
+            'form' => $form->createView(),
+        ]);
+    }
+
+
+    /**
+     * @Route("/form-2-mds", name="form-2-mds", methods={"GET","POST"})
+     */
+    public function newPart2(Request $request): Response
+    {
+
+        $candidat = new Candidat();
+        $form = $this->createForm(Candidat2Type::class, $candidat);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -79,11 +135,53 @@ class CandidatController extends AbstractController
 
 
 
-        return $this->render('candidat/form-1-mds.html.twig', [
+        return $this->render('candidat/form-2-mds.html.twig', [
             'candidat' => $candidat,
             'form' => $form->createView(),
         ]);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * @Route("/{id}", name="candidat_show", methods={"GET"})

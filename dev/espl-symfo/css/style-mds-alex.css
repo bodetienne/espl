@@ -29,7 +29,7 @@
 	transition: 0.4s;
 }
 
-/* coulerus menus */
+/* couleurs menus */
 .menu .title.perso {
 	background-color: #FFBD1D;
 }
@@ -95,6 +95,11 @@
 	font-family: "Ubuntu-condensed";
 	font-weight: lighter;
 	text-decoration: none;
+}
+
+.menu .questions p:hover{
+color:#4BC4CF;
+font-weight:200;
 }
 
 /* FIN PARTIE ASIDE */
@@ -225,7 +230,7 @@
 	color: #FFBD1D;
 }
 
-.main.dossier-reflexion .dossier-question .questions {
+.main.dossier-reflexion .dossier-question .questions-formation {
 	margin-left: 5px;
 	font-size: 1em;
 	font-family: "Ubuntu-condensed";
