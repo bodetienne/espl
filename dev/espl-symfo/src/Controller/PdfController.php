@@ -17,7 +17,7 @@ class PdfController extends Controller
     {
 
         $candidat = $this->getDoctrine()->getRepository(Candidat::class)->find($id);
-        
+
 
         // Configure Dompdf according to your needs
         $pdfOptions = new Options();
@@ -47,8 +47,6 @@ class PdfController extends Controller
         $dompdf->stream("mypdf.pdf", [
             "Attachment" => false
         ]);
-
-
 
     }
 }

@@ -22,8 +22,6 @@ class MainController extends Controller
       return $this->render('aide-mds.html.twig');
     } elseif ($nomdepage == "contact") {
       return $this->render('contact.html.twig');
-    } elseif ($nomdepage == "connexion-mds") {
-      return $this->render('connexion-mds.html.twig');
     } elseif ($nomdepage == "page-fin") {
       return $this->render('page-fin.html.twig');
     } else {

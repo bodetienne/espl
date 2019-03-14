@@ -6,6 +6,10 @@ pdf:
     path: /pdf/{id}/
     controller: App\Controller\PdfController::index
 
+connexion:
+    path: /connexion-mds/{id}
+    controller: App\Controller\ConnexionController::connexion
+
 presentation:
     path: /{nomdepage}/
     controller: App\Controller\MainController::pageName
