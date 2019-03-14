@@ -12,7 +12,7 @@ class QuestionsPrealablesType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('participationJpo')
+            //->add('participationJpo')
             ->add('questionsPrealables')
             /*->add('idCandidat')*/
         ;

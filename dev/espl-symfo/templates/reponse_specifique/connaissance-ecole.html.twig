@@ -7,6 +7,7 @@
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-alex.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
@@ -216,38 +217,51 @@
 						<div class="connaissance">
 							{{ form_start(form) }}
 							<div class="champ-internet">
-								{#{{ form_widget(formTitle.radioSet)  }}#}
+								{# {{ form_widget(form.ConnaissanceEcole.radioSet)  }} #}
+								<input type="checkbox" id="internet">
 								{{ form_label(form.connaissanceEcole, 'Internet (Précise : moteur de recherche, sites...', {'label_attr': {'class': 'container internet'}}) }}
+								{{ form_widget(form.connaissanceEcole, {'attr': {'class': 'reponse-internet', 'type': 'input'}}) }}
 							</div>
 							<div class="champ-forum">
 								{#{{ form_widget(formTitle.radioSet)  }}#}
+								<input type="checkbox" id="forum">
 								{{ form_label(form.connaissanceEcole, 'Forum Lycée', {'label_attr': {'class': 'container forum'}}) }}
+								{{ form_widget(form.connaissanceEcole, {'attr': {'class': 'reponse-forum', 'type': 'input'}}) }}
+								<input class="textfield-forum" type="text" name="textfield">
 							</div>
 							<div class="champ-relation">
 								{#{{ form_widget(formTitle.radioSet)  }}#}
+								<input type="checkbox" id="relation">
 								{{ form_label(form.connaissanceEcole, 'Bouche à oreille / relation / étudiant (Précise)', {'label_attr': {'class': 'container relation'}}) }}
+								<input class="textfield-relation" type="text" name="textfield">
 							</div>
 							<div class="champ-salon">
 								{#{{ form_widget(formTitle.radioSet)  }}#}
+								<input type="checkbox" id="salon">
 								{{ form_label(form.connaissanceEcole, 'Salon, lequel ? (Précise)', {'label_attr': {'class': 'container salon'}}) }}
+								<input class="textfield-salon" type="text" name="textfield">
 							</div>
 							<div class="champ-media">
 								{#{{ form_widget(formTitle.radioSet)  }}#}
+								<input type="checkbox" id="media">
 								{{ form_label(form.connaissanceEcole, 'Médias (Précise : presse, radio, cinéma, affiche... et quel support)', {'label_attr': {'class': 'container media'}}) }}
-							</div>
+								<input class="textfield-media" type="text" name="textfield">
+						</div>
 							{{ form_end(form) }}
-							<div class="container-button">
-								<a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/formation/formation-1-mds">
-									<button id="previous" class="btn-previous" type="button">Précédent</button>
-								</a>
-								<a class="lien sauvegarder" href="#">
-									<button id="save" class="btn-save" type="button">Sauvegarder</button>
-								</a>
-								<a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/reponse_specifique/questions-prealables">
-									<button id="suivant" class="btn-next" type="submit" name="button">Suivant</button>
-								</a>
 							</div>
+							<div class="boutons-nav">
+								<div class="boutons">
+									<a href="/espl/dev/espl-symfo/public/index.php/formation/formation-1-mds">
+										<button type="button" name="precedent" class="precedent">Précédent</button>
+									</a>
 
+									<button type="button" name="enregistrer" class="enregistrer">Sauvegarder</button>
+
+									<a href="/espl/dev/espl-symfo/public/index.php/reponse_specifique/questions-prealables">
+										<button type="button" name="suivant" class="suivant">Suivant</button>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

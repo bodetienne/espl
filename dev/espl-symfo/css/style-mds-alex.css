@@ -194,13 +194,15 @@ font-weight:200;
 	display: flex;
 }
 
-.main.dossier-reflexion .titre-mds {
+.main.dossier-reflexion .titre-mds,
+.main.connaissance-ecole .titre-mds,
+.main.questions-prealables .titre-mds {
 	font-size: 1.4em;
 	text-transform: uppercase;
 	font-family: "Ubuntu-condensed";
 	font-weight: bolder;
 	text-align: center;
-	margin-bottom:4vh;
+	margin-bottom: 4vh;
 	color: #363635;
 }
 
@@ -290,54 +292,164 @@ background-color: #A9A9A9;
 
 /* FIN BOUTON UPLOAD */
 
-.main.dossier-reflexion .boutons-nav {
+.main.dossier-reflexion .boutons-nav,
+.main.connaissance-ecole .boutons-nav,
+.main.questions-prealables .boutons-nav {
 	display: flex;
 	margin-top: 2vh;
 }
 
-.main.dossier-reflexion .boutons-nav .boutons {
+.main.dossier-reflexion .boutons-nav .boutons,
+.main.connaissance-ecole .boutons-nav .boutons,
+.main.questions-prealables .boutons-nav .boutons {
 	margin: auto;
 }
 
-.main.dossier-reflexion .boutons button {
+.main.dossier-reflexion .boutons button,
+.main.connaissance-ecole .boutons button,
+.main.questions-prealables .boutons button {
 	padding: 15px 30px;
   font-size: 1.1em;
   font-family: "Ubuntu-condensed";
 	margin: 0px 1vw;
 }
 
-.main.dossier-reflexion .boutons .precedent {
+.main.dossier-reflexion .boutons a,
+.main.connaissance-ecole .boutons a,
+.main.questions-prealables .boutons a  {
+	text-decoration: none;
+}
+
+.main.dossier-reflexion .boutons .precedent,
+.main.connaissance-ecole .boutons .precedent,
+.main.questions-prealables .boutons .precedent {
 	border: 1px solid #E7E7E7;
 	background-color: #E7E7E7;
 	color: #A9A9A9;
 }
 
-.main.dossier-reflexion .boutons .precedent:hover {
+.main.dossier-reflexion .boutons .precedent:hover,
+.main.connaissance-ecole .boutons .precedent:hover,
+.main.questions-prealables .boutons .precedent:hover {
 	border: 1px solid #A9A9A9;
 	background-color: #A9A9A9;
 	color: white;
 }
 
-.main.dossier-reflexion .boutons .enregistrer {
+.main.dossier-reflexion .boutons .enregistrer,
+.main.connaissance-ecole .boutons .enregistrer,
+.main.questions-prealables .boutons .enregistrer {
 	border: 1px solid #FF8A22;
 	background-color: white;
 	color: #FF8A22;
 }
 
-.main.dossier-reflexion .boutons .enregistrer:hover {
+.main.dossier-reflexion .boutons .enregistrer:hover,
+.main.connaissance-ecole  .boutons .enregistrer:hover,
+.main.questions-prealables .boutons .enregistrer:hover {
 	border: 1px solid #FF8A22;
 	background-color: #FF8A22;
 	color: white;
 }
 
-.main.dossier-reflexion .boutons .suivant {
+.main.dossier-reflexion .boutons .suivant,
+.main.connaissance-ecole .boutons .suivant,
+.main.questions-prealables .boutons .suivant {
 	border: 1px solid #FF8A22;
 	background-color: #FF8A22;
 	color: white;
 }
 
-.main.dossier-reflexion .boutons .suivant:hover {
+.main.dossier-reflexion .boutons .suivant:hover,
+.main.connaissance-ecole .boutons .suivant:hover,
+.main.questions-prealables .boutons .suivant:hover {
 	border: 1px solid #FF8A22;
 	background-color: white;
 	color: #FF8A22;
 }
+
+/* FIN PAGE DOSSIER DE REFLEXION */
+
+/* PAGE QUESTIONS PREALABLES */
+
+.main.questions-prealables .titre {
+	display: flex;
+}
+
+.main.questions-prealables .titre-mds {
+	margin: auto;
+	margin-bottom: 4vh;
+}
+
+.main.questions-prealables .question-prealable,
+.main.questions-prealables .question-jpo {
+	width: 60vw;
+	margin: auto;
+	font-family: "Ubuntu-condensed";
+	font-size: 1.1em;
+}
+
+.main.questions-prealables .question-jpo {
+	margin-top: 10vh;
+}
+
+.main.questions-prealables .question-jpo span {
+	margin-left: 4vh;
+}
+
+
+.main.questions-prealables .question-prealable .texte-question {
+	display: flex;
+}
+
+.main.questions-prealables  .texte p:last-of-type {
+	text-align: center;
+}
+
+ .question-prealable .textarea-question {
+	resize: none;
+	padding-right: 45vw;
+	padding-bottom: 20vh;
+}
+
+/* FIN PAGE QUESTIONS PREALABLES */
+
+/* PAGE CONNAISSANCE ECOLE */
+
+.main.connaissance-ecole .titre-mds {
+	margin-bottom: 4vh;
+}
+
+.main.connaissance-ecole .connaissance {
+	margin-left: 5vh;
+	font-family: "Ubuntu-condensed";
+	font-size: 1.1em;
+	height: 45vh;
+}
+
+.main.connaissance-ecole .champ-internet {
+	padding-top: 10vh;
+}
+
+.main.connaissance-ecole .champ-internet,
+.main.connaissance-ecole .champ-forum,
+.main.connaissance-ecole .champ-relation,
+.main.connaissance-ecole .champ-salon,
+.main.connaissance-ecole .champ-media {
+	margin-bottom: 2vh;
+}
+
+
+
+.main.connaissance-ecole .connaissance input {
+	border: none;
+	border-bottom: 1px #707070 solid;
+	margin-left: 1vw;
+}
+
+.main.connaissance-ecole input[type="checkbox"]:checked  {
+  background-color: #2196F3;
+}
+
+
+/* FIN CONNAISSANCE ECOLE */
