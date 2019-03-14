@@ -7,6 +7,8 @@
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-alex.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-martin.css') }}" media="all" />
@@ -211,42 +213,47 @@
 					</div>
 					<div class="main questions-prealables">
 						{% include "barre-progression.html.twig" %}
-						<h1 class="titre-mds">Comment as-tu connu l'école ?</h1>
-              <div class="style-radio">
-                    <span class="span-1">As-tu assisté à une Journée Portes Ouvertes ?</span>
-                      Oui<label class="container">
-                      <input type="radio" name="select1" value="">
-                      <span class="checkmark"></span>
-                    </label>Non
-                    <label class="container">
-                      <input type="radio" name="select1" value="">
-                      <span class="checkmark"></span>
-                    </label>
-              </div>
-              <div class="style-h-p2">
-                <p>Après lecture de notre brochure ou consultation du site internet, souhaiterais-tu des précisions
-                  complémentaires ? </p>
-                <p>Si oui, sur quels points d'information ? </p>
-                <a href="#" class="info-button">
+						<div class="titre">
+							<h1 class="titre-mds">Comment as-tu connu l'école ?</h1>
+						</div>
+						{{ form_start(form) }}
+            <div class="question-jpo">
+							<label>As-tu assisté à une Journée Portes Ouvertes ?</label>
+							<span>Oui</span>
+							{# {{ form_widget(form.participationJpo, {'attr': {'class': 'question-jp-reponse', 'type': 'checkbox',}}) }} #}
+							<input type="checkbox" id="question-jpo-oui" value="oui">
+							<span>Non</span>
+							<input type="checkbox" id="question-jpo-non" value="non">
+            </div>
+            <div class="question-prealable">
+							<div class="texte-question">
+								<div class="texte">
+									<p>Après lecture de notre brochure ou consultation du site internet, souhaiterais-tu des précisions
+		                  complémentaires ?</p>
+		              <p>Si oui, sur quels points d'information ?</p>
+								</div>
+								<a href="#" class="info-button">
 									<img class="info-button" src="{{ asset('../elements/info-button.png') }}" alt="bouton pour plus d\'informations">
 								</a>
+							</div>
+							<div class="textarea">
+                  {{ form_widget(form.questionsPrealables, {'attr': {'class': 'textarea-question', 'type': 'textarea', 'name': 'questions-prealables'}}) }}
               </div>
-
-              <div class="espase-textarea">
-                  <textarea name="name" rows="9" cols="100" class="textarea-style" placeholder="">&nbsp</textarea>
-              </div>
-
-              <div class="espace-button">
-                <a class="lien precedent" href="/espl/dev/espl-symfo/public/index.php/formation/questions-prealables">
-                  <button id="previous" class="btn-previous" type="button">Précédent</button>
-                </a>
-                <a class="lien sauvegarder" href="#">
-                  <button id="save" class="btn-save" type="button">Sauvegarder</button>
-                </a>
-                <a class="lien suivant" href="/espl/dev/espl-symfo/public/index.php/reponse_specifique/form-dossier-reflexion">
-                  <button id="suivant" class="btn-next" type="submit" name="button">Suivant</button>
-                </a>
-              </div>
+            </div>
+						{{ form_end(form) }}
+						<div class="boutons-nav">
+							<div class="boutons">
+								<a href="/espl/dev/espl-symfo/public/index.php/reponse_specifique/connaissance-ecole">
+									<button type="button" name="precedent" class="precedent">Précédent</button>
+								</a>
+								<a href="#">
+									<button type="button" name="enregistrer" class="enregistrer">Sauvegarder</button>
+								</a>
+								<a href="/espl/dev/espl-symfo/public/index.php/reponse_specifique/form-dossier-reflexion">
+									<button type="button" name="suivant" class="suivant">Suivant</button>
+								</a>
+							</div>
+						</div>
           </div>
 				</div>
 			{% include "footer.html.twig" %}
