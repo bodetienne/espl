@@ -10,15 +10,31 @@
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-martin.css') }}" media="all" />
 			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
 		{% endblock %}
+
+		{% block javascripts %}
+		<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+		<script src="{{ asset('doigt-garant-2.js') }}"></script>
+		<script> {% include "js-martin/form4.js" %} </script>
+		{% endblock %}
+
 	</head>
 
-	<body>
+	<body onload="init();">
 		<main class="form-main">
 			<div class="block-main">
 					<div class="aside">
 						{% include "header.html.twig" %}
+
+						<!-- Martin -->
+						<div id="animation_container">
+							<canvas id="canvas" width="823" height="980" style="margin-top:-3vh;"></canvas>
+							<div id="dom_overlay_container"></div>
+						</div>
+
+						<!-- Fond Martin -->
 						<div class="fond-martin">
 							<div class="mur">
 								<div class="col-1"></div>
@@ -41,21 +57,21 @@
 						<div class="form-4">
 							<div class="form-zone">
 								<div class="form-gauche">
-									{{ form_start(form) }}   
-									
-									<div class="nom-garant-1">										
+									{{ form_start(form) }}
+
+									<div class="nom-garant-1">
 										{{ form_label(form.nomGarant, 'Nom', {'label_attr': {'class': 'label label-nom'}}) }}
 										<div class="champ-nom">
 											{{ form_widget(form.nomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'nom'}}) }}
 										</div>
 									</div>
-									<div class="prenom-garant">										
+									<div class="prenom-garant">
 										{{ form_label(form.prenomGarant, 'Prénom', {'label_attr': {'class': 'label label-prenom'}}) }}
 										<div class="champ-prenom">
 											{{ form_widget(form.prenomGarant, {'attr': {'class': 'textfield-input', 'name': 'textfield', 'id':'prenom'}}) }}
 										</div>
 									</div>
-																	
+
 									<div class="mail-garant">
 										{{ form_label(form.mailGarant, 'E-mail', {'label_attr': {'class': 'label label-mail-garant'}}) }}
 										<div class="champs-mail-garant">

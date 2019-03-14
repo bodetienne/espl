@@ -16,6 +16,7 @@
 	</head>
 
 	<body>
+
 		<main class="form-main">
 			<div class="block-main">
 				<div class="aside">
@@ -49,6 +50,11 @@
 										{{ form_label(form.photoIdentite, 'Télécharger', {'label_attr': {'class': 'label-file-photo-identite'}}) }}
 										{{ form_widget(form.photoIdentite, {'attr': {'class': 'input-file', 'type': 'file',  'id':'file', 'accept':'.pdf'}}) }}
                   </div>
+									{% block javascripts %}
+									<script type="text/javascript">
+
+									</script>
+									{% endblock %}
                 </div>
                 <div class="liste dernier-releve">
                   <label class="element element-2"><div class="round-list-orange"> </div>Dernier relevé de notes</label>

@@ -11,15 +11,31 @@
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
 			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-martin.css') }}" media="all" />
 			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
 		{% endblock %}
+
+		{% block javascripts %}
+		<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+		<script src="{{ asset('doigt-garant-1.js') }}"></script>
+		<script> {% include "js-martin/form3.js" %} </script>
+		{% endblock %}
+
 	</head>
 
-	<body>
+	<body onload="init();">
 		<main class="form-main">
 			<div class="block-main">
 					<div class="aside">
 						{% include "header.html.twig" %}
+
+						<!-- Martin -->
+						<div id="animation_container">
+							<canvas id="canvas" width="823" height="980" style="margin-top:-3vh;"></canvas>
+							<div id="dom_overlay_container"></div>
+						</div>
+
+						<!-- Fond Martin -->
 						<div class="fond-martin">
 							<div class="mur">
 								<div class="col-1"></div>
