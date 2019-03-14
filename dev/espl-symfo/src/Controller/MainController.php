@@ -22,8 +22,8 @@ class MainController extends Controller
       return $this->render('aide-mds.html.twig');
     } elseif ($nomdepage == "contact") {
       return $this->render('contact.html.twig');
-    }  elseif ($nomdepage == "connexion-mds") {
-      return $this->render('connexion-mds.html.twig');
+    } elseif ($nomdepage == "page-fin") {
+      return $this->render('page-fin.html.twig');
     } else {
       return $this->render('error404.html.twig');
     }
@@ -65,7 +65,7 @@ class MainController extends Controller
     elseif ($nomdepage == "pieces-jointes" && $nomdossierpage =="piece_jointe")
     {
       return $this->render('piece_jointe/pieces-jointes.html.twig');
-    } 
+    }
   }
 }
 ?>

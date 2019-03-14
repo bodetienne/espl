@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Candidature My Digital School</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/normalize.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-eva.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-fouzi.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-structure.css') }}" media="all" />
+			<link rel="stylesheet" type="text/css" href="{{ asset('../css/style-mds-header-footer.css') }}" media="all" />
+			<link rel="icon" type="img" href="{{ asset('../elements/favicon.ico.png') }}"/>
+		{% endblock %}
+	</head>
+
+	<body>
+		<main class="form-main">
+			<div class="block-main">
+				<div class="page-presentation page-fin">
+					{% include "header.html.twig" %}
+					<div class="texte-mds">
+						<h1 class="titre-mds">Félicitations, tu as finis de remplir le formulaire</h1>
+						<div class="intro-mds">
+							<p>Ton dossier est désormais complet.</p>
+							<p>Nous allons l'étudier puis te contacter pour passer un rendez-vous avec la chargée de Recrutement. Tu as reçu un mail avec la fiche récapitulative de ton profil. Tu peux nous contacter s'il y a des erreurs ou des informations manquantes.</p>
+						</div>
+					</div>
+
+					<div class="container-button">
+						<a href="https://www.mydigitalschool.com/" class="doc"><button type="button">Retourner sur le site de l'école</button></a>
+						<a href="/espl/dev/espl-symfo/public/index.php/contact" class="begin"><button type="button">Nous contacter</button></a>
+
+					</div>
+
+				</div>
+			</div>
+
+			{% include "footer.html.twig" %}
+		</main>
+	</body>
+
+</html>

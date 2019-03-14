@@ -3,8 +3,12 @@ index:
    controller: App\Controller\MainController::index
 
 pdf:
-    path: /pdf/test/
+    path: /pdf/{id}/
     controller: App\Controller\PdfController::index
+
+connexion:
+    path: /connexion-mds/{id}
+    controller: App\Controller\ConnexionController::connexion
 
 presentation:
     path: /{nomdepage}/

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Génération du pdf</title>
+		<title>Fiche récapitulative candidature {{candidat.prenomCandidat}} {{candidat.nomCandidat}}</title>
     <style>
 	    @font-face {
 	    	font-family: "Ubuntu-condensed";
@@ -131,6 +131,7 @@
     </style>
   </head>
  <body>
+
     <div class="flex-title">
       <img class="logo-mds" src="../elements/logo-mds2.png"></img>
       <h1 class="title-pdf">{{title}}</h1>
@@ -138,10 +139,24 @@
 		<div class="bloc-intro">
 			<img src="../elements/lucaptain.jpg" alt="Photo étudiant">
 			<div class="infos-intro">
-				<span>Lucas </span><span class="maj">Durand</span>
-				<p>18 ans</p>
-				<p>lucas.durand@gmail.com</p>
-				<p>07-07-07-07-07</p>
+				<span>{{candidat.prenomCandidat}} </span><span class="maj">{{candidat.nomCandidat}}</span>
+				{% set age = 0 %}
+				{% if "now"|date("m") > candidat.moisNaissanceCandidat %}
+					{% set age = "now"|date("Y") - candidat.anneeNaissanceCandidat %}
+				{% elseif "now"|date("m") < candidat.moisNaissanceCandidat %}
+					{% set age = "now"|date("Y") - candidat.anneeNaissanceCandidat - 1 %}
+				{% else %}
+					{% if "now"|date("d") > candidat.jourNaissanceCandidat %}
+						{% set age = "now"|date("Y") - candidat.anneeNaissanceCandidat %}
+					{% elseif "now"|date("d") < candidat.jourNaissanceCandidat %}
+						{% set age = "now"|date("Y") - candidat.anneeNaissanceCandidat - 1 %}
+					{% else %}
+						{% set age = "now"|date("Y") - candidat.anneeNaissanceCandidat %}
+					{% endif %}
+				{% endif %}
+				<p>{{ age }} ans</p>
+				<p>{{candidat.mailCandidat}}</p>
+				<p>0{{candidat.mobileCandidat}}</p>
 			</div>
 		</div>
 		<div class="content">
@@ -150,12 +165,12 @@
 					<h2 class="title-block title-yellow">Informations étudiant</h2>
 				</div>
 				<div class="detail">
-					<p class="infos-front">Date de naissance : <span class="infos-bdd">24/06/2000</span></p>
-					<p class="infos-front">Lieu de naissance : <span class="infos-bdd">Angers</span></p>
-					<p class="infos-front">Tél. fixe : <span class="infos-bdd">02-41-05-49-81</span></p>
-					<p class="infos-front">Adresse : <span class="infos-bdd">17 rue quier, 49100 Angers</span></p>
-					<p class="infos-front">Num. de sécurité sociale : </br><span class="infos-bdd">1 00 00 123 456 78</span></p>
-					<p class="infos-front">Permis : <span class="infos-bdd">Oui</span></p>
+					<p class="infos-front">Date de naissance : <span class="infos-bdd">{{candidat.jourNaissanceCandidat}}/{% if candidat.moisNaissanceCandidat|length < 2 %}0{{candidat.moisNaissanceCandidat}}{% endif %}/{{candidat.anneeNaissanceCandidat}}</span></p>
+					<p class="infos-front">Lieu de naissance : <span class="infos-bdd">{{candidat.lieuNaissanceCandidat}}</span></p>
+					<p class="infos-front">Tél. fixe : <span class="infos-bdd">0{{candidat.fixeCandidat}}</span></p>
+					<p class="infos-front">Adresse : <span class="infos-bdd">{{candidat.adresseCandidat}}, {{candidat.cpCandidat}} {{candidat.villeCandidat}}</span></p>
+					<p class="infos-front">Num. de sécurité sociale : </br><span class="infos-bdd">{{candidat.secuCandidat}} </span></p>
+					<p class="infos-front">Permis : <span class="infos-bdd">{% if candidat.permisCandidat == 1 %}Oui{% else %}Non{% endif %}</span></p>
 					<p class="infos-front">A connu l'école par : <span class="infos-bdd">Internet</span></p>
 					<p class="infos-front">A assisté à une JPO : <span class="infos-bdd">Non</span></p>
 				</div>
@@ -165,7 +180,6 @@
 					<h2 class="title-block title-orange">Formation souhaitée</h2>
 				</div>
 				<div class="detail">
-					<p class="infos-front">Diplôme préparé : <span class="infos-bdd">Baccalauréat ES</span></p>
 					<p class="infos-front">Formation demandée : </br><span class="infos-bdd">Bachelor année 1 cycle web et digital</span></p>
 				</div>
 			</div>
