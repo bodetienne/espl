@@ -190,11 +190,11 @@
 
 /** BOUTON CHOIX **/
 
-.form-main .container-lgn {
+/* .form-main .container-lgn {
 	display: flex;
 	flex-direction: column;
 	height: 73vh;
-}
+} */
 
 .form-main .container-lgn .container-titre {
 	width: 80%;
@@ -213,7 +213,8 @@
 
 .form-main .container-lgn .lgn {
 	margin: auto;
-	margin-left: 0;
+	margin-left: 7vw;
+	margin-bottom: 6vh;
 	display: flex;
 	max-height: 30vh;
 }

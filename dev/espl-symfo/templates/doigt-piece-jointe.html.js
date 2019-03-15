@@ -31,19 +31,19 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	// doigt_en_l_air
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#7F3F13").s().p("Ag8CjQgKgGgPgQQgKgLgKgQIgIgMIAIAMQAKAOAKAMQAOAQALAGQAHAEAJgBIARgDQAUgGAFgNQADgMgDgVQgEgSgFgOQgFgNgJgSIgEgHQgpg+gphJIACgBQApA9AdA0IANAYQAaApATAUQAJAIAGADQAIAEALABQAYAEAPgFQALgEAEgIQAFgGAAgMQAAgNgJgZQgMgegUgpIgNgbIgXgsIgjhHIAAAAIAAgBIAAAAIAAAAIACACIAUAoIAPAdIAkBHIABADIAJATQANAcAJAWQAJAZAAANQAAAMgFAIQgGAIgKAEQgRAGgXgFQgLgBgIgEQgHgCgJgKQgRgRgVggIAKAXQAGAQADARQADAWgDALQgGAOgUAFIgRAEIgEAAQgGAAgGgDgAgfAiIgJgRQgZgtgkg0QAkA+AiA0g");
-	this.shape.setTransform(311.1275,316.3366,0.6016,0.6016);
+	this.shape.setTransform(311.1516,316.3289,0.6016,0.6016);
 
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("#7F3F13").s().p("Ag8B1QgKgCgFgIQgHgMAEgXQADgOAHgUIANghQAQgrAGgWIAKgiIAFgWIgEAWIgJAiQgKAggNAiIgMAhQgHATgDAOQgEAWAHAMQAFAHAIACQAIABAJgCQAOgDASgKQASgKAKgKQAXgUAPgmQAMgdAGglQAFgdACgZQgEBGgUAzQgPAngWAUQgJAIgTAMQgVALgMACIgMABIgGAAg");
-	this.shape_1.setTransform(327.0477,317.3072,0.6016,0.6016);
+	this.shape_1.setTransform(327.0709,317.2994,0.6016,0.6016);
 
 	this.shape_2 = new cjs.Shape();
 	this.shape_2.graphics.f("#EA9F65").s().p("AAXHaQgZgEgZgPQgVgNgfgkQgPgSgLgPIhyi4QgZgrgHgRQgQgoAHgfQAEgOAVgGQAagJAFgEQASgQAmgXIAsgbQAXgNAQgDQAkgEAXgEQAqgHADgLQADgOgGhrQgGhtgIhLQgHhDAZgPQARgKAZAOQALAGAfDrQAeDlAGgDQALgDAfACQAfADASAIQAQAHgEAdQgCAQgMAiIgQAwQgLAfgKASQgEAIAFAOIAOAfQAUA0gPA5QgSBAgoAZQgWAOg7ALQgdAFgWAAIgTgBg");
-	this.shape_2.setTransform(316.3237,309.4664,0.6017,0.6017);
+	this.shape_2.setTransform(316.3355,309.4627,0.6017,0.6017);
 
 	this.shape_3 = new cjs.Shape();
 	this.shape_3.graphics.f("#EA9F65").s().p("AAAJhQgvgygrg2IhFhXQgggohAiiQgzh/gdhbQgVhFhcjsQhfjzgOgQIBvhlQADAMBuD5QB3ENAaBDQAfBQAvBTIBGB0QAtBMBJAsQBaA3ARhmQALg9ANgzQAKgnATiDQAci3A/kaIA5j1QBhAxAuANQATAFAFAIQAJARgJB+QgJB8gOBFQgOBBgjCRQgiCLgSBGQgPA2gTBjIgZCCQg/EriBAIIgGABQhMAAhghmg");
-	this.shape_3.setTransform(349.882,368.9963,0.6017,0.6017);
+	this.shape_3.setTransform(349.893,368.9911,0.6017,0.6017);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},98).wait(179));
 
@@ -225,17 +225,17 @@ p.nominalBounds = new cjs.Rectangle(-82.6,-66.1,164.8,132.1);
 
 	// Calque_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").p("AO5H3QjXAlkDAlQoFBKjegBIgEAAQnJgHiqgOQk+gbighRQhtg2gwipQgkh/AIiEQADhOACgsQAFhNAPg5QAtihClhoQCmhoEhgiQCfgSGRgGQIygJCtAIQGvAUDMBoQCtBZAqDTQAXBwgICbQADAxATBxQAJBegiAfQhCBCgRAOQgUARg+AXIAfAYQAoAZAxALQA6AMBvAIQBYAGAuAAQAdAAh5AXQh6AXgkACQh1AHgngGQhlgOhbhHg");
-	this.shape.setTransform(-2.568,15.2561,1,1.4636);
+	this.shape.graphics.f().s("#000000").p("AJkJBQmNADlegFQllgFjeghQkEgmirhWQh2g6hXiUQhRiKAHhnQAJiLA6hrQBPiQCuhtQCshtDwgpQC2geFQgFQHUgIDmARQGHAcDPBqQCxBbBLDHQApBsAKCVQAFBFg3CBQg0B7gsAoQhIBBhZApQhTAmg/AAIBNA0QBVA6ArAZQA0AdBLAaQBIAZAfAAQA5AAigAUQiQASg6gNQiEgShegSQixgkhXhEg");
+	this.shape.setTransform(-15.532,26.1988,1,1.4636);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("AkEKKIgEAAQnJgHiqgOQk+gbighRQhtg2gwipQgkh/AIiEIAFh6QAFhNAPg5QAtihClhoQCmhoEhgiQCfgSGRgGQIygJCtAIQGvAUDMBoQCtBZAqDTQAXBwgICbQADAxATBxQAJBegiAfQhCBCgRAOQgUARg+AXIAfAYQAoAZAxALQA6AMBvAIQBYAGAuAAQAdAAh5AXQh6AXgkACQh1AHgngGQhlgOhbhHQjXAlkDAlQn+BJjfAAIgGAAg");
-	this.shape_1.setTransform(-2.568,15.2561,1,1.4636);
+	this.shape_1.graphics.f("#FFFFFF").s().p("AROLNQiEgShegSQixgkhXhEQmNADlegFQllgFjeghQkEgmirhWQh2g6hXiUQhRiKAHhnQAJiLA6hrQBPiQCuhtQCshtDwgpQC2geFQgFQHUgIDmARQGHAcDPBqQCxBbBLDHQApBsAKCVQAFBFg3CBQg0B7gsAoQhIBBhZApQhTAmg/AAIBNA0QBVA6ArAZQA0AdBLAaQBIAZAfAAQA5AAigAUQhUAKg2AAQgnAAgZgFg");
+	this.shape_1.setTransform(-15.532,26.1988,1,1.4636);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-159.2,-80.8,313.29999999999995,192.2);
+p.nominalBounds = new cjs.Rectangle(-159.1,-80.4,287.2,213.3);
 
 
 (lib.Path_Calque_1 = function(mode,startPosition,loop) {
@@ -388,12 +388,18 @@ p.nominalBounds = new cjs.Rectangle(-159.2,-80.8,313.29999999999995,192.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// bulle
+	this.text = new cjs.Text("Dernière ligne droite ! Voici tous les documents que tu dois nous fournir pour valider ta candidature à MyDigitalSchool.", "21px 'Ubuntu Condensed'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 26;
+	this.text.lineWidth = 212;
+	this.text.parent = this;
+	this.text.setTransform(202.05,91.5);
+
 	this.instance = new lib.Interpoler53("synched",0);
 	this.instance.parent = this;
 	this.instance.setTransform(215.05,141.05);
-	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2).to({_off:false},0).to({_off:true},3).wait(272));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance},{t:this.text}]},2).to({state:[]},88).wait(187));
 
 }).prototype = p = new cjs.MovieClip();
 
@@ -402,16 +408,16 @@ p.nominalBounds = new cjs.Rectangle(-159.2,-80.8,313.29999999999995,192.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// bulle
-	this.text = new cjs.Text("Afin de construire un projet commun de formation, nous te proposons de répondre aux questions suivantes. Tes réponses aideront nos conseillers de formation à comprendre les raisons de ton choix et à préparer l’entretien de recrutement.", "21px 'Ubuntu Condensed'");
+	this.text = new cjs.Text("Si ton diplôme est en cours d'obtention tu peux passer à la suite. Si tu as déjà le bac/bts/licence tu dois nous fournir ton diplôme.", "21px 'Ubuntu Condensed'");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 26;
 	this.text.lineWidth = 264;
 	this.text.parent = this;
-	this.text.setTransform(199.5,69.4);
+	this.text.setTransform(208.05,95.1);
 
 	this.instance = new lib.Interpoler53("synched",0);
 	this.instance.parent = this;
-	this.instance.setTransform(215.05,151.25,1,1.3108,0,0,0,0,0.1);
+	this.instance.setTransform(215.05,141.05);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance},{t:this.text}]},91).wait(186));
 
@@ -2729,7 +2735,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.bouton).wait(305));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(467.4,556,23.100000000000023,305.1);
+p.nominalBounds = new cjs.Rectangle(467.5,570.1,23,291);
 // library properties:
 lib.properties = {
 	id: 'C500C04A540DAC48A0B9FA721245CAF0',
